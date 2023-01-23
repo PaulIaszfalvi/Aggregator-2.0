@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "bootstrap": "^5.2.3",
+    "react-router-dom": "^6.7.0", 
+    "concurrently": "^7.3.0"
+  }, 
+  "scripts": {
+    "backend": "nodemon server/server.js",
+    "frontend": "npm start --prefix client",
+    "dev": "concurrently \"npm run backend\" \"npm run frontend\"",
+    "server": "cd server & node server.js", 
+    "client": "cd client & npm start",
+    "go": "concurrently \"npm run server\" \"npm run client\""
+  }
+}
