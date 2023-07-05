@@ -1,0 +1,22 @@
+{
+  "links": [
+    {
+      "title": "reddit",
+      "main": "https://wwww.reddit.com/r/",
+      "subs": [
+        "learnprogramming",
+        "programminghumor",
+        "cscareerquestions",
+        "programming",
+        "Fitness",
+        "weightroom",
+        "powerlifting"
+      ]
+    },
+    {
+      "title": "ycombinator",
+      "main": "https://news.ycombinator.com",
+      "subs": [""]
+    }
+  ]
+}
