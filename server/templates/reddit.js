@@ -1,6 +1,19 @@
 const puppeteer = require("puppeteer");
 
-let SUBREDDIT_URL = (reddit) => `https://old.reddit.com/r/${reddit}/`;
+/**
+ * Returns a formatted URL string for a specific subreddit on the old version of Reddit.
+ * @param {string} reddit - The name of the subreddit.
+ * @returns {string} - The URL of the specified subreddit on the old version of Reddit.
+ */
+const subredditUrl = (reddit) => {
+  if (!reddit || typeof reddit !== 'string') {
+    throw new Error('Invalid subreddit name');
+  }
+  const encodedReddit = encodeURIComponent(reddit);
+  return `https://old.reddit.com/r/${encodedReddit}/`;
+};
+
+module.exports = subredditUrl;
 
 const self = {
   browser: null,
@@ -12,7 +25,7 @@ const self = {
   //get url and make a call
   initialize: async (reddit) => {
     self.browser = await puppeteer.launch({
-      // headless: false,
+      headless: true,
     });
     self.page = await self.browser.newPage();
 

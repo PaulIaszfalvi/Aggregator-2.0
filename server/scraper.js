@@ -1,44 +1,53 @@
 const reddit = require("./templates/reddit");
 const ycombinator = require("./templates/ycombinator");
 
-const scraper = (async () => {
-  //Get the links
-  const myList = getList();
-  let resultsArray = [];
-  let numResults = 10;
-  // -1 because I can only scan reddit right now
-  // First for loop goes through links, second for loop goes through subs
-  for (var i = 0; i < myList.links.length; i++) {
-    var title = myList.links[i].title;
+/**
+ * Asynchronous function that scrapes data from different websites based on the links provided in a JSON file.
+ * It uses different templates for different websites and retrieves a specified number of results for each website.
+ * 
+ * @param {number} numResults - The number of results to retrieve for each website.
+ * @returns {Promise<Array<Array<any>>>} - An array of arrays, where each inner array contains the sub-site and the corresponding results for that sub-site.
+ */
+const scraper = async (numResults) => {
+  // Get the links
+  const linkList = getList();
+  const templates = {};
 
-    //console.log(title);
-
-    // Determine which template to use based on which site will be scraped
-    switch (title) {
-      case "reddit":
-        myTemplate = reddit;
-        break;
-      case "ycombinator":
-        myTemplate = ycombinator;
-        break;
-      default:
-        console.log("This should not happen");
-        break;
-    }
-
-    for (var j = 0; j < myList.links[i].subs.length; j++) {
-      const subSite = myList.links[i].subs[j] || "ycombinator";
-      await myTemplate.initialize(subSite);
-      let result = await myTemplate.getResults(numResults);
-
-      resultsArray.push([subSite, result]);
-      console.log(resultsArray);
-    }
+  // Dynamically import templates based on the title provided in the JSON file
+  for (const link of linkList.links) {
+    const title = link.title;
+    templates[title] = await import(`./templates/${title}`);
   }
 
-  return resultsArray;
-})();
+  // Create an array of promises using Array.prototype.map()
+  const promises = linkList.links.map(async (link) => {
+    const title = link.title;
 
+    // Determine which template to use based on which site will be scraped
+    const myTemplate = templates[title];
+
+    // Check if template exists
+    if (!myTemplate) {
+      throw new Error(`Invalid title '${title}' provided in JSON file.`);
+    }
+
+    // Loop through subs
+    const subPromises = link.subs.map(async (subSite) => {
+      subSite = subSite || "ycombinator";
+      await myTemplate.initialize(subSite);
+      let result = await myTemplate.getResults(numResults);
+      return [subSite, result];
+    });
+
+    // Return sub promises
+    return Promise.all(subPromises);
+  });
+
+  // Wait for all promises to resolve using Promise.all()
+  const resultsArray = await Promise.all(promises);
+
+  return resultsArray;
+};
 //Get a list (json format) with the titles, links, and subs for the websites that will be scraped
 function getList() {
   var json = require("./textFiles/links.json");
