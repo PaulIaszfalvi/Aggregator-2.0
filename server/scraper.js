@@ -51,7 +51,7 @@ const scraper = async (numResults) => {
 //Get a list (json format) with the titles, links, and subs for the websites that will be scraped
 function getList() {
   var json = require("./textFiles/links.json");
-
+  
   return json;
 }
 
