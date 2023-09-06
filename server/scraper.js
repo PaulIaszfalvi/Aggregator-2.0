@@ -8,16 +8,24 @@ const ycombinator = require("./templates/ycombinator");
  * @param {number} numResults - The number of results to retrieve for each website.
  * @returns {Promise<Array<Array<any>>>} - An array of arrays, where each inner array contains the sub-site and the corresponding results for that sub-site.
  */
+
+console.log("accessing scraper")
 const scraper = async (numResults) => {
+
+  console.log("scrapper started")
   // Get the links
   const linkList = getList();
   const templates = {};
+
+  console.log("template is being accessed")
 
   // Dynamically import templates based on the title provided in the JSON file
   for (const link of linkList.links) {
     const title = link.title;
     templates[title] = await import(`./templates/${title}`);
   }
+
+  console.log("creating promise")
 
   // Create an array of promises using Array.prototype.map()
   const promises = linkList.links.map(async (link) => {
@@ -30,7 +38,7 @@ const scraper = async (numResults) => {
     if (!myTemplate) {
       throw new Error(`Invalid title '${title}' provided in JSON file.`);
     }
-
+   
     // Loop through subs
     const subPromises = link.subs.map(async (subSite) => {
       subSite = subSite || "ycombinator";
@@ -45,7 +53,7 @@ const scraper = async (numResults) => {
 
   // Wait for all promises to resolve using Promise.all()
   const resultsArray = await Promise.all(promises);
-
+  console.log(resultsArray)
   return resultsArray;
 };
 //Get a list (json format) with the titles, links, and subs for the websites that will be scraped

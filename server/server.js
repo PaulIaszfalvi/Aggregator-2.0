@@ -19,7 +19,7 @@ app.use(cors());
 app.use(favicon(path.join(__dirname, "../client/public/network.png")));
 
 app.get("/", async (req, res) => {
-  //console.log(await scraper); //, new Date().getTime());
+  console.log(await scraper); //, new Date().getTime());
   res.json(await scraper);
 });
 
