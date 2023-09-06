@@ -19,10 +19,33 @@ const puppeteer = require('puppeteer');
     // Close the browser
     await browser.close();
 
-    // Extract the title from the JSON data
-    const title = jsonData.data.children[0].data.title;
+    let myArray = [];
 
-    console.log('Title:', title);
+    // Extract the title from the JSON data
+    for (let i = 0; i < 15; i++) {
+      let title = jsonData.data.children[i].data.title;
+      let user = jsonData.data.children[i].data.author;
+      let score = jsonData.data.children[i].data.score;
+      const permalink = jsonData.data.children[i].data.permalink;
+      let selftext = jsonData.data.children[i].data.selftext;
+      let sourceLink = jsonData.data.children[i].data.url;
+      // If the post isn't a discussion, return the link to what it points to instead of the discussion
+      if (selftext === "") {
+        selftext = jsonData.data.children[i].data.url;
+      }
+
+      myArray.push({
+        title: title,
+        user: user,
+        score: score,
+        selfText: selftext,
+        sourceLink: sourceLink,
+      });
+
+      console.log(myArray);      
+
+    }
+    
   } catch (error) {
     console.error('Error:', error);
   }
