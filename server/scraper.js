@@ -1,6 +1,8 @@
 const puppeteer = require('puppeteer');
+const axios = require('axios'); 
 
-(async () => {
+
+async function fetchData() {
   try {
     const browser = await puppeteer.launch();
     const page = await browser.newPage();
@@ -42,11 +44,13 @@ const puppeteer = require('puppeteer');
         sourceLink: sourceLink,
       });
 
-      console.log(myArray);      
-
+      console.log(myArray)
+      return JSON.stringify(myArray)     
     }
     
   } catch (error) {
     console.error('Error:', error);
   }
-})();
+};
+
+module.exports = {fetchData};

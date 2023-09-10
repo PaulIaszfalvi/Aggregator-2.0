@@ -18,10 +18,33 @@ app.use(cors());
 
 //app.use(favicon(path.join(__dirname, "../client/public/network.png")));
 
-app.get("/", async (req, res) => {
+app.use(express.static('public'))
+
+app.get("/info", async (req, res) => {
   console.log(await scraper); //, new Date().getTime());
+  
   res.json(await scraper);
+
 });
+
+app.get("/info", async (req, res) => {
+  const myArray = scraper
+  console.log(myArray)
+  res.send(myArray)  
+});
+
+// app.post("sendData", async (req,res) => {
+//   const {myArray} = req.body
+
+//   try {
+
+//     await scraper.insertMany([myArray = myArray]) 
+
+//   }
+//   catch(e) {
+//     console.log(e)
+//   }
+// })
 
 app.listen(PORT, () => {
   console.log(`Server listening on ${PORT}`);
