@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import RedditItem from './reddititem'; 
 
 const Receiver = () => {
   const [data, setData] = useState([]);
@@ -12,28 +13,20 @@ const Receiver = () => {
     axios.get(apiUrl)
       .then(response => {
         setData(response.data);
-        console.log(response.data)
       })
       .catch(error => {
         console.error('Error fetching data:', error);
-      });      
+      });
   }, []);
 
   return (
-    <div>    
+    <div>
       <h2>Data Fetcher Component</h2>
-      <ul>
+      <div className="reddit-items-container">
         {data.map(item => (
-          <li key={item.id}>
-            <strong>Title:</strong> {item.title}<br />
-            <strong>Score:</strong> {item.score}<br />
-            <strong>Permalink:</strong> {item.sourceLink}<br />
-            <strong>Selftext:</strong> {item.selfText}<br />
-            <strong>User:</strong> {item.user}<br />
-            <br></br>
-          </li>         
+          <RedditItem key={item.id} item={item} /> 
         ))}
-      </ul>
+      </div>
     </div>
   );
 };

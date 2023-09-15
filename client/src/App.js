@@ -6,8 +6,7 @@ import Receiver from "./components/data/receiver"
 
 function App() {
   return (
-    <div className="App">
-      app
+    <div className="App">      
       <Receiver />
     </div>
   );

@@ -10,7 +10,7 @@ async function fetchData() {
       let title = childData ? childData.title : undefined;
       let user = childData ? childData.author : undefined;
       let score = childData ? childData.score : undefined;
-      const permalink = childData ? childData.permalink : undefined;
+      const permaLink = childData ? "www.reddit.com" + childData.permalink : undefined;
       let selftext = childData ? childData.selftext : undefined;
       let sourceLink = childData ? childData.url : undefined;
       // If the post isn't a discussion, return the link to what it points to instead of the discussion
@@ -24,6 +24,7 @@ async function fetchData() {
         score: score,
         selfText: selftext,
         sourceLink: sourceLink,
+        permaLink: permaLink
       });
     });
     console.log(myArray)
