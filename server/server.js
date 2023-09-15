@@ -5,7 +5,6 @@ const PORT = process.env.PORT || 5000;
 const cors = require("cors");
 const bodyParser = require("body-parser");
 
-
 // Configuring express to use body-parser as middle-ware.
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
@@ -26,7 +25,3 @@ app.get("/info", async (req, res) => {
 app.listen(PORT, () => {
   console.log(`Server listening on ${PORT}`);
 });
-
-
-module.exports = app;
-module.exports = router;
