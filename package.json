@@ -1,12 +1,16 @@
 {
   "dependencies": {
+<<<<<<< HEAD
     "axios": "^1.5.0",
+=======
+>>>>>>> github/main
     "concurrently": "^8.2.0",
     "cors": "^2.8.5",
     "dotenv": "^16.3.1",
     "express": "^4.18.2",
     "mongoose": "^7.3.1",
     "node": "^20.2.0",
+<<<<<<< HEAD
     "nodemon": "^3.0.1",
     "puppeteer": "^20.7.3",
     "react": "^18.2.0",
@@ -21,5 +25,19 @@
     "server": "cd server & node server.js",
     "client": "cd client & npm start",
     "go": "concurrently \"npm run server\" \"npm run client\""
+=======
+    "nodemon": "^2.0.22",
+    "puppeteer": "^20.7.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "^5.0.1",
+    "serve-favicon": "^2.5.0"
+  },
+  "scripts": {
+    "start": "nodemon index.js",
+    "server": "nodemon server/server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+>>>>>>> github/main
   }
 }
