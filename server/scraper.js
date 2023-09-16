@@ -2,7 +2,7 @@ const axios = require('axios');
 
 async function fetchData() {
   try {
-    const response = await axios.get('https://www.reddit.com/r/learnprogramming.json');
+    const response = await axios.get('https://www.reddit.com/r/programming.json');
     const jsonData = response.data;
 
     const myArray = jsonData.data.children.slice(0, 15).map(child => {
@@ -13,10 +13,7 @@ async function fetchData() {
       const permaLink = childData ? `https://www.reddit.com${childData.permalink}` : undefined;
       let selftext = childData ? childData.selftext : undefined;
       let sourceLink = childData ? childData.url : undefined;
-      // If the post isn't a discussion, return the link to what it points to instead of the discussion
-      if (selftext === "") {
-        selftext = childData ? childData.url : undefined;
-      }
+     
 
       return ({
         title: title,

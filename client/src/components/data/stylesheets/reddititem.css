@@ -1,0 +1,7 @@
+/* Add this CSS to your stylesheet */
+a {
+    color: blue; /* Set the link text color to blue (or your preferred color) */
+    text-decoration: underline; /* Add underline to indicate it's a link */
+    cursor: pointer; /* Change cursor to a pointer on hover to indicate it's clickable */
+  }
+  
