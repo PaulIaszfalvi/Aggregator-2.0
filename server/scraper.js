@@ -24,7 +24,7 @@ async function fetchData() {
         permaLink: permaLink
       });
     });
-    console.log(myArray)
+    
     return myArray; // Return the array outside the for loop
   } catch (error) {
     console.error('Error:', error);
