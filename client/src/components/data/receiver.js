@@ -24,7 +24,9 @@ const Receiver = () => {
       <h2>Data Fetcher Component</h2>
       <div className="reddit-items-container">
         {data.map(item => (
-          <RedditItem key={item.id} item={item} /> 
+          <div key={item.id}>
+            <RedditItem item={item} /> 
+          </div>
         ))}
       </div>
     </div>

@@ -1,85 +1,84 @@
 /* RedditItem.css */
+
 .reddit-item {
   border: 1px solid #ccc;
   margin: 5px;
   background-color: #f9f9f9;
-  display: flex;  
+  display: flex;
   align-items: flex-start;
   max-width: 300px;
   max-height: 150px;
   align-items: center;
+  position: relative; /* Added to set a relative position for proper popup placement */
 }
 
 .left-box {
-  float:left;
+  float: left;
   width: 30%;
-  height: 100%;  
-  display:flex;
+  height: 100%;
+  display: flex;
   flex-direction: column;
 }
 
 .right-box {
-  float:right;
+  float: right;
   width: 70%;
   border: 1px solid #ccc;
   text-align: center;
 }
 
-.scorebox{
-  display:flex;
-  justify-content:center;
+/* ... (existing styles) */
+/* RedditItem.css */
+.reddit-item {
+  border: 1px solid #ccc;
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  max-width: 500px;
+  background-color: #f9f9f9;
+  position: relative; /* Added to set a relative position for proper popup placement */
 }
 
-.userbox {
-  display:flex;
-  justify-content:center;
+/* ... (other styles) */
+
+/* Popup styles */
+.popup {
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  z-index: 1;
+  display: none;
+  border-radius: 5px;
+  color: #333;
+  max-width: 500px;
+  top: 50%; /* Center the popup vertically */
+  transform: translateX(-50%); /* Center the popup horizontally */
+  transition: opacity 0.3s; /* Added for smooth fade-in/out */
 }
 
-h3 {
-  font-size: .9rem;
-  margin-bottom: 5px;
-  overflow: hidden;
-  text-align: center;
+/* Display the popup on the left side if leftSpace is true */
+.reddit-item.left-space .popup {
+  left: 0;
+  transform: translateX(0);
 }
 
-p {
-  margin: 0;
+/* Display the popup on the right side if leftSpace is false (default) */
+.reddit-item.right-space .popup {
+  right: 0;
+  transform: translateX(0);
 }
 
-.score {
-  font-weight: bold;
-  font-size: 1.5rem;
-  color: #0077cc;
+.reddit-item:hover .popup {
+  display: block;
 }
 
-.user {  
-  overflow: hidden;
-  font-size: 12px;
-}
+/* End of RedditItem.css */
 
-.link {
-  text-decoration: none;
-  color: #0077cc;
-  font-weight: bold;
-}
-
-.link:hover {
-  text-decoration: underline;
-}
-
-/* Style the selfText paragraph */
-.self-text {
-  font-style: italic;
-  margin-top: 10px;
-  
-}
-
-.permalink {  
-  margin-top: 10px;
-}
-
-/* Style the "Link to Reddit" link */
-.reddit-link {
-  margin-top: 10px;
-  width: 100%;
+/* Define styles for the self-image class */
+.self-image {
+  max-width: 100%; /* Ensure the image fits within its container */
+  max-height: 400px; /* Set a maximum height for the image */
+  display: block; /* Ensure the image is displayed as a block element */
+  margin: 0 auto; /* Center the image horizontally within its container */
 }
