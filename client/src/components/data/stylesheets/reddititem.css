@@ -14,7 +14,7 @@
 
 .left-box {
   float: left;
-  width: 30%;
+  width: 10%;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -22,7 +22,7 @@
 
 .right-box {
   float: right;
-  width: 70%;
+  width: 90%;
   border: 1px solid #ccc;
   text-align: center;
 }
@@ -39,8 +39,6 @@
   position: relative; /* Added to set a relative position for proper popup placement */
 }
 
-/* ... (other styles) */
-
 /* Popup styles */
 .popup {
   position: absolute;
@@ -51,11 +49,27 @@
   display: none;
   border-radius: 5px;
   color: #333;
-  max-width: 500px;
-  top: 50%; /* Center the popup vertically */
-  transform: translateX(-50%); /* Center the popup horizontally */
+  max-width: 500px; /* Maximum width of the popup */
+  left: 50%; /* Center the popup horizontally */
+  transform: translateX(20%); /* Center horizontally */
+  transform: translateY(30%); 
+  text-align: left; /* Align the text to the left */
   transition: opacity 0.3s; /* Added for smooth fade-in/out */
+  white-space: normal; /* Allow text to wrap */
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  word-break: break-word;
+  
 }
+
+/* Remove max-height for .popup.off-screen-top */
+.popup.off-screen-top {
+  top: 5%; /* Adjust this value to keep it on screen */
+  max-height: none; /* Remove max-height to allow content to wrap within the popup */
+}
+
+
+
 
 /* Display the popup on the left side if leftSpace is true */
 .reddit-item.left-space .popup {
@@ -82,3 +96,25 @@
   display: block; /* Ensure the image is displayed as a block element */
   margin: 0 auto; /* Center the image horizontally within its container */
 }
+
+/* RedditItem.css */
+
+/* ... (existing styles) */
+
+/* Style the self-text content */
+.self-text {
+  /* Apply general styling for HTML tags within self-text */
+  font-size: 16px;
+  color: #333;
+  /* Add any other common styling properties */
+}
+
+/* You can also target specific HTML tags within self-text */
+.self-text p {
+  /* Apply styling for <p> tags within self-text */
+  margin: 0;
+  padding: 10px;
+  /* Add any specific styling for paragraphs */
+}
+
+/* Add styling for other HTML tags as needed */

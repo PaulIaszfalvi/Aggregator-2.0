@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+  import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import RedditItem from './reddititem'; 
 
@@ -23,11 +23,11 @@ const Receiver = () => {
     <div>
       <h2>Data Fetcher Component</h2>
       <div className="reddit-items-container">
-        {data.map(item => (
-          <div key={item.id}>
-            <RedditItem item={item} /> 
-          </div>
-        ))}
+      {data.map((item) => (
+        <div key={item.id}>
+          <RedditItem item={item} />
+        </div>
+      ))}
       </div>
     </div>
   );
