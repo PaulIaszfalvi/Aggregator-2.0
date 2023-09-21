@@ -14,7 +14,6 @@ const RedditItem = ({ item }) => {
         <div className="scorebox">
           <p className="score">{item.score}</p>
         </div>
-  
       </div>
 
       <a
@@ -24,25 +23,29 @@ const RedditItem = ({ item }) => {
         className="reddit-link"
       >
         <div className="right-box">
-          <h3>{item.title}</h3>
-          <p className="permalink">
-            <a
-              href={item.sourceLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="link"
-            >
-              Link
-            </a>
-          </p>
+          <div className="title-box">
+            <h3>{item.title}</h3>
+          </div>
         </div>
       </a>
+
+      {item.sourceLink !== item.permaLink && ( // Conditionally render if sourceLink is different
+        <p className="source-link">
+          <a
+            href={item.sourceLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="link"
+          >
+            Link
+          </a>
+        </p>
+      )}
 
       {showPopup && (
         <div className="popup">
           {item.selfText && (
-
-            <pre>{item.selfText}</pre>
+            <pre className='discussion-text'>{item.selfText}</pre>
             // <div
             //   className="self-text"
             //   dangerouslySetInnerHTML={{ __html: item.selfText }}

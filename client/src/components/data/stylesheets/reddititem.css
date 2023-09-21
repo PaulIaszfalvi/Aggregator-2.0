@@ -22,9 +22,10 @@
 
 .right-box {
   float: right;
-  width: 90%;
+  width: 100%;
   border: 1px solid #ccc;
   text-align: center;
+  font-size: .8em;
 }
 
 /* ... (existing styles) */
@@ -39,6 +40,11 @@
   position: relative; /* Added to set a relative position for proper popup placement */
 }
 
+.source-link {
+  margin-left: auto; 
+margin-right: 0;
+}
+
 /* Popup styles */
 .popup {
   position: absolute;
@@ -49,16 +55,14 @@
   display: none;
   border-radius: 5px;
   color: #333;
-  max-width: 500px; /* Maximum width of the popup */
+  width: 500px;
   left: 50%; /* Center the popup horizontally */
   transform: translateX(20%); /* Center horizontally */
-  transform: translateY(30%); 
+  transform: translateY(40%); 
   text-align: left; /* Align the text to the left */
   transition: opacity 0.3s; /* Added for smooth fade-in/out */
   white-space: normal; /* Allow text to wrap */
-  word-wrap: break-word;
-  white-space: pre-wrap;
-  word-break: break-word;
+ 
   
 }
 
@@ -68,7 +72,11 @@
   max-height: none; /* Remove max-height to allow content to wrap within the popup */
 }
 
-
+.discussion-text {
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  word-break: break-all;
+}
 
 
 /* Display the popup on the left side if leftSpace is true */

@@ -1,6 +1,9 @@
-  import React, { useEffect, useState } from 'react';
+// Receiver.js
+import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import RedditItem from './reddititem'; 
+import SubContainer from "../styling/subContainer";
+import { Container } from "react-bootstrap";
+import "./stylesheets/receiver.css"
 
 const Receiver = () => {
   const [data, setData] = useState([]);
@@ -20,16 +23,15 @@ const Receiver = () => {
   }, []);
 
   return (
-    <div>
+    <Container>
       <h2>Data Fetcher Component</h2>
-      <div className="reddit-items-container">
-      {data.map((item) => (
-        <div key={item.id}>
-          <RedditItem item={item} />
-        </div>
-      ))}
+      <div className="main-container">
+      <SubContainer data={data} /> {/* Pass 'data' as a prop */}
+      <SubContainer data={data} /> {/* Pass 'data' as a prop */}
+      <SubContainer data={data} /> {/* Pass 'data' as a prop */}
       </div>
-    </div>
+     
+    </Container>
   );
 };
 
