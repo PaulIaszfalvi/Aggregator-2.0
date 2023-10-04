@@ -1,4 +1,3 @@
-// Receiver.js
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import SubContainer from "../styling/subContainer";
@@ -6,7 +5,8 @@ import { Container } from "react-bootstrap";
 import "./stylesheets/receiver.css"
 
 const Receiver = () => {
-  const [data, setData] = useState([]);
+  const [data, setData] = useState(null); // Initialize data as null
+  const [hasData, setHasData] = useState(false); // Initialize hasData as false
 
   useEffect(() => {
     // Define the API endpoint
@@ -16,6 +16,7 @@ const Receiver = () => {
     axios.get(apiUrl)
       .then(response => {
         setData(response.data);
+        setHasData(true); // Set hasData to true when data is available
       })
       .catch(error => {
         console.error('Error fetching data:', error);
@@ -24,12 +25,10 @@ const Receiver = () => {
 
   return (
     <Container>
-      <h2>Data Fetcher Component</h2>
+      <h2>Data Fetcher Component</h2>  
       <div className="main-container">
-      
-      <SubContainer data={data} /> {/* Pass 'data' as a prop */}   
+        {hasData && <SubContainer data={data} />} {/* Pass 'data' as a prop when hasData is true */}
       </div>
-     
     </Container>
   );
 };
