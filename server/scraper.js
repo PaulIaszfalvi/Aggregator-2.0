@@ -1,63 +1,56 @@
 const axios = require('axios');
-const puppeteer = require('puppeteer');
 const fs = require('fs').promises;
-const path = require('path');
 
-async function captureScreenshot(url, outputFilePath) {
-  const browser = await puppeteer.launch();
-  const page = await browser.newPage();
-
+async function scanFile() {
   try {
-    await page.goto(url, { waitUntil: 'networkidle2' });
-    await page.setViewport({ width: 1200, height: 800 });
-    await page.waitForTimeout(2000);
-    await page.screenshot({ path: outputFilePath, fullPage: true });
-  } finally {
-    await browser.close();
+    const file = require("./textFiles/links.json")
+    const dataArray = [];
+
+    for (const site of file.sites) {
+      if (site.title === 'reddit') {
+        const promises = site.subs.map(async (sub) => {
+          const data = await fetchRedditData(sub);
+          dataArray.push([sub, data]);
+        });
+
+        await Promise.all(promises);
+      } else if (site.title === 'ycombinator') {
+        // get y combinator
+      } else {
+        // throw error
+      }
+    }
+
+    return { dataArray };
+  } catch (error) {
+    console.error('Error:', error);
+    throw error;
   }
 }
 
-async function fetchData() {
+async function fetchRedditData(sub) {
   try {
-    const response = await axios.get('https://www.reddit.com/r/learnprogramming.json');
+    const response = await axios.get(`https://www.reddit.com/r/${sub}.json`);
     const jsonData = response.data;
 
-    const myArray = await Promise.all(jsonData.data.children.slice(0, 15).map(async (child) => {
-      let childData = child.data;
-      let title = childData ? childData.title : undefined;
-      let user = childData ? childData.author : undefined;
-      let score = childData ? childData.score : undefined;
+    const myArray = jsonData.data.children.slice(0, 15).map((child) => {
+      const childData = child.data;
+      const title = childData ? childData.title : undefined;
+      const user = childData ? childData.author : undefined;
+      const score = childData ? childData.score : undefined;
       const permaLink = childData ? `https://www.reddit.com${childData.permalink}` : undefined;
-      let selftext = childData ? childData.selftext : undefined;
-      let sourceLink = childData ? childData.url : undefined;
-
-      if (!selftext && sourceLink) {
-        // Capture a screenshot and store it as a file
-        const screenshotFilePath = `./screenshots/${childData.id}.png`;
-        await captureScreenshot(sourceLink, screenshotFilePath);
-
-        // Convert the image to a Base64 data URL
-        const imageBuffer = await fs.readFile(screenshotFilePath);
-        const imageBase64 = imageBuffer.toString('base64');
-        const imageExtension = path.extname(screenshotFilePath);
-        const dataURL = `data:image/${imageExtension};base64,${imageBase64}`;
-
-        // Set selftext to the image data URL
-        selftext = dataURL;
-
-        // Delete the screenshot file
-        await fs.unlink(screenshotFilePath);
-      }
+      const selftext = childData ? childData.selftext : undefined;
+      const sourceLink = childData ? childData.url : undefined;
 
       return {
-        title: title,
-        user: user,
-        score: score,
+        title,
+        user,
+        score,
         selfText: selftext,
-        sourceLink: sourceLink,
-        permaLink: permaLink,
+        sourceLink,
+        permaLink,
       };
-    }));
+    });
 
     return myArray;
   } catch (error) {
@@ -66,4 +59,4 @@ async function fetchData() {
   }
 }
 
-module.exports = { fetchData };
+module.exports = { scanFile };

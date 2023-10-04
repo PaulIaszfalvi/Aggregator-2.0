@@ -26,9 +26,8 @@ const Receiver = () => {
     <Container>
       <h2>Data Fetcher Component</h2>
       <div className="main-container">
-      <SubContainer data={data} /> {/* Pass 'data' as a prop */}
-      <SubContainer data={data} /> {/* Pass 'data' as a prop */}
-      <SubContainer data={data} /> {/* Pass 'data' as a prop */}
+      
+      <SubContainer data={data} /> {/* Pass 'data' as a prop */}   
       </div>
      
     </Container>

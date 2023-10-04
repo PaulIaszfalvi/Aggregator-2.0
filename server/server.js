@@ -14,7 +14,7 @@ app.use(express.static('public'))
 
 app.get("/info", async (req, res, next) => {
   try {
-    const data = await scraper.fetchData();
+    const data = await scraper.scanFile();
     res.json(data);
   } catch (error) {
     next(error);
