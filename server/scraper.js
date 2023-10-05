@@ -1,7 +1,7 @@
 const axios = require('axios');
 const fs = require('fs').promises;
 const path = require('path');
-
+const puppeteer = require("puppeteer");
 async function scanFile() {
   try {
     const linksFilePath = path.join(__dirname, 'textFiles', 'links.json');
@@ -36,7 +36,9 @@ async function scanFile() {
 
           await Promise.all(promises);
         } else if (site.title === 'ycombinator') {
-          // get y combinator
+          const data = await fetchYCombinatorData(site.main); // Pass the main URL
+          dataArray.push(['ycombinator', data]);
+        
         } else {
           // throw error
         }
@@ -57,7 +59,6 @@ async function scanFile() {
     throw error;
   }
 }
-
 async function fetchRedditData(sub) {
   try {
     const response = await axios.get(`https://www.reddit.com/r/${sub}.json`);
@@ -85,6 +86,52 @@ async function fetchRedditData(sub) {
     return myArray;
   } catch (error) {
     console.error('Error:', error);
+    throw error;
+  }
+}
+
+async function fetchYCombinatorData() {
+  try {
+    const browser = await puppeteer.launch({
+      // headless: false,
+    });
+    const page = await browser.newPage();
+
+    const subredditURL = `https://news.ycombinator.com`;
+    await page.goto(subredditURL, {
+      waitUntil: "networkidle0",
+    });
+
+    const items = await page.evaluate(() => {
+      const itemsArray = Array.from(document.querySelectorAll('tr.athing'));
+
+      return itemsArray.slice(0, 15).map((item) => {
+        const titleElement = item.querySelector('td.title span.titleline a');
+        const scoreElement = item.nextElementSibling.querySelector('span.score');
+        const userElement = item.nextElementSibling.querySelector('a.hnuser');
+        const ageElement = item.nextElementSibling.querySelector('span.age');
+
+        const title = titleElement ? titleElement.textContent.trim() : '';
+        const link = titleElement ? titleElement.href : '';
+        const score = scoreElement ? scoreElement.textContent.trim() : '';
+        const user = userElement ? userElement.textContent.trim() : '';
+        const age = ageElement ? ageElement.getAttribute('title') : '';
+
+        return {
+          title,
+          link,
+          score,
+          user,
+          age,
+        };
+      });
+    });
+
+    await browser.close();
+    console.log(items)
+    return items;
+  } catch (error) {
+    console.error("Error:", error);
     throw error;
   }
 }
