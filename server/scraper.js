@@ -46,7 +46,7 @@ async function fetchRedditData(sub) {
         title,
         user,
         score,
-        selfText: selftext,
+        selftext,
         sourceLink,
         permaLink,
       };

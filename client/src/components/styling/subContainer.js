@@ -1,5 +1,6 @@
 import React from 'react';
 import RedditItem from '../data/reddititem';
+import "./stylesheets/subContainer.css"
 
 function SubContainer({ data }) {
   // Check if 'data' is defined

@@ -1,5 +1,5 @@
-.sub-container {
-    max-width: 500px;
+.sub-container {   
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+   
 }

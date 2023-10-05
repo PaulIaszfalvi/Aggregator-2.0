@@ -24,12 +24,12 @@ const Receiver = () => {
   }, []);
 
   return (
-    <Container>
+    <div>
       <h2>Data Fetcher Component</h2>  
       <div className="main-container">
         {hasData && <SubContainer data={data} />} {/* Pass 'data' as a prop when hasData is true */}
       </div>
-    </Container>
+    </div>
   );
 };
 
