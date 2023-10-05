@@ -1,24 +1,54 @@
 const axios = require('axios');
 const fs = require('fs').promises;
+const path = require('path');
 
 async function scanFile() {
   try {
-    const file = require("./textFiles/links.json")
+    const linksFilePath = path.join(__dirname, 'textFiles', 'links.json');
+    const linksData = await fs.readFile(linksFilePath, 'utf8');
+    const file = JSON.parse(linksData);
     const dataArray = [];
 
-    for (const site of file.sites) {
-      if (site.title === 'reddit') {
-        const promises = site.subs.map(async (sub) => {
-          const data = await fetchRedditData(sub);
-          dataArray.push([sub, data]);
-        });
+    const fetchedDataFilePath = path.join(__dirname, 'textFiles', 'fetchedData.json');
+    let shouldFetchData = true;
 
-        await Promise.all(promises);
-      } else if (site.title === 'ycombinator') {
-        // get y combinator
-      } else {
-        // throw error
+    try {
+      const fetchedData = await fs.readFile(fetchedDataFilePath, 'utf8');
+      const { timestamp, data } = JSON.parse(fetchedData);
+      const currentTime = Date.now();
+
+      // Check if the timestamp is less than one hour ago
+      if (currentTime - timestamp <= 3600000) {
+        shouldFetchData = false;
+        dataArray.push(...data);
       }
+    } catch (error) {
+      // File does not exist or is not valid JSON, proceed with fetching data.
+    }
+
+    if (shouldFetchData) {
+      for (const site of file.sites) {
+        if (site.title === 'reddit') {
+          const promises = site.subs.map(async (sub) => {
+            const data = await fetchRedditData(sub);
+            dataArray.push([sub, data]);
+          });
+
+          await Promise.all(promises);
+        } else if (site.title === 'ycombinator') {
+          // get y combinator
+        } else {
+          // throw error
+        }
+      }
+
+      // Save the fetched data to the file with a new timestamp
+      const currentTime = Date.now();
+      await fs.writeFile(
+        fetchedDataFilePath,
+        JSON.stringify({ timestamp: currentTime, data: dataArray }, null, 2), // Formatting with 2 spaces
+        'utf8'
+      );
     }
 
     return { dataArray };
@@ -43,12 +73,12 @@ async function fetchRedditData(sub) {
       const sourceLink = childData ? childData.url : undefined;
 
       return {
-        title,
-        user,
-        score,
-        selftext,
-        sourceLink,
-        permaLink,
+        "title": title,
+        "user" : user,
+        "score" : score,
+        "selftext" : selftext,
+        "sourceLink" : sourceLink,
+        "premaLink" : permaLink,
       };
     });
 
@@ -60,3 +90,5 @@ async function fetchRedditData(sub) {
 }
 
 module.exports = { scanFile };
+
+

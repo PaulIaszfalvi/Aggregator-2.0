@@ -14,6 +14,7 @@ function SubContainer({ data }) {
 
   return (
     <div className='sub-container'>
+      {console.log(data.dataArray)}
       {data.dataArray.map((subArray, index) => (
         <div key={index}>
           <h3>{subArray[0]}</h3>
