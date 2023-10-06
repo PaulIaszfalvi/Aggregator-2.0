@@ -77,9 +77,9 @@ async function fetchRedditData(sub) {
         "title": title,
         "user" : user,
         "score" : score,
-        "selftext" : selftext,
+        "selfText" : selftext,
         "sourceLink" : sourceLink,
-        "premaLink" : permaLink,
+        "permaLink" : permaLink,
       };
     });
 
