@@ -5,31 +5,37 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 const cors = require("cors");
 const mongoose = require("mongoose");
+const { MongoClient, ServerApiVersion } = require('mongodb');
 
-const dbURI = require("./textFiles/dbURI.json")
+const dotenv = require('dotenv');
+require('dotenv').config();
+// Access the MongoDB connection string
+const mongodbUri = process.env.MONGODB_URI;
 
-mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true });
-
-// Handle connection events
-mongoose.connection.on('connected', () => {
-  console.log('Connected to MongoDB');
+// Create a MongoClient with a MongoClientOptions object to set the Stable API version
+const client = new MongoClient(mongodbUri, {
+  serverApi: {
+    version: ServerApiVersion.v1,
+    strict: true,
+    deprecationErrors: true,
+  }
 });
+async function run() {
+  try {
+    // Connect the client to the server (optional starting in v4.7)
+    await client.connect();
+    // Send a ping to confirm a successful connection
+    await client.db("admin").command({ ping: 1 });
+    console.log("Pinged your deployment. You successfully connected to MongoDB!");
+  } catch (error) {
+    console.error("MongoDB connection error:", error);
+  } finally {
+    // Ensure that the client will close when you finish/error
+    await client.close();
+  }
+}
 
-mongoose.connection.on('error', (err) => {
-  console.error('MongoDB connection error:', err);
-});
-
-mongoose.connection.on('disconnected', () => {
-  console.log('MongoDB disconnected');
-});
-
-// Close the MongoDB connection when your Node.js application exits
-process.on('SIGINT', () => {
-  mongoose.connection.close(() => {
-    console.log('MongoDB connection closed through app termination');
-    process.exit(0);
-  });
-});
+run().catch(console.dir);
 
 
 
