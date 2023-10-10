@@ -48,7 +48,7 @@ app.use(express.static('public'))
 
 app.get("/info", async (req, res, next) => {
   try {
-    const data = await scraper.scanFile();
+    const data = await scraper.scanFile(mongodbUri);
     res.json(data);
   } catch (error) {
     next(error);
@@ -63,3 +63,4 @@ app.use((err, req, res, next) => {
 app.listen(PORT, () => {
   console.log(`Server listening on ${PORT}`);
 });
+

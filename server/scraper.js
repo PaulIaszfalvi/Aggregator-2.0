@@ -2,7 +2,13 @@ const axios = require('axios');
 const fs = require('fs').promises;
 const path = require('path');
 const puppeteer = require("puppeteer");
-async function scanFile() {
+const { MongoClient, ServerApiVersion } = require('mongodb');
+
+const dotenv = require('dotenv');
+require('dotenv').config();
+const { mongodbUri } = require('./server'); // Adjust the import path as needed
+
+async function scanFile(mongodbUri) {
   try {
     const linksFilePath = path.join(__dirname, 'textFiles', 'links.json');
     const linksData = await fs.readFile(linksFilePath, 'utf8');
@@ -31,14 +37,27 @@ async function scanFile() {
         if (site.title === 'reddit') {
           const promises = site.subs.map(async (sub) => {
             const data = await fetchRedditData(sub);
-            dataArray.push([sub, data]);
+
+            // Ensure 'data' is an array of valid document objects
+            const validData = data.map((item) => ({
+              category: sub, 
+              data: item
+            }));
+
+            dataArray.push(...validData);
           });
 
           await Promise.all(promises);
         } else if (site.title === 'ycombinator') {
           const data = await fetchYCombinatorData(site.main); // Pass the main URL
-          dataArray.push(['ycombinator', data]);
-        
+
+          // Ensure 'data' is an array of valid document objects
+          const validData = data.map(item => ({
+            category: 'ycombinator',
+            data: item
+          }));
+
+          dataArray.push(...validData);
         } else {
           // throw error
         }
@@ -53,12 +72,38 @@ async function scanFile() {
       );
     }
 
+    const client = new MongoClient(mongodbUri, {
+      serverApi: {
+        version: ServerApiVersion.v1,
+        strict: true,
+        deprecationErrors: true,
+      },
+    });
+
+    await client.connect();
+
+    const db = client.db(); // Get the default database or specify a database name if needed
+    const collection = db.collection('your_collection_name'); // Replace with your collection name
+
+    console.log(dataArray)
+    // Flatten the dataArray to remove nested arrays
+    const flattenedArray = dataArray.flat(1);
+    console.log(flattenedArray)
+    // Insert the flattened array into the MongoDB collection
+    const result = await collection.insertMany(flattenedArray);
+
+    console.log(`Inserted ${result.insertedCount} documents into the collection.`);
+
+    // Close the MongoDB connection
+    await client.close();
+
     return { dataArray };
   } catch (error) {
     console.error('Error:', error);
     throw error;
   }
 }
+
 async function fetchRedditData(sub) {
   try {
     const response = await axios.get(`https://www.reddit.com/r/${sub}.json`);
@@ -128,7 +173,7 @@ async function fetchYCombinatorData() {
     });
 
     await browser.close();
-    console.log(items)
+   
     return items;
   } catch (error) {
     console.error("Error:", error);
