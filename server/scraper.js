@@ -12,15 +12,31 @@ async function scanFile(mongodbUri) {
     const linksData = await fs.readFile(linksFilePath, 'utf8');
     const file = JSON.parse(linksData);
 
+    // Extract the database name from the MongoDB URI
+    const uriParts = mongodbUri.split('/');
+    const databaseName = uriParts[uriParts.length - 1];
+
+    // Connect to the database using the extracted database name
+    const client = new MongoClient(mongodbUri, {
+      serverApi: {
+        version: ServerApiVersion.v1,
+        strict: true,
+        deprecationErrors: true,
+      },
+    });
+
+    await client.connect();
+    const db = client.db(databaseName);
+
     // Check the timestamp and fetch data if needed
-    let dataArray = await checkTimestampAndFetchData(file, fetchedDataFilePath);
+    let dataArray = await checkTimestampAndFetchData(file, fetchedDataFilePath, db);
 
     if (!dataArray) {
       return;
     }
 
     // Save the data to the database
-    await saveDataToDatabase(dataArray, mongodbUri);
+    await saveDataToDatabase(dataArray, db);
 
     return { dataArray };
   } catch (error) {
@@ -29,7 +45,7 @@ async function scanFile(mongodbUri) {
   }
 }
 
-async function checkTimestampAndFetchData(file, fetchedDataFilePath) {
+async function checkTimestampAndFetchData(file, fetchedDataFilePath, db) {
   let dataArray = [];
   let shouldFetchData = true;
 
@@ -90,18 +106,7 @@ async function checkTimestampAndFetchData(file, fetchedDataFilePath) {
   return dataArray;
 }
 
-async function saveDataToDatabase(dataArray, mongodbUri) {
-  const client = new MongoClient(mongodbUri, {
-    serverApi: {
-      version: ServerApiVersion.v1,
-      strict: true,
-      deprecationErrors: true,
-    },
-  });
-
-  await client.connect();
-
-  const db = client.db(); // Get the default database or specify a database name if needed
+async function saveDataToDatabase(dataArray, db) {
   const collection = db.collection('your_collection_name'); // Replace with your collection name
 
   // Flatten the dataArray to remove nested arrays
@@ -111,9 +116,6 @@ async function saveDataToDatabase(dataArray, mongodbUri) {
   const result = await collection.insertMany(flattenedArray);
 
   console.log(`Inserted ${result.insertedCount} documents into the collection.`);
-
-  // Close the MongoDB connection
-  await client.close();
 }
 
 async function fetchRedditData(sub) {

@@ -24,7 +24,7 @@ function SubContainer({ data }) {
   return (
     <div className="sub-container">
       {Object.keys(groupedData).map((category, index) => (
-        <div key={index}>
+        <div key={index}>         
           <h3>{category}</h3>
           {groupedData[category].map((item, itemIndex) => (
             <div key={itemIndex}>
