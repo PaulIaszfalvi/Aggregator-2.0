@@ -6,9 +6,21 @@ const PORT = process.env.PORT || 5000;
 const cors = require("cors");
 const mongoose = require("mongoose");
 const { MongoClient, ServerApiVersion } = require('mongodb');
+const winston = require('winston');
 
 const dotenv = require('dotenv');
 require('dotenv').config();
+
+// Configure the Winston logger
+const logger = winston.createLogger({
+  level: 'info',
+  format: winston.format.simple(),
+  transports: [
+    new winston.transports.Console(),
+    new winston.transports.File({ filename: 'error.log', level: 'error' }),
+  ],
+});
+
 // Access the MongoDB connection string
 const mongodbUri = process.env.MONGODB_URI;
 
@@ -20,15 +32,16 @@ const client = new MongoClient(mongodbUri, {
     deprecationErrors: true,
   }
 });
+
 async function run() {
   try {
     // Connect the client to the server (optional starting in v4.7)
     await client.connect();
     // Send a ping to confirm a successful connection
     await client.db("admin").command({ ping: 1 });
-    console.log("Pinged your deployment. You successfully connected to MongoDB!");
+    logger.info("Pinged your deployment. You successfully connected to MongoDB!");
   } catch (error) {
-    console.error("MongoDB connection error:", error);
+    logger.error("MongoDB connection error:", error);
   } finally {
     // Ensure that the client will close when you finish/error
     await client.close();
@@ -36,8 +49,6 @@ async function run() {
 }
 
 run().catch(console.dir);
-
-
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
@@ -56,11 +67,10 @@ app.get("/info", async (req, res, next) => {
 });
 
 app.use((err, req, res, next) => {
-  console.error('Error:', err);
-  res.status(500).json({ error: 'An error occurred' + err});
+  logger.error('Error:', err);
+  res.status(500).json({ error: 'An error occurred' + err });
 });
 
 app.listen(PORT, () => {
   console.log(`Server listening on ${PORT}`);
 });
-

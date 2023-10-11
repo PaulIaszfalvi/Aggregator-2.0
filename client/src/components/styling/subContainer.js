@@ -1,26 +1,34 @@
 import React from 'react';
-import RedditItem from '../data/reddititem';
-import "./stylesheets/subContainer.css"
+import DataItem from '../data/dataItem';
+import './stylesheets/subContainer.css';
 
 function SubContainer({ data }) {
-  // Check if 'data' is defined
-  if (!data || !Array.isArray(data.dataArray)) {
+  if (!data || !Array.isArray(data)) {
     return (
-      <div className='sub-container'>
+      <div className="sub-container">
         <h3>No data available.</h3>
       </div>
     );
   }
 
+  // Create an object to group data by category
+  const groupedData = data.reduce((result, item) => {
+    const category = item.category;
+    if (!result[category]) {
+      result[category] = [];
+    }
+    result[category].push(item);
+    return result;
+  }, {});
+
   return (
-    <div className='sub-container'>
-      {console.log(data.dataArray)}
-      {data.dataArray.map((subArray, index) => (
+    <div className="sub-container">
+      {Object.keys(groupedData).map((category, index) => (
         <div key={index}>
-          <h3>{subArray[0]}</h3>
-          {subArray[1].map((item) => (
-            <div key={item.id}>
-              <RedditItem item={item} />
+          <h3>{category}</h3>
+          {groupedData[category].map((item, itemIndex) => (
+            <div key={itemIndex}>
+              <DataItem item={item.data} />
             </div>
           ))}
         </div>

@@ -1,107 +1,119 @@
 const axios = require('axios');
 const fs = require('fs').promises;
-const path = require('path');
-const puppeteer = require("puppeteer");
 const { MongoClient, ServerApiVersion } = require('mongodb');
-
-const dotenv = require('dotenv');
+const puppeteer = require('puppeteer');
 require('dotenv').config();
-const { mongodbUri } = require('./server'); // Adjust the import path as needed
 
 async function scanFile(mongodbUri) {
   try {
-    const linksFilePath = path.join(__dirname, 'textFiles', 'links.json');
+    const linksFilePath = process.env.LINKS_FILE_PATH;
+    const fetchedDataFilePath = process.env.FETCHED_DATA_FILE_PATH;
+
     const linksData = await fs.readFile(linksFilePath, 'utf8');
     const file = JSON.parse(linksData);
-    const dataArray = [];
 
-    const fetchedDataFilePath = path.join(__dirname, 'textFiles', 'fetchedData.json');
-    let shouldFetchData = true;
+    // Check the timestamp and fetch data if needed
+    let dataArray = await checkTimestampAndFetchData(file, fetchedDataFilePath);
 
-    try {
-      const fetchedData = await fs.readFile(fetchedDataFilePath, 'utf8');
-      const { timestamp, data } = JSON.parse(fetchedData);
-      const currentTime = Date.now();
-
-      // Check if the timestamp is less than one hour ago
-      if (currentTime - timestamp <= 3600000) {
-        shouldFetchData = false;
-        dataArray.push(...data);
-      }
-    } catch (error) {
-      // File does not exist or is not valid JSON, proceed with fetching data.
+    if (!dataArray) {
+      return;
     }
 
-    if (shouldFetchData) {
-      for (const site of file.sites) {
-        if (site.title === 'reddit') {
-          const promises = site.subs.map(async (sub) => {
-            const data = await fetchRedditData(sub);
-
-            // Ensure 'data' is an array of valid document objects
-            const validData = data.map((item) => ({
-              category: sub, 
-              data: item
-            }));
-
-            dataArray.push(...validData);
-          });
-
-          await Promise.all(promises);
-        } else if (site.title === 'ycombinator') {
-          const data = await fetchYCombinatorData(site.main); // Pass the main URL
-
-          // Ensure 'data' is an array of valid document objects
-          const validData = data.map(item => ({
-            category: 'ycombinator',
-            data: item
-          }));
-
-          dataArray.push(...validData);
-        } else {
-          // throw error
-        }
-      }
-
-      // Save the fetched data to the file with a new timestamp
-      const currentTime = Date.now();
-      await fs.writeFile(
-        fetchedDataFilePath,
-        JSON.stringify({ timestamp: currentTime, data: dataArray }, null, 2), // Formatting with 2 spaces
-        'utf8'
-      );
-    }
-
-    const client = new MongoClient(mongodbUri, {
-      serverApi: {
-        version: ServerApiVersion.v1,
-        strict: true,
-        deprecationErrors: true,
-      },
-    });
-
-    await client.connect();
-
-    const db = client.db(); // Get the default database or specify a database name if needed
-    const collection = db.collection('your_collection_name'); // Replace with your collection name
-
-    console.log(dataArray)
-    // Flatten the dataArray to remove nested arrays
-    const flattenedArray = dataArray.flat(1);
-    console.log(flattenedArray)
-    // Insert the flattened array into the MongoDB collection
-    const result = await collection.insertMany(flattenedArray);
-
-    console.log(`Inserted ${result.insertedCount} documents into the collection.`);
-
-    // Close the MongoDB connection
-    await client.close();
+    // Save the data to the database
+    await saveDataToDatabase(dataArray, mongodbUri);
 
     return { dataArray };
   } catch (error) {
     console.error('Error:', error);
     throw error;
   }
+}
+
+async function checkTimestampAndFetchData(file, fetchedDataFilePath) {
+  let dataArray = [];
+  let shouldFetchData = true;
+
+  try {
+    const fetchedData = await fs.readFile(fetchedDataFilePath, 'utf8');
+    const { timestamp, data } = JSON.parse(fetchedData);
+    const currentTime = Date.now();
+
+    // Check if the timestamp is less than one hour ago
+    if (currentTime - timestamp <= 3600000) {
+      shouldFetchData = false;
+      dataArray.push(...data);
+    }
+  } catch (error) {
+    // File does not exist or is not valid JSON, proceed with fetching data.
+  }
+
+  if (shouldFetchData) {
+    for (const site of file.sites) {
+      if (site.title === 'reddit') {
+        const promises = site.subs.map(async (sub) => {
+          const data = await fetchRedditData(sub);
+
+          // Ensure 'data' is an array of valid document objects
+          const validData = data.map((item) => ({
+            category: sub,
+            data: item,
+          }));
+
+          dataArray.push(...validData);
+        });
+
+        await Promise.all(promises);
+      } else if (site.title === 'ycombinator') {
+        const data = await fetchYCombinatorData(site.main); // Pass the main URL
+
+        // Ensure 'data' is an array of valid document objects
+        const validData = data.map((item) => ({
+          category: 'ycombinator',
+          data: item,
+        }));
+
+        dataArray.push(...validData);
+      } else {
+        // Handle other site types as needed
+      }
+    }
+
+    // Save the fetched data to the file with a new timestamp
+    const currentTime = Date.now();
+    await fs.writeFile(
+      fetchedDataFilePath,
+      JSON.stringify({ timestamp: currentTime, data: dataArray }, null, 2), // Formatting with 2 spaces
+      'utf8'
+    );
+  }
+
+  return dataArray;
+}
+
+async function saveDataToDatabase(dataArray, mongodbUri) {
+  const client = new MongoClient(mongodbUri, {
+    serverApi: {
+      version: ServerApiVersion.v1,
+      strict: true,
+      deprecationErrors: true,
+    },
+  });
+
+  await client.connect();
+
+  const db = client.db(); // Get the default database or specify a database name if needed
+  const collection = db.collection('your_collection_name'); // Replace with your collection name
+
+  // Flatten the dataArray to remove nested arrays
+  const flattenedArray = dataArray.flat(1);
+
+  // Insert the flattened array into the MongoDB collection
+  const result = await collection.insertMany(flattenedArray);
+
+  console.log(`Inserted ${result.insertedCount} documents into the collection.`);
+
+  // Close the MongoDB connection
+  await client.close();
 }
 
 async function fetchRedditData(sub) {
@@ -119,12 +131,12 @@ async function fetchRedditData(sub) {
       const sourceLink = childData ? childData.url : undefined;
 
       return {
-        "title": title,
-        "user" : user,
-        "score" : score,
-        "selfText" : selftext,
-        "sourceLink" : sourceLink,
-        "permaLink" : permaLink,
+        title: title,
+        user: user,
+        score: score,
+        selfText: selftext,
+        sourceLink: sourceLink,
+        permaLink: permaLink,
       };
     });
 
@@ -135,16 +147,13 @@ async function fetchRedditData(sub) {
   }
 }
 
-async function fetchYCombinatorData() {
+async function fetchYCombinatorData(main) {
   try {
-    const browser = await puppeteer.launch({
-      // headless: false,
-    });
+    const browser = await puppeteer.launch();
     const page = await browser.newPage();
 
-    const subredditURL = `https://news.ycombinator.com`;
-    await page.goto(subredditURL, {
-      waitUntil: "networkidle0",
+    await page.goto(main, {
+      waitUntil: 'networkidle0',
     });
 
     const items = await page.evaluate(() => {
@@ -173,14 +182,12 @@ async function fetchYCombinatorData() {
     });
 
     await browser.close();
-   
+
     return items;
   } catch (error) {
-    console.error("Error:", error);
+    console.error('Error:', error);
     throw error;
   }
 }
 
 module.exports = { scanFile };
-
-

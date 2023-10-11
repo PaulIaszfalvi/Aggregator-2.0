@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import './stylesheets/reddititem.css';
+import './stylesheets/dataItem.css';
 
-const RedditItem = ({ item }) => {
+const DataItem = ({ item }) => {
   const [showPopup, setShowPopup] = useState(false);
 
   return (
@@ -29,7 +29,7 @@ const RedditItem = ({ item }) => {
         </div>
       </a>
 
-      {item.sourceLink !== item.permaLink && ( // Conditionally render if sourceLink is different
+      {item.sourceLink !== item.permaLink && (
         <p className="source-link">
           <a
             href={item.sourceLink}
@@ -45,11 +45,7 @@ const RedditItem = ({ item }) => {
       {showPopup && (
         <div className="popup">
           {item.selfText && (
-            <pre className='discussion-text'>{item.selfText}</pre>
-            // <div
-            //   className="self-text"
-            //   dangerouslySetInnerHTML={{ __html: item.selfText }}
-            // />
+            <div className="discussion-text" dangerouslySetInnerHTML={{ __html: item.selfText }} />
           )}
         </div>
       )}
@@ -57,4 +53,4 @@ const RedditItem = ({ item }) => {
   );
 };
 
-export default RedditItem;
+export default DataItem;
