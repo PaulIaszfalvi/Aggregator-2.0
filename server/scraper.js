@@ -3,6 +3,16 @@ const fs = require('fs').promises;
 const { MongoClient, ServerApiVersion } = require('mongodb');
 const puppeteer = require('puppeteer');
 require('dotenv').config();
+const winston = require('winston');
+
+const logger = winston.createLogger({
+  level: 'error',
+  format: winston.format.simple(),
+  transports: [
+    new winston.transports.Console(),
+    new winston.transports.File({ filename: 'error.log' }),
+  ],
+});
 
 async function scanFile(mongodbUri) {
   try {
@@ -36,11 +46,11 @@ async function scanFile(mongodbUri) {
     }
 
     // Save the data to the database
-    await saveDataToDatabase(dataArray, db);
+    await saveDataToDatabase(dataArray, db, 'your_collection_name');
 
     return { dataArray };
   } catch (error) {
-    console.error('Error:', error);
+    logger.error('Error:', error);
     throw error;
   }
 }
@@ -96,18 +106,17 @@ async function checkTimestampAndFetchData(file, fetchedDataFilePath, db) {
 
     // Save the fetched data to the file with a new timestamp
     const currentTime = Date.now();
-    await fs.writeFile(
+    await writeToFile(
       fetchedDataFilePath,
       JSON.stringify({ timestamp: currentTime, data: dataArray }, null, 2), // Formatting with 2 spaces
-      'utf8'
     );
   }
 
   return dataArray;
 }
 
-async function saveDataToDatabase(dataArray, db) {
-  const collection = db.collection('your_collection_name'); // Replace with your collection name
+async function saveDataToDatabase(dataArray, db, collectionName) {
+  const collection = db.collection(collectionName);
 
   // Flatten the dataArray to remove nested arrays
   const flattenedArray = dataArray.flat(1);
@@ -120,8 +129,7 @@ async function saveDataToDatabase(dataArray, db) {
 
 async function fetchRedditData(sub) {
   try {
-    const response = await axios.get(`https://www.reddit.com/r/${sub}.json`);
-    const jsonData = response.data;
+    const jsonData = await makeHttpRequest(`https://www.reddit.com/r/${sub}.json`);
 
     const myArray = jsonData.data.children.slice(0, 15).map((child) => {
       const childData = child.data;
@@ -144,14 +152,14 @@ async function fetchRedditData(sub) {
 
     return myArray;
   } catch (error) {
-    console.error('Error:', error);
+    logger.error('Error:', error);
     throw error;
   }
 }
 
 async function fetchYCombinatorData(main) {
   try {
-    const browser = await puppeteer.launch();
+    const browser = await launchBrowser();
     const page = await browser.newPage();
 
     await page.goto(main, {
@@ -187,7 +195,35 @@ async function fetchYCombinatorData(main) {
 
     return items;
   } catch (error) {
-    console.error('Error:', error);
+    logger.error('Error:', error);
+    throw error;
+  }
+}
+
+async function makeHttpRequest(url) {
+  try {
+    const response = await axios.get(url);
+    return response.data;
+  } catch (error) {
+    logger.error('Error:', error);
+    throw error;
+  }
+}
+
+async function readFromFile(filePath) {
+  return await fs.readFile(filePath, 'utf8');
+}
+
+async function writeToFile(filePath, data) {
+  return await fs.writeFile(filePath, data, 'utf8');
+}
+
+async function launchBrowser() {
+  try {
+    const browser = await puppeteer.launch();
+    return browser;
+  } catch (error) {
+    logger.error('Error:', error);
     throw error;
   }
 }
