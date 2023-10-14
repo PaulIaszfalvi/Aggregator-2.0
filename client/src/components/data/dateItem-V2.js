@@ -7,11 +7,7 @@ const DataItem = ({ item }) => {
 
   const handleMouseEnter = (event) => {
     setShowPopup(true);
-
-    // Calculate the position of the popup based on the mouse cursor's position
-    const x = event.clientX;
-    const y = event.clientY;
-    setPopupPosition({ x, y });
+    setPopupPosition({ x: event.clientX, y: event.clientY });
   };
 
   const handleMouseLeave = () => {
@@ -21,9 +17,9 @@ const DataItem = ({ item }) => {
   const isImage = /\.(jpg|jpeg|png|gif)$/.test(item.permaLink);
   const popupStyle = {
     display: showPopup ? 'block' : 'none',
-    position: 'fixed', // Use 'fixed' for popup positioning
-    top: `${popupPosition.y}px`, // Set the top position based on the mouse cursor
-    left: `${popupPosition.x}px`, // Set the left position based on the mouse cursor
+    position: 'absolute',
+    top: Math.min(popupPosition.y, window.innerHeight - 200) + 'px',
+    left: Math.min(popupPosition.x, window.innerWidth - 500) + 'px',
     zIndex: 1000,
   };
 

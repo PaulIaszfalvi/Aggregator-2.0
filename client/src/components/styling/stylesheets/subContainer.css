@@ -1,6 +1,44 @@
-.sub-container {   
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-   
+/* subContainer.css */
+.sub-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  gap: 0; /* Set both horizontal and vertical gap to 0 to eliminate gaps */
+  max-width: 1920px; /* Maximum width when the screen size is 1920x1200 */
+  margin: 0 auto;
+}
+
+.container {
+  width: 100%; /* Containers take up all available space */
+}
+
+.title {
+  color: #3498db;
+  display: flex;
+  flex-direction: column; /* Display the title and button vertically */
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+  padding: 20px; /* Add some padding for spacing */
+}
+
+.category h3 {
+  margin: 0; /* Remove margin for h3 elements to center text */
+  color: #3498db; /* Blue text color for the category */
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  color: #3498db; /* Blue text color for the button */
+  cursor: pointer;
+}
+
+.sub-container.collapsed {
+  display: none;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 1920px) {
+  .sub-container {
+    max-width: 100%; /* Full width when the screen is smaller than 1920x1200 */
+  }
 }

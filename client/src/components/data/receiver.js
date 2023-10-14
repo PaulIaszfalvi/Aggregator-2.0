@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import SubContainer from '../styling/subContainer';
+import './stylesheets/receiver.css';
 
 const Receiver = () => {
   const [data, setData] = useState(null);
@@ -20,7 +21,7 @@ const Receiver = () => {
   }, []);
 
   return (
-    <div>
+    <div className="receiver">
       <h2>Data Fetcher Component</h2>
       <div className="main-container">
         {hasData && <SubContainer data={data.dataArray} />}
