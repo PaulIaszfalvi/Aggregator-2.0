@@ -66,6 +66,7 @@ const DataItem = ({ item }) => {
       <div className="popup" style={popupStyle}>
         {showPopup && (
           <div className="popup-content">
+            {console.log(item.selfText)}
             {item.selfText && !isImage && (
               <div
                 className="discussion-text"

@@ -5,26 +5,34 @@ import './stylesheets/receiver.css';
 
 const Receiver = () => {
   const [data, setData] = useState(null);
-  const [hasData, setHasData] = useState(false);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const apiUrl = 'http://localhost:5000/info';
-
-    axios.get(apiUrl)
-      .then(response => {
+    const fetchData = async () => {
+      try {
+        const response = await axios.get('http://localhost:5000/info');
         setData(response.data);
-        setHasData(true);
-      })
-      .catch(error => {
+      } catch (error) {
         console.error('Error fetching data:', error);
-      });
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchData();
   }, []);
 
   return (
     <div className="receiver">
       <h2>Data Fetcher Component</h2>
       <div className="main-container">
-        {hasData && <SubContainer data={data.dataArray} />}
+        {loading ? (
+          <p>Loading...</p>
+        ) : data ? (
+          <SubContainer data={data.dataArray} />
+        ) : (
+          <p>No data available</p>
+        )}
       </div>
     </div>
   );

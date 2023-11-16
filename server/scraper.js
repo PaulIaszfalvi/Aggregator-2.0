@@ -74,8 +74,9 @@ async function checkTimestampAndFetchData(file, fetchedDataFilePath, db) {
   }
 
   if (shouldFetchData) {
-    for (const site of file.sites) {
-      if (site.title === 'reddit') {
+    const redditPromises = file.sites
+      .filter((site) => site.title === 'reddit')
+      .map(async (site) => {
         const promises = site.subs.map(async (sub) => {
           const data = await fetchRedditData(sub);
 
@@ -89,8 +90,12 @@ async function checkTimestampAndFetchData(file, fetchedDataFilePath, db) {
         });
 
         await Promise.all(promises);
-      } else if (site.title === 'ycombinator') {
-        const data = await fetchYCombinatorData(site.main); // Pass the main URL
+      });
+
+    const ycombinatorPromises = file.sites
+      .filter((site) => site.title === 'ycombinator')
+      .map(async (site) => {
+        const data = await fetchYCombinatorData(site.main);
 
         // Ensure 'data' is an array of valid document objects
         const validData = data.map((item) => ({
@@ -99,10 +104,10 @@ async function checkTimestampAndFetchData(file, fetchedDataFilePath, db) {
         }));
 
         dataArray.push(...validData);
-      } else {
-        // Handle other site types as needed
-      }
-    }
+      });
+
+    // Execute promises concurrently
+    await Promise.all([...redditPromises, ...ycombinatorPromises]);
 
     // Save the fetched data to the file with a new timestamp
     const currentTime = Date.now();

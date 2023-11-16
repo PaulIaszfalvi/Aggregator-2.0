@@ -17,23 +17,43 @@ const logger = winston.createLogger({
   ],
 });
 
-// Access the MongoDB connection string
-const mongodbUri = process.env.MONGODB_URI;
+// Check if the required environment variables are set
+if (!process.env.MONGODB_URI) {
+  logger.error('MONGODB_URI environment variable is not set.');
+  process.exit(1);
+}
 
+// CORS configuration
+const corsOptions = {
+  origin: 'http://localhost:3000', // Update this with your actual frontend domain
+  methods: 'GET',
+};
+
+// Handle OPTIONS requests for the /info endpoint
+app.options('/info', cors(corsOptions));
+
+// Use CORS middleware
+app.use(cors(corsOptions));
+
+app.use(helmet());
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
-app.use(cors());
-app.use(helmet());
 app.use(express.static('public'));
 
 app.get("/info", async (req, res, next) => {
   try {
-    const data = await scraper.scanFile(mongodbUri);
+    const data = await scraper.scanFile(process.env.MONGODB_URI);
     res.json(data);
   } catch (error) {
     logger.error('Error:', error);
     res.status(500).json({ error: 'An error occurred' });
   }
+});
+
+// Custom error handling middleware
+app.use((err, req, res, next) => {
+  logger.error('Unhandled error:', err);
+  res.status(500).json({ error: 'Internal Server Error' });
 });
 
 app.listen(PORT, () => {

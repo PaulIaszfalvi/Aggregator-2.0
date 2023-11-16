@@ -1,21 +1,21 @@
-import React, {useState, useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 import DataItem from '../data/dataItem';
 import './stylesheets/subContainer.css';
 
 function SubContainer({ data }) {
-
   const [collapseStates, setCollapseStates] = useState({});
 
-
-    // Initialize the collapse states when the component is mounted
-    useEffect(() => {
+  // Initialize the collapse states when the component is mounted or when data changes
+  useEffect(() => {
+    if (data && Array.isArray(data)) {
       const initialCollapseStates = {};
-      Object.keys(groupedData).forEach((category) => {
+      data.forEach((item) => {
+        const category = item.category;
         initialCollapseStates[category] = true;
       });
       setCollapseStates(initialCollapseStates);
-    }, []);
-
+    }
+  }, [data]);
 
   if (!data || !Array.isArray(data)) {
     return (
@@ -41,22 +41,16 @@ function SubContainer({ data }) {
     }));
   };
 
-  
- 
   return (
     <div className="sub-container">
       {Object.keys(groupedData).map((category, index) => (
-        <div key={index} className='container'>
+        <div key={index}>
           <div className="title">
-          <h3 className="category">
-            {category}
-            </h3>
+            <h3 className="category">{category}</h3>
             <button onClick={() => toggleCollapse(category)}>
-              {collapseStates[category] ? 'Collapse' :  'Expand'}
+              {collapseStates[category] ? 'Collapse' : 'Expand'}
             </button>
-          
           </div>
-       
           {collapseStates[category] && (
             groupedData[category].map((item, itemIndex) => (
               <div key={itemIndex}>
@@ -67,7 +61,7 @@ function SubContainer({ data }) {
         </div>
       ))}
     </div>
-  
-  )}
+  );
+}
 
 export default SubContainer;
