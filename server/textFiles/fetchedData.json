@@ -1,12 +1,12 @@
 {
-  "timestamp": 1700157252547,
+  "timestamp": 1700160906698,
   "data": [
     {
       "category": "programming",
       "data": {
         "title": "[META] The future of r/programming",
         "user": "ketralnis",
-        "score": 752,
+        "score": 751,
         "selfText": "# Hello fellow programs!\n\n**tl;dr what should r/programming's rules be?** And also a call for additional mods. We'll leave this stickied for a few days to gather feedback.\n\nHere are the broad categories of content that we see, along with whether they are **currently** allowed. ✅ means that it's currently allowed, 🚫 means that it's not currently allowed, ⚠️ means that we leave it up if it is already popular but if we catch it young in its life we do try to remove it early.\n\n* ✅ Actual programming content. They probably have actual code in them. Language or library writeups, papers, technology descriptions. How an allocator works. How my new fancy allocator I just wrote works. How our startup built our Frobnicator, rocket ship emoji. For many years this was the only category of allowed content.\n* ✅ Programming news. ChatGPT can write code. A big new CVE just dropped. Curl 8.01 released now with Coffee over IP support.\n* ✅ Programmer career content. How to become a Staff engineer in 30 days. Habits of the best engineering managers. How to deal with your annoying coworkers, *Jeff*.\n* ✅ Articles/news interesting *to* programmers but not about programming. Work from home is bullshit. Return to office is bullshit. There's a Steam sale on programming games. Terry Davis has died. How to SCRUMM. App Store commissions are going up. How to hire a more diverse development team. Interviewing programmers is broken.\n* ⚠️ General technology news. Google buys its last competitor. A self driving car hit a pedestrian. Twitter is collapsing. Oculus accidentally showed your grandmother a penis. Github sued when Copilot produces the complete works of Harry Potter in a code comment. Meta cancels work from home. Gnome dropped a feature I like. How to run Stable Diffusion to generate pictures of, uh, cats, yeah it's definitely just for cats. A bitcoin VR metaversed my AI and now my app store is mobile social local.\n* 🚫 Politics. The Pirate Party is winning in Sweden. Please vote for net neutrality. Big Tech is being sued in Europe for *gestures broadly*.\n* 🚫 Gossip. Richard Stallman switches to Windows. Elon Musk farted. Linus Torvalds was a poopy-head on a mailing list. Grace Hopper Conference is now 60% male. The People's Rust Foundation is arguing with the Rust Foundation For The People. Terraform has been forked into Terra and Form. Stack Overflow sucks now. Stack Overflow is good actually.\n* ✅ Demos with code. I wrote a game, here it is on GitHub\n* 🚫 Demos without code. I wrote a game, come buy it! Please give me feedback on my startup (totally not an ad nosirree). I stayed up all night writing a commercial text editor, here's the pricing page. I made a DALL-E image generator. I made the fifteenth animation of A* this week, here's a GIF.\n* 🚫 AskReddit type forum questions. What's your favourite programming language? Tabs or spaces? Does anyone else hate it when.\n* 🚫 Support questions. How do I write a web crawler? How do I get into programming? Where's my missing semicolon? Please do this obvious homework problem for me. Personally I feel very strongly about not allowing these because they'd quickly drown out all of the actual content I come to see, and there are already much more effective places to get them answered anyway. In real life the quality of the ones that we see is also universally very low.\n* 🚫 Surveys and 🚫 Job postings and anything else that is looking to extract value from a place a lot of programmers hang out without contributing anything itself.\n* 🚫 Meta posts. DAE think r/programming sucks? Why did you remove my post? Why did you ban this user that is totes not me I swear I'm just asking questions. Except this meta post. This one is okay because I'm a tyrant that the rules don't apply to (I assume you are saying about me to yourself right now).\n* 🚫 Images, memes, anything low-effort or low-content. Thankfully we very rarely see any of this so there's not much to remove but like support questions once you have a few of these they tend to totally take over because it's easier to make a meme than to write a paper and also easier to vote on a meme than to read a paper.\n* ⚠️ Posts that we'd normally allow but that are obviously, unquestioningly super low quality like blogspam copy-pasted onto a site with a bazillion ads. It has to be pretty bad before we remove it and even then sometimes these are the first post to get traction about a news event so we leave them up if they're the best discussion going on about the news event. There's a lot of grey area here with CVE announcements in particular: there are a lot of spammy security \"blogs\" that syndicate stories like this.\n* ⚠️ Posts that are duplicates of other posts or the same news event. We leave up either the first one or the healthiest discussion.\n* ⚠️ Posts where the title editorialises too heavily or especially is a lie or conspiracy theory.\n* Comments are only very loosely moderated and it's mostly 🚫 Bots of any kind (Beep boop you misspelled misspelled!) and 🚫 Incivility (You idiot, everybody knows that my favourite toy is better than your favourite toy.) However the number of obvious GPT comment bots is rising and will quickly become untenable for the number of active moderators we have.\n\nThere are some topics such as Code of Conduct arguments within projects that I don't know where to place where we've been doing a civility check on the comments thread and using that to make the decision. Similarly some straddle the line (a link to a StackOverflow post asking for help and the reddit OP is the StackOverflow OP, but there's a lot of technical content and the reddit discussion is healthy). And even most 🚫s above are left up if there's a healthy discussion going already by the time we see it.\n\n# So what now?\n\nWe need to decide **what r/programming should be about** and we need to write those rules down so that mods can consistently apply them. The rules as written are pretty vague and the way we're moderating in practise is only loosely connected to them. We're looking for feedback on what kind of place r/programming should be so tell us below.\n\n**We need additional mods**. If you're interested in helping moderate **please post below, saying why you'd be a good mod and what you'd would change about the space if you were**. You don't need to be a moderator elsewhere but please do mention it if you are and what we could learn on r/programming that you already know. Currently I think I'm the only one going down the new page every morning and removing the rule-breaking posts. (Today these are mostly \"how do I program computer\" or \"can somebody help me fix my printer\", and obvious spam.) This results in a lot of threads complaining about the moderation quality and, well, it's not wrong. I'm not rigorously watching the mod queue and I'm not trawling comments threads looking for bad actors unless I'm in that thread anyway and I don't use reddit every single day. So if we want it to be better we'll need more human power.\n\n# FAQ: Why do we need moderation at all? Can't the votes just do it?\n\nWe know there is demand for unmoderated spaces in the world, but r/programming isn't that space. This is our theory on why keeping the subreddit on topic is important:\n\n* Forums have the interesting property that **whatever is on the front page today is what will be on the front page tomorrow**. When a user comes to the site and sees a set of content, they believe that that's what this website is about. If they like it they'll stay and contribute that kind of content and if they don't like it they won't stay, leaving only the people that liked the content they saw yesterday. So the seed content is important and keeping things on topic is important. If you like r/programming then you need moderation to keep it the way that you like it (or make it be the place you wish it were) because otherwise entropic drift will make it be a different place. And once you have moderation it's going to have a subjective component, that's just the nature of it.\n* Because of the way reddit works, on a light news day r/programming doesn't get enough daily content for articles to meaningfully compete with each other. Towards the end of the day if I post something to r/programming it will immediately go to the front page of all r/programming subscribers. So while it's true that sub-par and rule-breaking posts already do most of their damage before the mods even see them, the whole theory of posts competing via votes alone doesn't really work in a lower-volume subreddit.\n* Because of the mechanics of moderation it's not really possible to allow the subreddit to be say 5% support questions. Even if we wanted to allow it to be a small amount of the conten, the individuals whose content was removed would experience and perceive this as a punitive action against them. That means that any category we allow could theoretically completely take over r/programming (like the career posts from last week) so we should only allow types of content that we'd be okay with taking it over.\n\nPersonally my dream is for r/programming to be the place with the highest quality programming content, where I can go to read something interesting and learn something new every day. That dream is at odds with allowing every piece of blogspam and \"10 ways to convince your boss to give you a raise, #2 will get you fired!\"",
         "sourceLink": "https://www.reddit.com/r/programming/comments/173viwj/meta_the_future_of_rprogramming/",
         "permaLink": "https://www.reddit.com/r/programming/comments/173viwj/meta_the_future_of_rprogramming/"
@@ -17,7 +17,7 @@
       "data": {
         "title": "The Lack of Compensation in Open Source Software is Unsustainable",
         "user": "chillysurfer",
-        "score": 326,
+        "score": 421,
         "selfText": "",
         "sourceLink": "https://trstringer.com/oss-compensation-broken/",
         "permaLink": "https://www.reddit.com/r/programming/comments/17wmzkb/the_lack_of_compensation_in_open_source_software/"
@@ -28,7 +28,7 @@
       "data": {
         "title": "When should you choose C++ as your starting language?",
         "user": "Xadartt",
-        "score": 87,
+        "score": 102,
         "selfText": "",
         "sourceLink": "https://steelph0enix.github.io/posts/choosing-first-language/?ref=dailydev",
         "permaLink": "https://www.reddit.com/r/programming/comments/17wlah3/when_should_you_choose_c_as_your_starting_language/"
@@ -39,7 +39,7 @@
       "data": {
         "title": "How to create a GitHub Stars monitor with NextJS",
         "user": "Alternative-Rich-578",
-        "score": 48,
+        "score": 41,
         "selfText": "",
         "sourceLink": "https://tgr.dev/take-nextjs-to-the-next-level-create-a-github-stars-monitor",
         "permaLink": "https://www.reddit.com/r/programming/comments/17wl4ls/how_to_create_a_github_stars_monitor_with_nextjs/"
@@ -50,7 +50,7 @@
       "data": {
         "title": "Social engineering campaign targeting tech employees spreading through npm malware",
         "user": "fagnerbrack",
-        "score": 81,
+        "score": 90,
         "selfText": "",
         "sourceLink": "https://socket.dev/blog/social-engineering-campaign-npm-malware",
         "permaLink": "https://www.reddit.com/r/programming/comments/17wfpzu/social_engineering_campaign_targeting_tech/"
@@ -61,7 +61,7 @@
       "data": {
         "title": "Why does calling a coroutine allocate a lot of stack space even though the coroutine frame is on the heap? - The Old New Thing",
         "user": "Pioneer_X",
-        "score": 66,
+        "score": 65,
         "selfText": "",
         "sourceLink": "https://devblogs.microsoft.com/oldnewthing/20231115-00/?p=109020",
         "permaLink": "https://www.reddit.com/r/programming/comments/17wg5tj/why_does_calling_a_coroutine_allocate_a_lot_of/"
@@ -72,7 +72,7 @@
       "data": {
         "title": "Replit has quietly announced that Teams for Education is no longer free",
         "user": "theangryepicbanana",
-        "score": 60,
+        "score": 64,
         "selfText": "",
         "sourceLink": "https://twitter.com/angryepicbanana/status/1725022939337175514",
         "permaLink": "https://www.reddit.com/r/programming/comments/17wfbu2/replit_has_quietly_announced_that_teams_for/"
@@ -83,7 +83,7 @@
       "data": {
         "title": "Hack project: Chatbot that knows the current state of a bunch technologies",
         "user": "jgbbrd",
-        "score": 12,
+        "score": 14,
         "selfText": "",
         "sourceLink": "https://ask.cord.com/",
         "permaLink": "https://www.reddit.com/r/programming/comments/17wmffq/hack_project_chatbot_that_knows_the_current_state/"
@@ -94,7 +94,7 @@
       "data": {
         "title": "A Very Subtle Bug",
         "user": "Pump1IT",
-        "score": 13,
+        "score": 12,
         "selfText": "",
         "sourceLink": "https://blog.nelhage.com/2010/02/a-very-subtle-bug/",
         "permaLink": "https://www.reddit.com/r/programming/comments/17wlqsh/a_very_subtle_bug/"
@@ -105,7 +105,7 @@
       "data": {
         "title": "Escaping the sandbox: A bug that speaks for itself",
         "user": "lowlet3443",
-        "score": 12,
+        "score": 16,
         "selfText": "",
         "sourceLink": "https://microsoftedge.github.io/edgevr/posts/Escaping-the-sandbox-A-bug-that-speaks-for-itself/",
         "permaLink": "https://www.reddit.com/r/programming/comments/17wjst1/escaping_the_sandbox_a_bug_that_speaks_for_itself/"
@@ -116,7 +116,7 @@
       "data": {
         "title": "Multiple documents reveal significant limitations of OpenAI's Assistants API for RAG",
         "user": "ian4321",
-        "score": 104,
+        "score": 103,
         "selfText": "",
         "sourceLink": "https://www.tonic.ai/blog/rag-evaluation-series-validating-openai-assistants-rag-performance",
         "permaLink": "https://www.reddit.com/r/programming/comments/17w4qkr/multiple_documents_reveal_significant_limitations/"
@@ -125,45 +125,45 @@
     {
       "category": "programming",
       "data": {
-        "title": "Hyperdrive: making databases feel like they’re global",
-        "user": "pmz",
-        "score": 4,
+        "title": "Linus Torvalds on C++",
+        "user": "ketralnis",
+        "score": 2,
         "selfText": "",
-        "sourceLink": "https://blog.cloudflare.com/hyperdrive-making-regional-databases-feel-distributed/",
-        "permaLink": "https://www.reddit.com/r/programming/comments/17wnffi/hyperdrive_making_databases_feel_like_theyre/"
+        "sourceLink": "https://harmful.cat-v.org/software/c++/linus",
+        "permaLink": "https://www.reddit.com/r/programming/comments/17wtdm0/linus_torvalds_on_c/"
       }
     },
     {
       "category": "programming",
       "data": {
-        "title": "Advice to Myself When Starting as a Software Developer",
-        "user": "bajcmartinez",
-        "score": 44,
+        "title": "hyper v1 (rust http library)",
+        "user": "ketralnis",
+        "score": 2,
         "selfText": "",
-        "sourceLink": "https://thecodeenigma.com/post/advice-to-myself-when-starting-as-a-software-developer/",
-        "permaLink": "https://www.reddit.com/r/programming/comments/17w42h8/advice_to_myself_when_starting_as_a_software/"
+        "sourceLink": "https://seanmonstar.com/blog/hyper-v1/",
+        "permaLink": "https://www.reddit.com/r/programming/comments/17wtbbr/hyper_v1_rust_http_library/"
       }
     },
     {
       "category": "programming",
       "data": {
-        "title": "'Reptar' - New CPU Vulnerability Discovered by Google - Cyber Kendra",
-        "user": "geek_noob",
-        "score": 443,
+        "title": "Edge of Emulation: Pokemon Mini",
+        "user": "ketralnis",
+        "score": 2,
         "selfText": "",
-        "sourceLink": "https://www.cyberkendra.com/2023/11/reptar-new-cpu-vulnerability-discovered.html",
-        "permaLink": "https://www.reddit.com/r/programming/comments/17voujk/reptar_new_cpu_vulnerability_discovered_by_google/"
+        "sourceLink": "https://shonumi.github.io/articles/art25.html",
+        "permaLink": "https://www.reddit.com/r/programming/comments/17wt99t/edge_of_emulation_pokemon_mini/"
       }
     },
     {
       "category": "programming",
       "data": {
-        "title": "Build Tic Tac Toe Game With React | How To Make Tic Tac Toe Game With React | Rethinking Ui |",
-        "user": "suresh9058",
-        "score": 0,
+        "title": "Numbat – A programming language with physical dimensions as types",
+        "user": "ketralnis",
+        "score": 2,
         "selfText": "",
-        "sourceLink": "https://youtu.be/ig28SxyFKP4",
-        "permaLink": "https://www.reddit.com/r/programming/comments/17wrwec/build_tic_tac_toe_game_with_react_how_to_make_tic/"
+        "sourceLink": "https://numbat.dev/articles/intro.html",
+        "permaLink": "https://www.reddit.com/r/programming/comments/17wt6ol/numbat_a_programming_language_with_physical/"
       }
     },
     {
@@ -171,7 +171,7 @@
       "data": {
         "title": ".",
         "user": "giffyfruit",
-        "score": 97,
+        "score": 101,
         "selfText": "",
         "sourceLink": "https://v.redd.it/oz9u2z1cnl0c1",
         "permaLink": "https://www.reddit.com/r/programminghumor/comments/17w7y0j/_/"
@@ -182,7 +182,7 @@
       "data": {
         "title": "Google's email auto-complete suggesting me to do shots?",
         "user": "SnooSquirrels165",
-        "score": 4,
+        "score": 5,
         "selfText": "",
         "sourceLink": "https://i.redd.it/sp1ao1hmzo0c1.png",
         "permaLink": "https://www.reddit.com/r/programminghumor/comments/17wkao8/googles_email_autocomplete_suggesting_me_to_do/"
@@ -193,7 +193,7 @@
       "data": {
         "title": "Never change, JavaScript",
         "user": "Alex_Hovhannisyan",
-        "score": 25,
+        "score": 27,
         "selfText": "",
         "sourceLink": "https://i.redd.it/ekh0ttri4j0c1.png",
         "permaLink": "https://www.reddit.com/r/programminghumor/comments/17vvypp/never_change_javascript/"
@@ -215,7 +215,7 @@
       "data": {
         "title": "im sorry guys",
         "user": "giffyfruit",
-        "score": 56,
+        "score": 61,
         "selfText": "",
         "sourceLink": "https://i.redd.it/y1rlz9yg4g0c1.png",
         "permaLink": "https://www.reddit.com/r/programminghumor/comments/17vmfgj/im_sorry_guys/"
@@ -270,7 +270,7 @@
       "data": {
         "title": "It's time to do the impossible. Code the backend in JS.",
         "user": "SrijalPlayz",
-        "score": 7,
+        "score": 8,
         "selfText": "It was not a good idea.\n\n[Edit from heaven I mean hell, thats what I deserve for trying this stupid idea: https:\\/\\/codepen.io\\/jak\\_e\\/full\\/MvjKYN](https://preview.redd.it/71i5viorra0c1.png?width=600&amp;format=png&amp;auto=webp&amp;s=63dc3cdde052d851268d230dc543ca5e71f247b4)",
         "sourceLink": "https://www.reddit.com/r/programminghumor/comments/17v03vp/its_time_to_do_the_impossible_code_the_backend_in/",
         "permaLink": "https://www.reddit.com/r/programminghumor/comments/17v03vp/its_time_to_do_the_impossible_code_the_backend_in/"
@@ -281,7 +281,7 @@
       "data": {
         "title": "Software Startups before they become profitable",
         "user": "SnooCats6827",
-        "score": 30,
+        "score": 35,
         "selfText": "",
         "sourceLink": "https://i.redd.it/je8atuogd60c1.png",
         "permaLink": "https://www.reddit.com/r/programminghumor/comments/17uk18e/software_startups_before_they_become_profitable/"
@@ -292,7 +292,7 @@
       "data": {
         "title": "When the template fits like a glove",
         "user": "scrapped-script",
-        "score": 60,
+        "score": 57,
         "selfText": "",
         "sourceLink": "https://i.redd.it/1y3pwuaz630c1.jpg",
         "permaLink": "https://www.reddit.com/r/programminghumor/comments/17u79ok/when_the_template_fits_like_a_glove/"
@@ -303,7 +303,7 @@
       "data": {
         "title": "This is me",
         "user": "NaserShareef1",
-        "score": 201,
+        "score": 206,
         "selfText": "",
         "sourceLink": "https://i.redd.it/b5q561v0byzb1.jpg",
         "permaLink": "https://www.reddit.com/r/programminghumor/comments/17towdu/this_is_me/"
@@ -314,7 +314,7 @@
       "data": {
         "title": "C tesseract",
         "user": "giffyfruit",
-        "score": 64,
+        "score": 63,
         "selfText": "",
         "sourceLink": "https://i.redd.it/rp5szhemazzb1.png",
         "permaLink": "https://www.reddit.com/r/programminghumor/comments/17tt7hn/c_tesseract/"
@@ -325,10 +325,340 @@
       "data": {
         "title": "The true \"Hello World\" introduction",
         "user": "CashAppMe1Dollar",
-        "score": 19,
+        "score": 18,
         "selfText": "",
         "sourceLink": "https://i.redd.it/i4lh4bscqyzb1.png",
         "permaLink": "https://www.reddit.com/r/programminghumor/comments/17tqpwd/the_true_hello_world_introduction/"
+      }
+    },
+    {
+      "category": "cscareerquestions",
+      "data": {
+        "title": "Interview Discussion - November 16, 2023",
+        "user": "CSCQMods",
+        "score": 1,
+        "selfText": "Please use this thread to have discussions about interviews, interviewing, and interview prep. Posts focusing solely on interviews created outside of this thread will probably be removed.\n        \nAbide by the rules, don't be a jerk.\n        \nThis thread is posted each **Monday and Thursday at midnight PST**. Previous Interview Discussion threads can be found [here](https://www.reddit.com/r/cscareerquestions/search?q=Interview+Discussion&amp;restrict_sr=on&amp;sort=new&amp;t=all).",
+        "sourceLink": "https://www.reddit.com/r/cscareerquestions/comments/17whk8l/interview_discussion_november_16_2023/",
+        "permaLink": "https://www.reddit.com/r/cscareerquestions/comments/17whk8l/interview_discussion_november_16_2023/"
+      }
+    },
+    {
+      "category": "cscareerquestions",
+      "data": {
+        "title": "Daily Chat Thread - November 16, 2023",
+        "user": "CSCQMods",
+        "score": 1,
+        "selfText": "Please use this thread to chat, have casual discussions, and ask casual questions. Moderation will be light, but don't be a jerk.\n\nThis thread is posted **every day at midnight PST**. Previous Daily Chat Threads can be found [here](https://www.reddit.com/r/cscareerquestions/search?q=Daily+Chat+Thread&amp;restrict_sr=on&amp;sort=new&amp;t=all).",
+        "sourceLink": "https://www.reddit.com/r/cscareerquestions/comments/17whlm4/daily_chat_thread_november_16_2023/",
+        "permaLink": "https://www.reddit.com/r/cscareerquestions/comments/17whlm4/daily_chat_thread_november_16_2023/"
+      }
+    },
+    {
+      "category": "cscareerquestions",
+      "data": {
+        "title": "If you think \"Getting good\" is enough.",
+        "user": "jsveyfjc",
+        "score": 89,
+        "selfText": "I just went through interviews 6 different companies in which I answered all the questions in details (and correctly of course). These are results for each company:\n\n\\- there was somebody else who also answered all questions, so they had to choose randomly (of course not me)  \n\\- there was somebody with more YOE  \n\\- I don't have social media so it's suspicious  \n\\- I sounded more like a manager, instead of a developer (lol)  \n\\- the spot was filled before the interview and the interviewer didn't know about that  \n\\- the client put the job on hold\n\nAt this point even recruiters are sorry for me (and for themselves for not making money when their candidate answered the questions). It's very discouraging that you can do everything right and still not get the job for things outside your control. All I can do is to answer the questions well enough and not have somebody with a decade in the field trying to get a job too.\n\nIt does not matter if you're good or not, you can be even terrible and as long as you're the best available candidate, they will take you.",
+        "sourceLink": "https://www.reddit.com/r/cscareerquestions/comments/17wo2am/if_you_think_getting_good_is_enough/",
+        "permaLink": "https://www.reddit.com/r/cscareerquestions/comments/17wo2am/if_you_think_getting_good_is_enough/"
+      }
+    },
+    {
+      "category": "cscareerquestions",
+      "data": {
+        "title": "Stagnating salary",
+        "user": "rental_car_abuse",
+        "score": 62,
+        "selfText": "Is it normal that you work in a big company as a software developer and the salary remains the same for 3rd year in a row?\n\nBecause of the rising inflation, I actually earn less than when I joined.",
+        "sourceLink": "https://www.reddit.com/r/cscareerquestions/comments/17wobjd/stagnating_salary/",
+        "permaLink": "https://www.reddit.com/r/cscareerquestions/comments/17wobjd/stagnating_salary/"
+      }
+    },
+    {
+      "category": "cscareerquestions",
+      "data": {
+        "title": "Better think twice before you accept take home assignment.",
+        "user": "Hot-Entry-007",
+        "score": 710,
+        "selfText": "I want to warn candidates about this company. Over 100 applications were posted on Linkedin. Like most, I was also sent a take-home assignment. It was strange that the task involved very specific use cases related to the insurance industry. So, from the beginning, everything smelled like a request for free work. Nonetheless, I spent two days working on the task, which was a C# backend API.\r  \n\r  \nToday, I received a response that I was not selected, probably because they got what they were looking for.\r  \n\r  \nWell, this way, they will get even more. I advise everyone to bypass the company CoverGo.com. And if you still want to do free work for them, here is the type of assignment they ask you to do, together with my solution.\r  \nhttps://github.com/jalle007/CoverGo",
+        "sourceLink": "https://www.reddit.com/r/cscareerquestions/comments/17w8t4o/better_think_twice_before_you_accept_take_home/",
+        "permaLink": "https://www.reddit.com/r/cscareerquestions/comments/17w8t4o/better_think_twice_before_you_accept_take_home/"
+      }
+    },
+    {
+      "category": "cscareerquestions",
+      "data": {
+        "title": "5 YOE recently laid off and feeling hopeless/lost",
+        "user": "meatball_parm",
+        "score": 43,
+        "selfText": "Like the title says, I was laid off a couple weeks ago with 5.5 YOE as a Frontend leaning Fullstack Dev.  I’ve been applying like crazy, mostly getting rejections or ghosted.  I made it to a technical round and got eliminated on some minor details, being told that it was a strong submission but the bar is super high because of how many candidates they have.\n\nI know it’s the end of the year, but I’m starting to lose hope I’ll find something ever… let alone in the next 3 months.  I’ve been messaging hiring managers when I can, reaching out to old colleagues, but nothing so far.  My days are basically spent applying to jobs and coding personal projects to keep my chops up.  \n\nIs there anything else I should do/try doing to improve my situation?  And for anyone else in the same situation or who has been there… how do you keep your hopes/confidence alive?\n\nSorry if something like this was already posted, and thanks in advance for any advice",
+        "sourceLink": "https://www.reddit.com/r/cscareerquestions/comments/17wlc4n/5_yoe_recently_laid_off_and_feeling_hopelesslost/",
+        "permaLink": "https://www.reddit.com/r/cscareerquestions/comments/17wlc4n/5_yoe_recently_laid_off_and_feeling_hopelesslost/"
+      }
+    },
+    {
+      "category": "cscareerquestions",
+      "data": {
+        "title": "How long does \"I am still new, so cut me some slack when I mess up in basic ways\" hold up for.",
+        "user": "JustAPrinny",
+        "score": 150,
+        "selfText": "Basic context, been coding/deving as a hobby for close to 4 years for myself.\n\nRecently landed a position working on a companies project. Things are going well, but I have been working here for over 6 months now and I am wondering, at what point is \"Well, bad fuck ups are expected, I am still new\" a really poor excuse. Cause damn I still fuck up alot \n\nAny thoughts are appreciated, just curious where people stand on that.",
+        "sourceLink": "https://www.reddit.com/r/cscareerquestions/comments/17wd0wf/how_long_does_i_am_still_new_so_cut_me_some_slack/",
+        "permaLink": "https://www.reddit.com/r/cscareerquestions/comments/17wd0wf/how_long_does_i_am_still_new_so_cut_me_some_slack/"
+      }
+    },
+    {
+      "category": "cscareerquestions",
+      "data": {
+        "title": "Is coding always so mentally draining?",
+        "user": "PyJacker16",
+        "score": 428,
+        "selfText": "So I've been working as a full stack developer intern for the last four months, and it's been a grueling journey for the most part. On a very productive day I spend about 6 hours coding, yet other times I can barely muster up to 3.\n\nI'm working on the frontend for the most part, so I've been writing React code. It's very tedious, and always feels so \"hacky\". And for me, whose favourite hobby is Leetcode/competitive programming, it's very boring as well.\n\nSo I wanted to ask: do you find your day jobs equally tedious? If so, how do you cope? And what would you recommend that I do to motivate myself more and be more productive?",
+        "sourceLink": "https://www.reddit.com/r/cscareerquestions/comments/17w0q60/is_coding_always_so_mentally_draining/",
+        "permaLink": "https://www.reddit.com/r/cscareerquestions/comments/17w0q60/is_coding_always_so_mentally_draining/"
+      }
+    },
+    {
+      "category": "cscareerquestions",
+      "data": {
+        "title": "Why do recruiters think I care about a company's status in the stock market?",
+        "user": "yopp_son",
+        "score": 232,
+        "selfText": "They always say something like \"market leader worth x-billion dollars.\" I literally don't give a fuck lol. How much are they going to pay ME?",
+        "sourceLink": "https://www.reddit.com/r/cscareerquestions/comments/17w1v32/why_do_recruiters_think_i_care_about_a_companys/",
+        "permaLink": "https://www.reddit.com/r/cscareerquestions/comments/17w1v32/why_do_recruiters_think_i_care_about_a_companys/"
+      }
+    },
+    {
+      "category": "cscareerquestions",
+      "data": {
+        "title": "Stress",
+        "user": "BojangleChicken",
+        "score": 13,
+        "selfText": "The only thing I can think of when I think of the word stress is my job. I realized it’s probably me being afraid of letting someone down or being fired. But I just thought it a little more deeply though. \n\nIf I let someone the down then boo-hoo some multi-billion dollar corporation’s feature doesn’t work 2 days early. \n\nAnd if I get fired, I have an emergency fund and savings to last me a while. It would probably be so relieving to not have to work my current job. I could then get a new job doing something I like again.\n\nI used to work in corporate, and switched to engineering for a consulting firm. My god I fucking hate consulting, and I loved corporate. \n\nI’m going to start looking for a new job tomorrow.\n\nAnyone else hate consulting and love corporate or have been in similar shoes? What did you do?",
+        "sourceLink": "https://www.reddit.com/r/cscareerquestions/comments/17wk8ms/stress/",
+        "permaLink": "https://www.reddit.com/r/cscareerquestions/comments/17wk8ms/stress/"
+      }
+    },
+    {
+      "category": "cscareerquestions",
+      "data": {
+        "title": "Team culture vs stack: which one is more important when choosing a job?",
+        "user": "jesseparks13",
+        "score": 12,
+        "selfText": "When you are choosing a job, would you prioritize culture or stack?\n\nFor example, company A works with the stack you want but gives bad vibes, and company B gives super good vibes but has a stack you aren’t keen about, how would you choose?\n\nAs a fresh grad, I’m inching toward good vibes over good stack. One company with the stack I want has a team lead who comes off as very anti-social and slightly rude, so I’m concerned about working with him in the long run. Not that I want to judge someone through a short interaction, but committing to work for a company is a big deal and I can’t stand the risk of being supervised by someone who potentially has personality problems. He might not have said problem, but I just can’t stand the risk. \n\nPlease tell your opinions!",
+        "sourceLink": "https://www.reddit.com/r/cscareerquestions/comments/17wkcpz/team_culture_vs_stack_which_one_is_more_important/",
+        "permaLink": "https://www.reddit.com/r/cscareerquestions/comments/17wkcpz/team_culture_vs_stack_which_one_is_more_important/"
+      }
+    },
+    {
+      "category": "cscareerquestions",
+      "data": {
+        "title": "Will tech companies be screwed 10 years down the line when they need a slew of senior devs but no one is senior level because no one offered jobs to juniors?",
+        "user": "Twilight_Scratch",
+        "score": 604,
+        "selfText": "Title.",
+        "sourceLink": "https://www.reddit.com/r/cscareerquestions/comments/17vu3tf/will_tech_companies_be_screwed_10_years_down_the/",
+        "permaLink": "https://www.reddit.com/r/cscareerquestions/comments/17vu3tf/will_tech_companies_be_screwed_10_years_down_the/"
+      }
+    },
+    {
+      "category": "cscareerquestions",
+      "data": {
+        "title": "Team culture vs stack: which one is more important when choosing a job?",
+        "user": "jesseparks13",
+        "score": 9,
+        "selfText": "When you are choosing a job, would you prioritize culture or stack?\n\nFor example, company A works with the stack you want but gives bad vibes, and company B gives super good vibes but has a stack you aren’t keen about, how would you choose?\n\nAs a fresh grad, I’m inching toward good vibes over good stack. One company with the stack I want has a team lead who comes off as very anti-social and slightly rude, so I’m concerned about working with him in the long run. Not that I want to judge someone through a short interaction, but committing to work for a company is a big deal and I can’t stand the risk of being supervised by someone who potentially has personality problems. He might not have said problem, but I just can’t stand the risk. \n\nPlease tell your opinions!",
+        "sourceLink": "https://www.reddit.com/r/cscareerquestions/comments/17wkckq/team_culture_vs_stack_which_one_is_more_important/",
+        "permaLink": "https://www.reddit.com/r/cscareerquestions/comments/17wkckq/team_culture_vs_stack_which_one_is_more_important/"
+      }
+    },
+    {
+      "category": "cscareerquestions",
+      "data": {
+        "title": "I feel stupid",
+        "user": "aaron_is_here_",
+        "score": 2,
+        "selfText": "I’m a SWE with 2 yoe. Started out writing code but the company is messy so I got my hands on a lot of different things and technologies in a quick pace. I would understand after reading documentation and writing code but soon after forget.\n\nLooking for another job is hell. Interviewers would ask me questions that I’d have no knowledge about , simply because I wasn’t part of the process they’re asking for. For example, I was tasked with converting shell scripts to python for a kubernetes deployment. The interviewers would ask questions like what service I used to deploy in aws, specific questions about the script I wrote months ago, and I would feel like they were intentionally trying to trip me up and make me feel like an idiot.\n\nI just wrote code and read documentation, I don’t have on demand knowledge of every single process and technology like I feel every company is asking for now.",
+        "sourceLink": "https://www.reddit.com/r/cscareerquestions/comments/17wu7lx/i_feel_stupid/",
+        "permaLink": "https://www.reddit.com/r/cscareerquestions/comments/17wu7lx/i_feel_stupid/"
+      }
+    },
+    {
+      "category": "cscareerquestions",
+      "data": {
+        "title": "How common is it for a developer to spend most of their time sending emails?",
+        "user": "Chickenfrend",
+        "score": 2,
+        "selfText": "Hey all. For the past 6 months I've been working for a fortune 100 company. It's not a tech company but does employee quite a few tech workers. I was hired as a Software Developer (Software Developer 1), and I was told in the interview that there would be some support work and server administration type stuff involved.  \n\n\nThe thing is, while I do have some development related tasks and I do a bit of programming, the majority of what I do and what I am judged on is more the \"sending emails\" type of tasks. Often I need some API access, or I need to arrange for a vendor to perform some upgrade, or I just need some information, etc, and I have to send emails either to vendors or other parts of the business to get this to happen. It doesn't always take a huge amount of time to do this, but it takes a lot of my mental load and much of my stress around the job is related to this. I have several small projects I'm working on simultaneously that mostly require sending emails and dealing with other teams/vendors. My manager isn't super technical (though he's not an idiot on this stuff and has worked on tech projects for a while), and my impression is that for him the most important thing is that I'm pinging people daily if they're not responding to me, and that I'm clearing blockers for projects quickly, which usually means sending emails and slack messages. I have a project manager, and she sends \\*some\\* of these emails for me, but for the most part dealing with other parts of the business is my responsibility.  \n\n\nI have about 2 years of experience prior to this, split between two small start ups. At both of my previous positions most of my work was more directly related to developing software and I was judged off of that work. I guess I'm thinking, maybe this is just the reality of working on a small team in a big company, but I find it pretty frustrating. I like Software Development, even parts of it that are less glamorous like writing documentation and dealing with scrum processes. I know that not all of the software development process is programming, but I guess I wish I was judged more on my technical proficiency than on my ability to answer emails quickly and keep track of the 10 different people I need to be contacting in order to get anything done. I'm tired of things being constantly blocked, and I get stressed out about being held responsible for how fast other people in the company respond to me. I'm learning some things here, but it feels like not enough.  \n\n\nI don't know, has anyone been in a similar position as this? Is this just the reality of working for a big company? What's a good way of handling this without letting my skills degrade? It feels like my company is wasting my education/skills to a good degree and I'm frustrated.",
+        "sourceLink": "https://www.reddit.com/r/cscareerquestions/comments/17wtugc/how_common_is_it_for_a_developer_to_spend_most_of/",
+        "permaLink": "https://www.reddit.com/r/cscareerquestions/comments/17wtugc/how_common_is_it_for_a_developer_to_spend_most_of/"
+      }
+    },
+    {
+      "category": "learnprogramming",
+      "data": {
+        "title": "New? READ ME FIRST!",
+        "user": "michael0x2a",
+        "score": 827,
+        "selfText": "# Welcome to /r/learnprogramming!\n\n## Quick start:\n\n1. New to programming? Not sure how to start learning? See [FAQ - Getting started][faq-start].\n2. Have a question? Our [FAQ][faq] covers many common questions; check that first. Also try searching old posts, either [via google][google] or via reddit's search.\n3. Your question isn't answered in the FAQ? Please read the following:\n\n## Getting debugging help\n\nIf your question is about code, make sure it's **specific** and **provides all information up-front**. Here's a checklist of what to include:\n\n1. A [**concise but descriptive title**][debugging-title].\n2. A [**good description**][debugging-description] of the problem.\n4.  A [**minimal**, **easily runnable**][debugging-posting], and [**well-formatted**][debugging-formatting] program that demonstrates your problem.\n5. The output you expected and what you got instead. If you got an error, include the **full** error message.\n\nDo your best to solve your problem before posting. The quality of the answers will be proportional to the amount of effort you put into your post. Note that title-only posts are automatically removed.\n\nAlso see [our full posting guidelines][debugging] and the [subreddit rules][rules]. After you post a question, **DO NOT** delete it!\n\n## Asking conceptual questions\n\nAsking conceptual questions is ok, but please check [our FAQ][faq] and search older posts first.\n\nIf you plan on asking a question similar to one in the FAQ, explain what exactly the FAQ didn't address and clarify what you're looking for instead. See our full guidelines on [asking conceptual questions][conceptual] for more details.\n\n## Subreddit rules\n\nPlease read [our rules][rules] and [other policies][policies] before posting. If you see somebody breaking a rule, report it! Reports and PMs to the mod team are the quickest ways to bring issues to our attention.\n\n\n  [faq-start]: https://www.reddit.com/r/learnprogramming/wiki/faq#wiki_getting_started\n  [faq]: https://www.reddit.com/r/learnprogramming/wiki/faq\n  [google]: https://www.google.com/#q=site:reddit.com%2Fr%2Flearnprogramming\n  [wiki]: https://www.reddit.com/r/learnprogramming/wiki/index\n  [debugging]: https://www.reddit.com/r/learnprogramming/wiki/index#wiki_getting_debugging_help\n  [debugging-title]: https://www.reddit.com/r/learnprogramming/wiki/index#wiki_writing_a_good_title\n  [debugging-description]: https://www.reddit.com/r/learnprogramming/wiki/index#wiki_writing_a_good_description_of_the_problem\n  [debugging-posting]: https://www.reddit.com/r/learnprogramming/wiki/index#wiki_posting_code\n  [debugging-formatting]: https://www.reddit.com/r/learnprogramming/wiki/index#wiki_formatting_code\n  [conceptual]: https://www.reddit.com/r/learnprogramming/wiki/index#wiki_asking_conceptual_questions\n  [rules]: https://www.reddit.com/r/learnprogramming/about/rules\n  [policies]: https://www.reddit.com/r/learnprogramming/wiki/index#wiki_rules",
+        "sourceLink": "https://www.reddit.com/r/learnprogramming/comments/61oly8/new_read_me_first/",
+        "permaLink": "https://www.reddit.com/r/learnprogramming/comments/61oly8/new_read_me_first/"
+      }
+    },
+    {
+      "category": "learnprogramming",
+      "data": {
+        "title": "What have you been working on recently? [November 11, 2023]",
+        "user": "AutoModerator",
+        "score": 7,
+        "selfText": "What have you been working on recently? Feel free to share updates on projects you're working on, brag about any major milestones you've hit, grouse about a challenge you've ran into recently... Any sort of \"progress report\" is fair game!\n\nA few requests:\n\n1. If possible, include a link to your source code when sharing a project update. That way, others can learn from your work!\n\n2. If you've shared something, try commenting on at least one other update -- ask a question, give feedback, compliment something cool... We encourage discussion!\n\n3. If you don't consider yourself to be a beginner, include about how many years of experience you have.\n\nThis thread will remained stickied over the weekend. [Link to past threads here](https://www.reddit.com/r/learnprogramming/search?q=%22What+have+you+been+working+on+recently%3F%22&amp;sort=new&amp;restrict_sr=on).",
+        "sourceLink": "https://www.reddit.com/r/learnprogramming/comments/17snbja/what_have_you_been_working_on_recently_november/",
+        "permaLink": "https://www.reddit.com/r/learnprogramming/comments/17snbja/what_have_you_been_working_on_recently_november/"
+      }
+    },
+    {
+      "category": "learnprogramming",
+      "data": {
+        "title": "Where should I start: CS50 Harvard or learning a programming language?",
+        "user": "Floorwriter",
+        "score": 17,
+        "selfText": "Context: I’m a college student in a 3rd world country learning Java in a cheap college where lectures are dull, boring, and extremely slow.\n\nI want to approach programming as efficiently as I possibly can, and that meant crawling in the trenches of building a proper foundation of ”what” programming is, and its different applications. I am torn between learning the fundamentals of Java or CS50 by Harvard. Which one benefits me the most in the long run?\n\nmost importantly, what are your experiences in learning CS50 by Harvard and how did it benefit your progress moving forward as a programmer?",
+        "sourceLink": "https://www.reddit.com/r/learnprogramming/comments/17wna1k/where_should_i_start_cs50_harvard_or_learning_a/",
+        "permaLink": "https://www.reddit.com/r/learnprogramming/comments/17wna1k/where_should_i_start_cs50_harvard_or_learning_a/"
+      }
+    },
+    {
+      "category": "learnprogramming",
+      "data": {
+        "title": "Where does C#/.NET shine and has it's disadvantages?",
+        "user": "kfmnm",
+        "score": 25,
+        "selfText": "&amp;#x200B;\n\nMy background: I'm working as an apprentice mainly using JavaScript (front-/backend and some html/css) for almost a year now. Before that I did a java course to try out if programming was my thing, got to basic algorithms like sorts, game of life, creating a bingo sheet with user input. I also have a basic understanding of SQL and NoSQL.\n\n&amp;#x200B;\n\nFor a while now I have been feeling the desire to pick up another language. It should be type safe and have the potential to pick some deeper concepts and understanding of programming languages in general on the go, so i get to know more behind the scenes stuff (which i don't feel so much in JavaScript than maybe with Java) also in order to make picking up other languages in the future easier, if required.\n\nIt should also be a potentially strong backend language.\n\nAlthough i'm not planning on changing my job anytime soon, it should also be in strong demand on the market. It's just nice to know what you're doing is not just for fun/understanding but also increases my value for potential employers.\n\n&amp;#x200B;\n\nConsidering all of this, there seem to be two languages left: Java and C# (C# is surprisingly popular in my area, also the tech stack for C# jobs tends to not involve as many other technologies as java).\n\nI'm feeling pretty ready to dive into C# but theres still this question that's bugging my mind:As it's a hobby for now: Where does C# shine? Where can i gain motivation and fun by thinking \"this will come in so handy when building xy\"? (Similar to quick and simple in python, fast in C++, universal/scalable in java, frontend/web in javascript and so on)\n\n&amp;#x200B;\n\nThanks in advance for your replies and input.\n\n&amp;#x200B;\n\nP.S. of course i tried googling but i failed finding a common consensus on this as clear as for other languages\n\n&amp;#x200B;\n\nEdit: Not into game dev as of now",
+        "sourceLink": "https://www.reddit.com/r/learnprogramming/comments/17whx5j/where_does_cnet_shine_and_has_its_disadvantages/",
+        "permaLink": "https://www.reddit.com/r/learnprogramming/comments/17whx5j/where_does_cnet_shine_and_has_its_disadvantages/"
+      }
+    },
+    {
+      "category": "learnprogramming",
+      "data": {
+        "title": "What back-end programming language to use?",
+        "user": "nasser_1498",
+        "score": 5,
+        "selfText": "In my full-stack journey, I'm about to enter the back-end world, \n\nThe [road map](https://roadmap.sh/full-stack) i follow is telling me to learn Node.js since I'm already familiar with JS.\n\n&amp;#x200B;\n\n but  I'm  Also familiar with java even better, so, Can i use java and continue?  and If so,\n\nwhat should i know (in advanced java) to move on to the next section, (witch is databases),\n\n&amp;#x200B;\n\nWhat I learnt is in the first 5 hours of this [course](https://www.youtube.com/watch?v=xk4_1vDrzzo&amp;t=14950s), Thank you :D\n\n&amp;#x200B;",
+        "sourceLink": "https://www.reddit.com/r/learnprogramming/comments/17wsvkq/what_backend_programming_language_to_use/",
+        "permaLink": "https://www.reddit.com/r/learnprogramming/comments/17wsvkq/what_backend_programming_language_to_use/"
+      }
+    },
+    {
+      "category": "learnprogramming",
+      "data": {
+        "title": "This is an example of an algorithm I worked on for an accepted manuscript; trying to determine what kind of science and tech work I should pursue from here",
+        "user": "emaxwell13131313",
+        "score": 3,
+        "selfText": "[This](https://github.com/evanmaskanazi/Convex-Hull) is an example of an algorithm I coded in python for a research project for an accepted manuscript (IF between 5 and 6) based on high reliability machine learning regions.\n\nI was wondering, what do you make of the code and how it is written?\n\nIs there a way to tell what kind of science and tech roles I could be suited for based on the research and design skills shown?",
+        "sourceLink": "https://www.reddit.com/r/learnprogramming/comments/17wsvhy/this_is_an_example_of_an_algorithm_i_worked_on/",
+        "permaLink": "https://www.reddit.com/r/learnprogramming/comments/17wsvhy/this_is_an_example_of_an_algorithm_i_worked_on/"
+      }
+    },
+    {
+      "category": "learnprogramming",
+      "data": {
+        "title": "Seeking Coding Buddies for Virtual Learning Adventure!",
+        "user": "Admirable_Elk9170",
+        "score": 3,
+        "selfText": "I’m on the lookout for like-minded individuals interested in learning to code together in a virtual environment. Whether you’re a beginner eager to dive into the coding world or an experienced developer looking to share your knowledge, let’s embark on this coding journey together!\n\nAbout Me:\n\n\t23 M, working as Level 2 Helpdesk support for a company that specialises in providing IT support to B2B clients.\n\t\n\tNo coding experience, but want to learn coding to apply for cloud solution engineer roles. Interested in learning C#, Java, Python.",
+        "sourceLink": "https://www.reddit.com/r/learnprogramming/comments/17wssox/seeking_coding_buddies_for_virtual_learning/",
+        "permaLink": "https://www.reddit.com/r/learnprogramming/comments/17wssox/seeking_coding_buddies_for_virtual_learning/"
+      }
+    },
+    {
+      "category": "learnprogramming",
+      "data": {
+        "title": "CS degree usefulness?",
+        "user": "Important_Floor_7126",
+        "score": 86,
+        "selfText": "Have friends that did the CS degree and others learned online themselves. What’s the overall consensus on this? Personally, when I went to university I thought a bunch of classes were kinda pointless and a money grab (Although I didn’t do a CS degree). ",
+        "sourceLink": "https://www.reddit.com/r/learnprogramming/comments/17w6bws/cs_degree_usefulness/",
+        "permaLink": "https://www.reddit.com/r/learnprogramming/comments/17w6bws/cs_degree_usefulness/"
+      }
+    },
+    {
+      "category": "learnprogramming",
+      "data": {
+        "title": "What to learn first?",
+        "user": "um2spiicy",
+        "score": 3,
+        "selfText": "I am a freshman college student, and we're currently learning c++ as our first language. What language do you think I should advance study that will be useful as a beginner?",
+        "sourceLink": "https://www.reddit.com/r/learnprogramming/comments/17wp5x3/what_to_learn_first/",
+        "permaLink": "https://www.reddit.com/r/learnprogramming/comments/17wp5x3/what_to_learn_first/"
+      }
+    },
+    {
+      "category": "learnprogramming",
+      "data": {
+        "title": "What do python users use for visuals",
+        "user": "UpbeatBoard5763",
+        "score": 6,
+        "selfText": "I'm interested in creating a little game in python, like I've done in visual basic, that includes a GUI. I was wondering what people use to create a GUI on python",
+        "sourceLink": "https://www.reddit.com/r/learnprogramming/comments/17wltap/what_do_python_users_use_for_visuals/",
+        "permaLink": "https://www.reddit.com/r/learnprogramming/comments/17wltap/what_do_python_users_use_for_visuals/"
+      }
+    },
+    {
+      "category": "learnprogramming",
+      "data": {
+        "title": "Has anyone here ever dropped out of an online boot camp?",
+        "user": "cur_learner",
+        "score": 6,
+        "selfText": "I see  very valuable reviews about recommended programs, but I actually want to raise a less common question - **who here has ever dropped out of an online boot camp and can share their experience with me?**  \nI'll greatly appreciate if you can comment or send me a dm.  \nI’m conducting a small research about difficulties people face during online programs and would appreciate any sharing and thoughts in a completely anonymous way.   \nSince this is somewhat sensitive question, which people are not in a hurry to note out on their LinkedIn profile, I'm struggling to find an informants who can shed a little bit light on this subject, and will thank you for any help.",
+        "sourceLink": "https://www.reddit.com/r/learnprogramming/comments/17wkei7/has_anyone_here_ever_dropped_out_of_an_online/",
+        "permaLink": "https://www.reddit.com/r/learnprogramming/comments/17wkei7/has_anyone_here_ever_dropped_out_of_an_online/"
+      }
+    },
+    {
+      "category": "learnprogramming",
+      "data": {
+        "title": "I am in a bad CS program.",
+        "user": "Adorable_Simple465",
+        "score": 4,
+        "selfText": "NCC EDU sells curriculum to colleges in third world countries. Students from those colleges pay exam fees and sit for NCC EDU diploma tests.\n\nI am a student at one of those colleges. I am studying Level 4 Diploma in Computing.\n\nThis Diploma did not start with a couse in programming. Practically every CS Year 1 starts with a programming course.\n\nThe Computer Systems class seems to be a watered-down version of Comptia A+. There is not even a bit of system programming in that course. And the coursework I have to do has a very far-fetched task. I am supposed to write a report to a CEO about updating IT infrastructure of the entire company. It looks very much like bullshit (sorry if I am impolite) consulting task. Moreover, other tasks don't go deep into computer system theory (the curticulum itself has shallow computer system theory and practice).\n\nComputer Network class also does not have any programming tasks. NCC does not teach typical system programming languages like C. It is as shallow as Computer System class. The class has little to no practical lab tasks.\n\nSkills for Computing class also has far-fetched tasks but its teaching materials and curriculum provided by NCC is too lightweight. It does not explain theories behind the formulae very well. The presentation slides provided by NCC gives formulae and example problems for using those formulae. Other parts of SfC are about so-called problem solving. But instead of teaching about real problem solving useful for future programmers , NCC teaches us how to do consulting (not always about IT) tasks for business owners. Wishy-washy corporate speak is the worst of all. There are several project management acronyms but no deep discussions about project management.\n\nThe next class is Database class and I haven't learnt programming. This class also focuses on consultant tasks that are too far-fetched. I am supposed to design an entire database system for a business and the course material doesn't get deep into a database system like MySQL or PostgreSQL or database theory. I must remind you that this class lasted only a month (four days a week). \n\nThe worst thing about the NCC programme is teaching algorithms before teaching programming. I am now taking algorithms class even though I haven't taken a class in programming. It is unbelieveable.\n\nNCC provides presentation slides as course materials. They can't go really deep into theory and practice. The teacher who taught computer system and computer networking class has little programming experience and a former network engineer in industry for only a few years. He doesn't seem to understand the course materials. Maybe it is because of his English. Maybe he doesn't understand the technical content. I don't know.\n\nThe entire programme from Level 4 to 6 (level 6 is a top-up degree at affiliated UK university) does not has compiler course, data structure class, system programming, usability and ui/ux, operating systems, data science and machine learning courses.\n\nIt seems like I will have to learn everything I need to know about Computer Science and Software Engineering on my own.",
+        "sourceLink": "https://www.reddit.com/r/learnprogramming/comments/17wlxgm/i_am_in_a_bad_cs_program/",
+        "permaLink": "https://www.reddit.com/r/learnprogramming/comments/17wlxgm/i_am_in_a_bad_cs_program/"
+      }
+    },
+    {
+      "category": "learnprogramming",
+      "data": {
+        "title": "How to close off security loopholes in networking?",
+        "user": "Rishabh_0507",
+        "score": 2,
+        "selfText": "I am looking to develop a peer to peer live stream in python. For now it is a pretty simple code where I open a socket on sender's end and host the live stream over the internet. But how would I close off the security loopholes in this case? For example any one with the IP address could access the video stream. Should I have a encryption algorithm? If yes, then what kind of algorithm? \n\nApart from that, what kind of compression algorithm should I use?  I know Youtube uses less bandwidth by simply not changing pixels that remain constant through frames. That kind of stuff? \n\nI could use a few pointers in the correct directions as I am new to networking and stuff.",
+        "sourceLink": "https://www.reddit.com/r/learnprogramming/comments/17wpucy/how_to_close_off_security_loopholes_in_networking/",
+        "permaLink": "https://www.reddit.com/r/learnprogramming/comments/17wpucy/how_to_close_off_security_loopholes_in_networking/"
+      }
+    },
+    {
+      "category": "learnprogramming",
+      "data": {
+        "title": "Am I ready for a job?",
+        "user": "Last_Housing_3463",
+        "score": 22,
+        "selfText": "https://johndunking.github.io/jduncan-portfolio/#/ \n\nHere is a link to my portfolio which also has a link to my github. I am looking for advice on next steps. Should I work on more projects any in specific which focus on specific skills. I am currently a teacher looking to switch to software engineering and have been focusing on javascript and react. Any and all feedback and constructive criticism is welcome!",
+        "sourceLink": "https://www.reddit.com/r/learnprogramming/comments/17wbud1/am_i_ready_for_a_job/",
+        "permaLink": "https://www.reddit.com/r/learnprogramming/comments/17wbud1/am_i_ready_for_a_job/"
+      }
+    },
+    {
+      "category": "learnprogramming",
+      "data": {
+        "title": "I really like games that are like programming. Is this a sign that I would enjoy programming as a career?",
+        "user": "DrasticBread",
+        "score": 42,
+        "selfText": "(Edit: You folks are awesome, thanks for all the great advice and support. I've got enough recommendations from this post to keep me busy for quite awhile now. I salute you all, it's much appreciated.)\n\nBesides the title, I am 35 and don't have a college degree. In recent years, I've been really into playing games like Factorio and Dyson Sphere Program that, according to a lot of programmers who play, are a lot like programming. The way these games put my brain in a problem-solving mode can keep me glued to the desk for hours on end, and I'm beginning to think that it's likely I would feel a similar way about programming.\n\nToday, I did a free class on Python syntax, and finishing the review at the end felt just like I was building my first factory in one of these games. ~~Now I'm thinking of pulling the trigger on a subscription for Codeacademy~~, (edit: I moved on from this thanks partly to you folks, but mostly because I found out even the stuff marked \"free\" there is paywalled), but I thought it would be good to collect some outside input from people who actually do it for a living.",
+        "sourceLink": "https://www.reddit.com/r/learnprogramming/comments/17w5i6t/i_really_like_games_that_are_like_programming_is/",
+        "permaLink": "https://www.reddit.com/r/learnprogramming/comments/17w5i6t/i_really_like_games_that_are_like_programming_is/"
       }
     },
     {
@@ -347,7 +677,7 @@
       "data": {
         "title": "Daily Simple Questions Thread - November 16, 2023",
         "user": "AutoModerator",
-        "score": 13,
+        "score": 16,
         "selfText": "Welcome to the /r/Fitness Daily Simple Questions Thread - Our daily thread to ask about all things fitness. Post your questions here related to your diet and nutrition or your training routine and exercises. Anyone can post a question and the community as a whole is invited and encouraged to provide an answer.\n\n# As always, be sure to [read the wiki](https://thefitness.wiki) first. Like, all of it. Rule #0 still applies in this thread.\n\nAlso, there's a [handy search function](https://www.reddit.com/r/Fitness/search?&amp;restrict_sr=on) to your right, and if you didn't know, you can also use Google to search r/Fitness by using the limiter \"site:reddit.com/r/fitness\" after your search topic.\n\nAlso make sure to check out [Examine.com](https://examine.com/) for evidence based answers to nutrition and supplement questions.\n\nIf you are posting a routine critique request, make sure you follow [the guidelines](https://www.reddit.com/r/Fitness/wiki/rules#wiki_rule_.239) for including enough detail.\n\n# \"Bulk or cut\" type questions are not permitted on r/Fitness - Refer to [the FAQ](https://thefitness.wiki/faq/should-i-bulk-or-cut/) or post them in r/bulkorcut.\n\n# Questions that [involve pain, injury, or any medical concern of any kind](https://www.reddit.com/r/Fitness/wiki/rules/rule5) are not permitted on r/Fitness. Seek advice from an appropriate medical professional instead.\n\n**(Please note: This is not a place for general small talk, chit-chat, jokes, memes, \"Dear Diary\" type comments, shitposting, or non-fitness questions. It is for fitness questions only, and only those that are serious.)**",
         "sourceLink": "https://www.reddit.com/r/Fitness/comments/17wj9wu/daily_simple_questions_thread_november_16_2023/",
         "permaLink": "https://www.reddit.com/r/Fitness/comments/17wj9wu/daily_simple_questions_thread_november_16_2023/"
@@ -369,7 +699,7 @@
       "data": {
         "title": "Monthly Fitness Pro-Tips Megathread",
         "user": "AutoModerator",
-        "score": 15,
+        "score": 12,
         "selfText": "**Welcome to the Monthly Fitness Pro-Tips Megathread!**\n\nThis thread is for sharing quick tips (don't you dare call them hacks, that word is stupid) about training, equipment use, nutrition, or other fitness connected topics that have improved your fitness experience.",
         "sourceLink": "https://www.reddit.com/r/Fitness/comments/17vqefg/monthly_fitness_protips_megathread/",
         "permaLink": "https://www.reddit.com/r/Fitness/comments/17vqefg/monthly_fitness_protips_megathread/"
@@ -391,7 +721,7 @@
       "data": {
         "title": "Daily Simple Questions Thread - November 14, 2023",
         "user": "AutoModerator",
-        "score": 27,
+        "score": 29,
         "selfText": "Welcome to the /r/Fitness Daily Simple Questions Thread - Our daily thread to ask about all things fitness. Post your questions here related to your diet and nutrition or your training routine and exercises. Anyone can post a question and the community as a whole is invited and encouraged to provide an answer.\n\n# As always, be sure to [read the wiki](https://thefitness.wiki) first. Like, all of it. Rule #0 still applies in this thread.\n\nAlso, there's a [handy search function](https://www.reddit.com/r/Fitness/search?&amp;restrict_sr=on) to your right, and if you didn't know, you can also use Google to search r/Fitness by using the limiter \"site:reddit.com/r/fitness\" after your search topic.\n\nAlso make sure to check out [Examine.com](https://examine.com/) for evidence based answers to nutrition and supplement questions.\n\nIf you are posting a routine critique request, make sure you follow [the guidelines](https://www.reddit.com/r/Fitness/wiki/rules#wiki_rule_.239) for including enough detail.\n\n# \"Bulk or cut\" type questions are not permitted on r/Fitness - Refer to [the FAQ](https://thefitness.wiki/faq/should-i-bulk-or-cut/) or post them in r/bulkorcut.\n\n# Questions that [involve pain, injury, or any medical concern of any kind](https://www.reddit.com/r/Fitness/wiki/rules/rule5) are not permitted on r/Fitness. Seek advice from an appropriate medical professional instead.\n\n**(Please note: This is not a place for general small talk, chit-chat, jokes, memes, \"Dear Diary\" type comments, shitposting, or non-fitness questions. It is for fitness questions only, and only those that are serious.)**",
         "sourceLink": "https://www.reddit.com/r/Fitness/comments/17uz1in/daily_simple_questions_thread_november_14_2023/",
         "permaLink": "https://www.reddit.com/r/Fitness/comments/17uz1in/daily_simple_questions_thread_november_14_2023/"
@@ -402,7 +732,7 @@
       "data": {
         "title": "Moronic Monday - Your weekly stupid questions thread",
         "user": "cdingo",
-        "score": 41,
+        "score": 42,
         "selfText": "Get your dunce hats out, Fittit, it's time for your weekly Stupid Questions Thread.\n\nPost your question - stupid or otherwise - here to get an answer. Anyone can post a question and the community as a whole is invited and encouraged to provide an answer. Many questions get submitted late each week that don't get a lot of action, so if your question didn't get answered before, feel free to post it again.\n\n###**As always, be sure to read the [FAQ](https://thefitness.wiki/faq/) first**.\n\nAlso, there's a handy-dandy **search bar to your right**, and if you didn't know, you can also use [Google](https://www.google.com/) to search fittit by using the limiter \"site:reddit.com\\/r/fitness\".\n\nBe sure to check back often as questions get posted throughout the day.  Lastly, it may be a good idea to sort comments by \"new\" to be sure the newer questions get some love as well. [Click here to sort by new in this thread only.](https://old.reddit.com/r/Fitness/comments/17oxv56/moronic_monday_your_weekly_stupid_questions_thread/?sort=new)\n\nSo, what's rattling around in your brain this week, Fittit?\n \n---\n\nAs per [this](https://old.reddit.com/r/Fitness/comments/20namh/meta_can_we_delete_jokes_from_the_moronic_monday/) thread, the community has asked that we keep jokes, trolling, and memes outside of the Moronic Monday thread. Please use the downvote / report button when necessary.",
         "sourceLink": "https://www.reddit.com/r/Fitness/comments/17u5vr6/moronic_monday_your_weekly_stupid_questions_thread/",
         "permaLink": "https://www.reddit.com/r/Fitness/comments/17u5vr6/moronic_monday_your_weekly_stupid_questions_thread/"
@@ -413,7 +743,7 @@
       "data": {
         "title": "Daily Simple Questions Thread - November 12, 2023",
         "user": "AutoModerator",
-        "score": 24,
+        "score": 21,
         "selfText": "Welcome to the /r/Fitness Daily Simple Questions Thread - Our daily thread to ask about all things fitness. Post your questions here related to your diet and nutrition or your training routine and exercises. Anyone can post a question and the community as a whole is invited and encouraged to provide an answer.\n\n# As always, be sure to [read the wiki](https://thefitness.wiki) first. Like, all of it. Rule #0 still applies in this thread.\n\nAlso, there's a [handy search function](https://www.reddit.com/r/Fitness/search?&amp;restrict_sr=on) to your right, and if you didn't know, you can also use Google to search r/Fitness by using the limiter \"site:reddit.com/r/fitness\" after your search topic.\n\nAlso make sure to check out [Examine.com](https://examine.com/) for evidence based answers to nutrition and supplement questions.\n\nIf you are posting a routine critique request, make sure you follow [the guidelines](https://www.reddit.com/r/Fitness/wiki/rules#wiki_rule_.239) for including enough detail.\n\n# \"Bulk or cut\" type questions are not permitted on r/Fitness - Refer to [the FAQ](https://thefitness.wiki/faq/should-i-bulk-or-cut/) or post them in r/bulkorcut.\n\n# Questions that [involve pain, injury, or any medical concern of any kind](https://www.reddit.com/r/Fitness/wiki/rules/rule5) are not permitted on r/Fitness. Seek advice from an appropriate medical professional instead.\n\n**(Please note: This is not a place for general small talk, chit-chat, jokes, memes, \"Dear Diary\" type comments, shitposting, or non-fitness questions. It is for fitness questions only, and only those that are serious.)**",
         "sourceLink": "https://www.reddit.com/r/Fitness/comments/17th69t/daily_simple_questions_thread_november_12_2023/",
         "permaLink": "https://www.reddit.com/r/Fitness/comments/17th69t/daily_simple_questions_thread_november_12_2023/"
@@ -446,7 +776,7 @@
       "data": {
         "title": "Daily Simple Questions Thread - November 11, 2023",
         "user": "AutoModerator",
-        "score": 5,
+        "score": 6,
         "selfText": "Welcome to the /r/Fitness Daily Simple Questions Thread - Our daily thread to ask about all things fitness. Post your questions here related to your diet and nutrition or your training routine and exercises. Anyone can post a question and the community as a whole is invited and encouraged to provide an answer.\n\n# As always, be sure to [read the wiki](https://thefitness.wiki) first. Like, all of it. Rule #0 still applies in this thread.\n\nAlso, there's a [handy search function](https://www.reddit.com/r/Fitness/search?&amp;restrict_sr=on) to your right, and if you didn't know, you can also use Google to search r/Fitness by using the limiter \"site:reddit.com/r/fitness\" after your search topic.\n\nAlso make sure to check out [Examine.com](https://examine.com/) for evidence based answers to nutrition and supplement questions.\n\nIf you are posting a routine critique request, make sure you follow [the guidelines](https://www.reddit.com/r/Fitness/wiki/rules#wiki_rule_.239) for including enough detail.\n\n# \"Bulk or cut\" type questions are not permitted on r/Fitness - Refer to [the FAQ](https://thefitness.wiki/faq/should-i-bulk-or-cut/) or post them in r/bulkorcut.\n\n# Questions that [involve pain, injury, or any medical concern of any kind](https://www.reddit.com/r/Fitness/wiki/rules/rule5) are not permitted on r/Fitness. Seek advice from an appropriate medical professional instead.\n\n**(Please note: This is not a place for general small talk, chit-chat, jokes, memes, \"Dear Diary\" type comments, shitposting, or non-fitness questions. It is for fitness questions only, and only those that are serious.)**",
         "sourceLink": "https://www.reddit.com/r/Fitness/comments/17sre3l/daily_simple_questions_thread_november_11_2023/",
         "permaLink": "https://www.reddit.com/r/Fitness/comments/17sre3l/daily_simple_questions_thread_november_11_2023/"
@@ -479,7 +809,7 @@
       "data": {
         "title": "Daily Simple Questions Thread - November 09, 2023",
         "user": "AutoModerator",
-        "score": 22,
+        "score": 24,
         "selfText": "Welcome to the /r/Fitness Daily Simple Questions Thread - Our daily thread to ask about all things fitness. Post your questions here related to your diet and nutrition or your training routine and exercises. Anyone can post a question and the community as a whole is invited and encouraged to provide an answer.\n\n# As always, be sure to [read the wiki](https://thefitness.wiki) first. Like, all of it. Rule #0 still applies in this thread.\n\nAlso, there's a [handy search function](https://www.reddit.com/r/Fitness/search?&amp;restrict_sr=on) to your right, and if you didn't know, you can also use Google to search r/Fitness by using the limiter \"site:reddit.com/r/fitness\" after your search topic.\n\nOther good resources to check first are [Exrx.net](http://www.exrx.net/index.html) for exercise-related topics and [Examine.com](https://examine.com/) for nutrition and supplement science.\n\nIf you are posting a routine critique request, make sure you follow [the guidelines](https://www.reddit.com/r/Fitness/wiki/rules#wiki_rule_.239) for including enough detail.\n\n# \"Bulk or cut\" type questions are not permitted on r/Fitness - Refer to [the FAQ](https://thefitness.wiki/faq/should-i-bulk-or-cut/) or post them in r/bulkorcut.\n\n# Questions that [involve any medical concern of any kind](https://www.reddit.com/r/Fitness/wiki/rules/rule5) are not permitted on r/Fitness. Seek advice from an appropriate medical professional instead.\n\n**(Please note: This is not a place for general small talk, chit-chat, jokes, memes, \"Dear Diary\" type comments, shitposting, or non-fitness questions. It is for fitness questions only, and only those that are serious.)**",
         "sourceLink": "https://www.reddit.com/r/Fitness/comments/17r9ok3/daily_simple_questions_thread_november_09_2023/",
         "permaLink": "https://www.reddit.com/r/Fitness/comments/17r9ok3/daily_simple_questions_thread_november_09_2023/"
@@ -490,340 +820,175 @@
       "data": {
         "title": "Rant Wednesday",
         "user": "AutoModerator",
-        "score": 53,
+        "score": 55,
         "selfText": "Welcome to Rant Wednesday: It’s your time to let your gym/fitness/nutrition related frustrations out!\n\nThere is no guiding question to help stir up some rage-feels, feel free to fire at will, ranting about anything and everything that’s been pissing you off or getting on your nerves.",
         "sourceLink": "https://www.reddit.com/r/Fitness/comments/17qidyw/rant_wednesday/",
         "permaLink": "https://www.reddit.com/r/Fitness/comments/17qidyw/rant_wednesday/"
       }
     },
     {
-      "category": "learnprogramming",
+      "category": "powerlifting",
       "data": {
-        "title": "New? READ ME FIRST!",
-        "user": "michael0x2a",
-        "score": 828,
-        "selfText": "# Welcome to /r/learnprogramming!\n\n## Quick start:\n\n1. New to programming? Not sure how to start learning? See [FAQ - Getting started][faq-start].\n2. Have a question? Our [FAQ][faq] covers many common questions; check that first. Also try searching old posts, either [via google][google] or via reddit's search.\n3. Your question isn't answered in the FAQ? Please read the following:\n\n## Getting debugging help\n\nIf your question is about code, make sure it's **specific** and **provides all information up-front**. Here's a checklist of what to include:\n\n1. A [**concise but descriptive title**][debugging-title].\n2. A [**good description**][debugging-description] of the problem.\n4.  A [**minimal**, **easily runnable**][debugging-posting], and [**well-formatted**][debugging-formatting] program that demonstrates your problem.\n5. The output you expected and what you got instead. If you got an error, include the **full** error message.\n\nDo your best to solve your problem before posting. The quality of the answers will be proportional to the amount of effort you put into your post. Note that title-only posts are automatically removed.\n\nAlso see [our full posting guidelines][debugging] and the [subreddit rules][rules]. After you post a question, **DO NOT** delete it!\n\n## Asking conceptual questions\n\nAsking conceptual questions is ok, but please check [our FAQ][faq] and search older posts first.\n\nIf you plan on asking a question similar to one in the FAQ, explain what exactly the FAQ didn't address and clarify what you're looking for instead. See our full guidelines on [asking conceptual questions][conceptual] for more details.\n\n## Subreddit rules\n\nPlease read [our rules][rules] and [other policies][policies] before posting. If you see somebody breaking a rule, report it! Reports and PMs to the mod team are the quickest ways to bring issues to our attention.\n\n\n  [faq-start]: https://www.reddit.com/r/learnprogramming/wiki/faq#wiki_getting_started\n  [faq]: https://www.reddit.com/r/learnprogramming/wiki/faq\n  [google]: https://www.google.com/#q=site:reddit.com%2Fr%2Flearnprogramming\n  [wiki]: https://www.reddit.com/r/learnprogramming/wiki/index\n  [debugging]: https://www.reddit.com/r/learnprogramming/wiki/index#wiki_getting_debugging_help\n  [debugging-title]: https://www.reddit.com/r/learnprogramming/wiki/index#wiki_writing_a_good_title\n  [debugging-description]: https://www.reddit.com/r/learnprogramming/wiki/index#wiki_writing_a_good_description_of_the_problem\n  [debugging-posting]: https://www.reddit.com/r/learnprogramming/wiki/index#wiki_posting_code\n  [debugging-formatting]: https://www.reddit.com/r/learnprogramming/wiki/index#wiki_formatting_code\n  [conceptual]: https://www.reddit.com/r/learnprogramming/wiki/index#wiki_asking_conceptual_questions\n  [rules]: https://www.reddit.com/r/learnprogramming/about/rules\n  [policies]: https://www.reddit.com/r/learnprogramming/wiki/index#wiki_rules",
-        "sourceLink": "https://www.reddit.com/r/learnprogramming/comments/61oly8/new_read_me_first/",
-        "permaLink": "https://www.reddit.com/r/learnprogramming/comments/61oly8/new_read_me_first/"
+        "title": "NEW TO THE SUB? START HERE!",
+        "user": "BenchPolkov",
+        "score": 366,
+        "selfText": "#1. READ THE [WIKI](https://www.reddit.com/r/powerlifting/wiki/index). PLEASE READ THE WIKI!\nThen read it again, and again, especially **[HOW TO POST IN THIS SUB](https://www.reddit.com/r/powerlifting/wiki/index)** and **[THE RULES](https://www.reddit.com/r/powerlifting/wiki/rules)**.\n\n#2. USER FLAIR IS MANDATORY\nYou can't post or comment without it. [Find out how to get yours.](https://www.reddit.com/r/powerlifting/wiki/flair)\n\n#3. READ THE SIDEBAR\n**Your thread belongs on the main board:**\n\n* -It's a meet report.\n* -It's an interesting article or video of an elite or interesting lift relevant to the sport.\n* -It's a program review.\n* -It's a thread that is specifically about powerlifting and promotes community discussion.\n\n**Your thread belongs in the daily thread or one of the other weekly threads:**\n\n* -It's not a community discussion thread.\n* -You want to complain.\n* -It's a form check.\n* -You want to sell us a product or do market research.\n* -It pertains to only you and not the larger community.\n* -It's not specifically about powerlifting or only very tangentially related .\n* -It's a request for a program critique.\n\n**What /r/powerlifting is:**\n\n* -A place to discuss the sport of Powerlifting and the training of the lifts.\n* -A place to post theory, discussion and information that will make us better lifters.\n* -A place where mods WILL delete any post we feel is not a good fit, regardless of any sidebar or FAQ statements. A post doesn't have to violate a rule to not meet our criteria.\n\n**What /r/powerlifting isn't:**\n\n* -This is not a place for questions that can be answered via a quick google search.\n* -This is not a place for memes or rants.\n* -This is not a place for overdone and nonconstructive complaints and criticisms about elements of the sport that you don't like, **ESPECIALLY IF YOU DON'T ACTUALLY TAKE PART IN THE SPORT**.\n* -This is not a place for your personal records, articles or videologs unless you meet specific requirements.",
+        "sourceLink": "https://www.reddit.com/r/powerlifting/comments/aw04t0/new_to_the_sub_start_here/",
+        "permaLink": "https://www.reddit.com/r/powerlifting/comments/aw04t0/new_to_the_sub_start_here/"
       }
     },
     {
-      "category": "learnprogramming",
+      "category": "powerlifting",
       "data": {
-        "title": "What have you been working on recently? [November 11, 2023]",
+        "title": "Every Second-Daily Thread - November 15, 2023",
+        "user": "AutoModerator",
+        "score": 2,
+        "selfText": "A sorta kinda daily open thread to use as an alternative to posting on the main board. You should post here for:\n\n* PRs\n* Formchecks\n*  Rudimentary discussion or questions\n* General conversation with other users\n* Memes, funnies, and general bollocks not appropriate to the main board\n* If you have suggestions for the subreddit, let us know!\n* This thread now defaults to \"new\" sorting.\n\n**For the purpose of fairness across timezones this thread works on a 44hr cycle.**",
+        "sourceLink": "https://www.reddit.com/r/powerlifting/comments/17vnzqb/every_seconddaily_thread_november_15_2023/",
+        "permaLink": "https://www.reddit.com/r/powerlifting/comments/17vnzqb/every_seconddaily_thread_november_15_2023/"
+      }
+    },
+    {
+      "category": "powerlifting",
+      "data": {
+        "title": "Equipped Lifting Thread",
+        "user": "AutoModerator",
+        "score": 11,
+        "selfText": "Do you like having 2-3 sweaty men shoe-horn you into polyester, canvas or denim bondage gear.\n\nDo you like having your joints wrapped so tightly they bruise and bleed?\n\nDo you like having your blood pressure turned up to 11 and being compressed so much that you think your head might explode? \n\nDo you get off on enduring pain and suffering, and watching others endure it too? \n\nDo you have a deathwish every time you get under the bar?\n\n**Yes?**\n\n&amp;#x200B;\n\n# THEN WELCOME TO THE FORTNIGHTLY EQUIPPED LIFTING THREAD!!!",
+        "sourceLink": "https://www.reddit.com/r/powerlifting/comments/17w84sc/equipped_lifting_thread/",
+        "permaLink": "https://www.reddit.com/r/powerlifting/comments/17w84sc/equipped_lifting_thread/"
+      }
+    },
+    {
+      "category": "powerlifting",
+      "data": {
+        "title": "Diet Discussion Thread",
+        "user": "AutoModerator",
+        "score": 5,
+        "selfText": "**For discussion of:**\n\n* **Eating all the food when you want to get swole**\n* **Eating less of the food when you're too fluffy**\n* **Diet methods and plans**\n* **Favourite foods and recipes**\n* **How awful dieting is**",
+        "sourceLink": "https://www.reddit.com/r/powerlifting/comments/17w9j2s/diet_discussion_thread/",
+        "permaLink": "https://www.reddit.com/r/powerlifting/comments/17w9j2s/diet_discussion_thread/"
+      }
+    },
+    {
+      "category": "powerlifting",
+      "data": {
+        "title": "IPF Open Equipped Worlds Megathread",
+        "user": "psstein",
+        "score": 30,
+        "selfText": "Occurring Nov. 13-18th. \n\nNominations, stream, and results here: https://goodlift.info/live.php",
+        "sourceLink": "https://www.reddit.com/r/powerlifting/comments/17v7acp/ipf_open_equipped_worlds_megathread/",
+        "permaLink": "https://www.reddit.com/r/powerlifting/comments/17v7acp/ipf_open_equipped_worlds_megathread/"
+      }
+    },
+    {
+      "category": "powerlifting",
+      "data": {
+        "title": "Programming Wednesdays",
+        "user": "AutoModerator",
+        "score": 5,
+        "selfText": " \n\n## Discuss all aspects of training for powerlifting:\n\n&amp;#x200B;\n\n* Periodization\n* Nutrition\n* Movement selection\n* Routine critiques\n* etc...",
+        "sourceLink": "https://www.reddit.com/r/powerlifting/comments/17vg97r/programming_wednesdays/",
+        "permaLink": "https://www.reddit.com/r/powerlifting/comments/17vg97r/programming_wednesdays/"
+      }
+    },
+    {
+      "category": "powerlifting",
+      "data": {
+        "title": "Lifting at Higher Altitudes",
+        "user": "ts_arnell",
+        "score": 48,
+        "selfText": "I recently moved to Colorado from Indiana. In Indy, I was sitting at 400-500 feet. Where I live in CO, I am training around 5900-6000 feet. I’ve lived here nearly 3 months and weight (especially on squat and deadlift) still feels extremely heavy, and everything over 6-7 reps makes me feel like I’m going to pass out. \n\nIs this normal? And, has anyone else experienced this? I never had these issues back in Indy, so I assume it has to be elevation related but it’s taking so long to acclimate",
+        "sourceLink": "https://www.reddit.com/r/powerlifting/comments/17up8vy/lifting_at_higher_altitudes/",
+        "permaLink": "https://www.reddit.com/r/powerlifting/comments/17up8vy/lifting_at_higher_altitudes/"
+      }
+    },
+    {
+      "category": "powerlifting",
+      "data": {
+        "title": "Ladies Open Weekly Thread",
+        "user": "AutoModerator",
+        "score": 4,
+        "selfText": " \n\n**Here you can:**  \n\n* **Discuss all aspects of powerlifting as it pertains to being a woman.**\n* **Socialize with other ladies.**\n* **If you have discussion provoking bullet points, those are welcome too.**",
+        "sourceLink": "https://www.reddit.com/r/powerlifting/comments/17uq6zd/ladies_open_weekly_thread/",
+        "permaLink": "https://www.reddit.com/r/powerlifting/comments/17uq6zd/ladies_open_weekly_thread/"
+      }
+    },
+    {
+      "category": "powerlifting",
+      "data": {
+        "title": "[Meet report] DT Strength Throwdown| Kirkland, WA| | 400 kg @ 86.1 kg | F32 | Raw | DOTS 363.8",
+        "user": "GilesofGiles",
+        "score": 43,
+        "selfText": "This meet was 20 minutes from my house, I know the director runs smooth meets, and it was about a year after my last meet. No brainer. The meet also happened today so I’m a little scattered but wanted to get this down. I initially did meet reports because I was kind of lonely in the powerlifting world, but now I have a really great IRL crew including my awesome friends who came out to watch and handle me, so I post these to mark how far I’ve come since my first meet. \n\n*My prep*\n\nThis was a fucking killer prep. We tried a new structure and it worked really well. Another thing I want to note is that I am embarking on a 2-3 year bulk/cut cycle with the long term goal of being a much more jacked 82.5 lifter. However, I did not want to pause the bulk I was currently on to lift in that class for this event, so I lifted in the 90 kg class. I think it also helped my prep that I was actively bulking through it. The only issue with my prep was a tendency to flirt with high squats. However, for this meet I really, really wanted a 400 kg total. I didn’t need a big squat to get that but going 3/3 would take a lot of pressure off of me so I made a conservative squat plan with the intention of sinking each one. I knew if I could go 3/3 I would have a shot to secure the total on my second deadlift, and then I could wild out on the last deadlift to get a little silly. Bench and deads, no notes, PR’d in prep and everything moved wonderfully. \n\nVideo of all lifts can be found [here](https://youtu.be/kP_NrWGby7A)\n\nSQUAT: \n\n1: 137.5 yes good. Easy. Whatever \n\n2: 145 also yes\n\n3: 150 hell yes!! A lifetime PR and 5 kg meet PR. Moved easy. Exactly what I wanted—enough room in the tank that I wasn’t worn out for bench and deads and heavy enough to take some pressure off the other events for the total I wanted \n\nBENCH: \n\n1: 75 this was my third attempt at my last meet\n\n2: 80, little wobble. I had planned anyway to jump to 82.5 and technically I had no choice but if there had been a more conservative option I would have taken it \n\n3: 82.5, miss. Lol. I have hit this in the gym before, and still walked away with another 5 kg meet PR. \n\nMy back was really sore at this point but my amazing and excellent handler found me a foam roller so I foam rolled and ate a sausage egg muffin sandwich and deadlift warmups were ON FIRE! Missing the third bench meant I would need to use my third deadlift attempt to secure the total, but making all my squats like the genius that I am meant I wouldn’t need to ask too much of myself to get it. \n\nDEADLIFT:\n\n1: 157.5 I am visibly pissed off here that the platform crew didn’t straighten out the bar for me and I had to kneel down and roll it into place with my precious minute. But it was fine for the rest of the attempts \n\n2: 167.5 yes good, 2.5 kg meet PR. At this point, the total was 397.5. My coach came to me and said he thought I could definitely do 172.5, maybe even 175. And I was like yeah and I know this is basically taking the same weight twice, and it’s anticlimactic, but...\n\n3: 170 yeah I just did this to grab that total. I’ll wild out at the next meet. My best gym deadlift is 175 and that was definitely available on the day. Maybe next time. \n\n*What I did right* \n\nI was really diligent about recovery during this prep and I was actively eating in a surplus and that probably did most of the work for me, I do not care. I was told I had the biggest women’s total at the meet, I will confirm that when the results are posted. I also got drug tested. I think that speaks more to how fractured the powerlifting world is across feds than to whether or not I am strong. \n\nI was also an execution machine. Historically I have been high on hype, but for this meet I just put my headphones in between attempts and chilled out. Focusing on a total instead of individual lifts also helped me think about lifting strategically instead of desperately trying to PR everything, even though I did that too. This was a major mental PR. Also I have not gone 3/3 on squats since 2018. I am extremely grateful for my friends who came out to watch my meet even though it was just me lifting, and for my friend that stepped up to handle me when I asked for help. I like my powerlifting crew a lot. \n\n*What I wish I did differently*\n\nI wish I’d fueled a little better between squats and bench because I think my back was tired and shaky, but the deadlifts moved so well after eating that I see it was a fuel problem. Then I could have gone all out on my third deadlift. That is a very minor thing though.\n\n*What’s next*\n\nNothing! Whatever the next meet on my timeline is, that is what I will do. My next goal is to total 410, and force my squats to be consistent enough that I can actually talk about big numbers when planning attempts instead making a plan for how to not bomb out.",
+        "sourceLink": "https://www.reddit.com/r/powerlifting/comments/17u04n5/meet_report_dt_strength_throwdown_kirkland_wa_400/",
+        "permaLink": "https://www.reddit.com/r/powerlifting/comments/17u04n5/meet_report_dt_strength_throwdown_kirkland_wa_400/"
+      }
+    },
+    {
+      "category": "powerlifting",
+      "data": {
+        "title": "Every Second-Daily Thread - November 13, 2023",
+        "user": "AutoModerator",
+        "score": 6,
+        "selfText": "A sorta kinda daily open thread to use as an alternative to posting on the main board. You should post here for:\n\n* PRs\n* Formchecks\n*  Rudimentary discussion or questions\n* General conversation with other users\n* Memes, funnies, and general bollocks not appropriate to the main board\n* If you have suggestions for the subreddit, let us know!\n* This thread now defaults to \"new\" sorting.\n\n**For the purpose of fairness across timezones this thread works on a 44hr cycle.**",
+        "sourceLink": "https://www.reddit.com/r/powerlifting/comments/17u88ww/every_seconddaily_thread_november_13_2023/",
+        "permaLink": "https://www.reddit.com/r/powerlifting/comments/17u88ww/every_seconddaily_thread_november_13_2023/"
+      }
+    },
+    {
+      "category": "powerlifting",
+      "data": {
+        "title": "Weekly Dumb/Newb Question Thread",
         "user": "AutoModerator",
         "score": 10,
-        "selfText": "What have you been working on recently? Feel free to share updates on projects you're working on, brag about any major milestones you've hit, grouse about a challenge you've ran into recently... Any sort of \"progress report\" is fair game!\n\nA few requests:\n\n1. If possible, include a link to your source code when sharing a project update. That way, others can learn from your work!\n\n2. If you've shared something, try commenting on at least one other update -- ask a question, give feedback, compliment something cool... We encourage discussion!\n\n3. If you don't consider yourself to be a beginner, include about how many years of experience you have.\n\nThis thread will remained stickied over the weekend. [Link to past threads here](https://www.reddit.com/r/learnprogramming/search?q=%22What+have+you+been+working+on+recently%3F%22&amp;sort=new&amp;restrict_sr=on).",
-        "sourceLink": "https://www.reddit.com/r/learnprogramming/comments/17snbja/what_have_you_been_working_on_recently_november/",
-        "permaLink": "https://www.reddit.com/r/learnprogramming/comments/17snbja/what_have_you_been_working_on_recently_november/"
+        "selfText": "**Do you have a question and are:**\n\n* **A novice and basically clueless by default?**\n* **Completely incapable of using google?**\n* **Just feeling plain stupid today and need shit explained like you're 5?**\n\n**Then this is the thread FOR YOU!** Don't take up valuable space on the front page and annoy the mods, ASK IT HERE and one of our resident \"experts\" will try and answer it. As long as it's somehow related to powerlifting then nothing is too generic, too stupid, too awful, too obvious or too repetitive. And don't be shy, we don't bite (unless we're hungry), and no one will judge you because everyone had to start somewhere and we're more than happy to help newbie lifters out.\n\n# SO FIRE AWAY WITH YOUR DUMBNESS!!!",
+        "sourceLink": "https://www.reddit.com/r/powerlifting/comments/17u0346/weekly_dumbnewb_question_thread/",
+        "permaLink": "https://www.reddit.com/r/powerlifting/comments/17u0346/weekly_dumbnewb_question_thread/"
       }
     },
     {
-      "category": "learnprogramming",
+      "category": "powerlifting",
       "data": {
-        "title": "Where does C#/.NET shine and has it's disadvantages?",
-        "user": "kfmnm",
-        "score": 22,
-        "selfText": "&amp;#x200B;\n\nMy background: I'm working as an apprentice mainly using JavaScript (front-/backend and some html/css) for almost a year now. Before that I did a java course to try out if programming was my thing, got to basic algorithms like sorts, game of life, creating a bingo sheet with user input. I also have a basic understanding of SQL and NoSQL.\n\n&amp;#x200B;\n\nFor a while now I have been feeling the desire to pick up another language. It should be type safe and have the potential to pick some deeper concepts and understanding of programming languages in general on the go, so i get to know more behind the scenes stuff (which i don't feel so much in JavaScript than maybe with Java) also in order to make picking up other languages in the future easier, if required.\n\nIt should also be a potentially strong backend language.\n\nAlthough i'm not planning on changing my job anytime soon, it should also be in strong demand on the market. It's just nice to know what you're doing is not just for fun/understanding but also increases my value for potential employers.\n\n&amp;#x200B;\n\nConsidering all of this, there seem to be two languages left: Java and C# (C# is surprisingly popular in my area, also the tech stack for C# jobs tends to not involve as many other technologies as java).\n\nI'm feeling pretty ready to dive into C# but theres still this question that's bugging my mind:As it's a hobby for now: Where does C# shine? Where can i gain motivation and fun by thinking \"this will come in so handy when building xy\"? (Similar to quick and simple in python, fast in C++, universal/scalable in java, frontend/web in javascript and so on)\n\n&amp;#x200B;\n\nThanks in advance for your replies and input.\n\n&amp;#x200B;\n\nP.S. of course i tried googling but i failed finding a common consensus on this as clear as for other languages\n\n&amp;#x200B;\n\nEdit: Not into game dev as of now",
-        "sourceLink": "https://www.reddit.com/r/learnprogramming/comments/17whx5j/where_does_cnet_shine_and_has_its_disadvantages/",
-        "permaLink": "https://www.reddit.com/r/learnprogramming/comments/17whx5j/where_does_cnet_shine_and_has_its_disadvantages/"
+        "title": "Powerlifting Victory Thread",
+        "user": "AutoModerator",
+        "score": 5,
+        "selfText": " \n\nThis is the thread to post your:\n\n* Powerlifting accomplishments\n* Training PRs\n* Gym or diet related victories\n* Best flexing photos\n* Sweet new equipment purchases\n* Gym dog or gym family photos\n\nOr really anything you felt good or happy about from the last week (or even further back in time, no one's gonna stop you).\n\nText, images, videos, any format goes.\n\nLet's get those good vibes flowing.",
+        "sourceLink": "https://www.reddit.com/r/powerlifting/comments/17titkq/powerlifting_victory_thread/",
+        "permaLink": "https://www.reddit.com/r/powerlifting/comments/17titkq/powerlifting_victory_thread/"
       }
     },
     {
-      "category": "learnprogramming",
+      "category": "powerlifting",
       "data": {
-        "title": "Where should I start: CS50 Harvard or learning a programming language?",
-        "user": "Floorwriter",
-        "score": 9,
-        "selfText": "Context: I’m a college student in a 3rd world country learning Java in a cheap college where lectures are dull, boring, and extremely slow.\n\nI want to approach programming as efficiently as I possibly can, and that meant crawling in the trenches of building a proper foundation of ”what” programming is, and its different applications. I am torn between learning the fundamentals of Java or CS50 by Harvard. Which one benefits me the most in the long run?\n\nmost importantly, what are your experiences in learning CS50 by Harvard and how did it benefit your progress moving forward as a programmer?",
-        "sourceLink": "https://www.reddit.com/r/learnprogramming/comments/17wna1k/where_should_i_start_cs50_harvard_or_learning_a/",
-        "permaLink": "https://www.reddit.com/r/learnprogramming/comments/17wna1k/where_should_i_start_cs50_harvard_or_learning_a/"
+        "title": "(Almost) One cycle of GZCL The Rippler [Program Review]",
+        "user": "omnptnt",
+        "score": 36,
+        "selfText": "Starting with the usual stats:\n\n&amp;#x200B;\n\n||Starting Stats|Week 8 (AMRAP after 8 singles at the same weight)|Week 10|\n|:-|:-|:-|:-|\n|Age|33|33|33|\n|Height|182cm|182cm|182cm|\n|Weight|91-92kg|91-92kg|91-92kg|\n|Squat|135kg x 2|130kg x 6|137kg x 3|\n|Bench Press|100kg x 2|102kg x 4|102kg x 3|\n|Deadlift|125kg x 3|120kg x 10|125kg x 6|\n|Lovely daughter|0|0|1|\n\n&amp;#x200B;\n\nSo let me preface this by stating that I cut the program short, 11th week is supposed to be a deload week and the 12th week is supposed to be a 1RM test week.\n\nMy lovely newborn daughter decided to come just slightly a bit earlier than expected (just before Week 10 of the program), so I decided not to continue with Weeks 11 and 12 as Week 10 was already done with loads of fatigue due to sleep deprivation.\n\nFor those familiar with the program, Week 8 is the one with the highest accumulated volume at the highest intensity (8 singles @ 97.5% and an AMRAP 9th set). It is worth noting that my performance at the final 1+ set of that week was better than my performance of Week 10, which leaves me with a lot to be desired...\n\nBefore starting The Rippler I was on holidays for 3 weeks and I was doing 531 SSL just to maintain strength and before that I did Candito's 6 week program which gave me good results.\n\n&amp;#x200B;\n\nMy program was as follows:\n\nMonday: T1 Squat, T2 Squat, T3a Single-leg weighted hyperextensions, T3b Leg curls/Leg extensions, T3c Calves work\n\nTuesday: T1 Bench press, T2a Bench press, T2b Incline DB press/Chins, T3a DB curls/DB French press, T3b Ab work\n\nThursday: T1 Deadlift, T2a Deadlift, T2b Reverse BB lunges, T3a GHR/Leg extensions, T3b Calves work\n\nFriday:  T1 CGBP, T2a CGBP, T2b Incline DB press/Chins, T3a DB hammers/Overhead cable tricep extensions, T3b Ab work\n\n&amp;#x200B;\n\nDuring previous programs that I've followed I didn't use OHP neither and exchanged it for CGBP, reason is that I'm still working on my overhead mobility.\n\nCody says that T2 should be variations of T1, or use the same movement if technique needs to be honed in. I consider myself an early intermediate lifter, so I decided to make T2 the same as T1 in order to improve my technique. Next time I'll be running The Rippler again, I'll probably use the variation method and see where it gets me.\n\n&amp;#x200B;\n\nWhile running The Rippler I could feel that weights in high intensities were feeling considerably lighter than before, and on +sets I was always hitting PRs. Another important point to note is that during these 10 weeks I did not experience any joint pain, while usually I'm quite prone to left quadricep tendon inflammations.\n\nI loved the program and I loved the higher intensity work it put me through, I enjoyed the undulating progression, I would surely follow it again. Cody has done an amazing job at providing the community all these years with such valuable, high quality information.\n\nAs I said earlier, I'll never know what my real RM would be during the 12th Week but that's okay. I'll use Week's 10 numbers which better depict my current fatigued state in order to continue with another percentage-based program or something like GZCL General Gainz which is RPE based and will suit my current life better, or something with even less volume like a minimum effective training dose approach.\n\n&amp;#x200B;\n\n&amp;#x200B;",
+        "sourceLink": "https://www.reddit.com/r/powerlifting/comments/17syji8/almost_one_cycle_of_gzcl_the_rippler_program/",
+        "permaLink": "https://www.reddit.com/r/powerlifting/comments/17syji8/almost_one_cycle_of_gzcl_the_rippler_program/"
       }
     },
     {
-      "category": "learnprogramming",
+      "category": "powerlifting",
       "data": {
-        "title": "CS degree usefulness?",
-        "user": "Important_Floor_7126",
-        "score": 81,
-        "selfText": "Have friends that did the CS degree and others learned online themselves. What’s the overall consensus on this? Personally, when I went to university I thought a bunch of classes were kinda pointless and a money grab (Although I didn’t do a CS degree). ",
-        "sourceLink": "https://www.reddit.com/r/learnprogramming/comments/17w6bws/cs_degree_usefulness/",
-        "permaLink": "https://www.reddit.com/r/learnprogramming/comments/17w6bws/cs_degree_usefulness/"
+        "title": "[Meet Report] WRPF North State Barbell Open (520kg @80.4)",
+        "user": "nespinola24",
+        "score": 38,
+        "selfText": "Overview\n\nLast weekend, 11/4/23, I (24 year old male) competed at the North State Barbell Open in Chico, CA. I totaled 520/1146 at a body weight of 80.4/177.3. My best lifts were: squat-170/374.8, bench-130/286.6, deadlift-220-485. This was my first meet since last September, my first WRPF meet, and by far my the best meet I’ve ever had as far as performance goes. The credit for the performance goes to my coach, Dr. Dave Osborn who get me set up perfectly to perform well at the meet and my wife who coached me on meet day and did a spectacular job. \n\nTraining\n\nI’ve been working with Dr. Dave Osborn now since November of 2021 and have been making strides since then. This spring, due to a busy schedule in my personal life, we switched from training 4 days a week to 3. With the 3 day training set up, I train two SBD days split up by an accessory day. On day 1, I train main squat and bench as well as conventional deadlift as a secondary deadlift movement. Day 2 is only accessory movements. Then, day 3 is main deadlift followed by a secondary bench, then hibar squat. Early on, the secondary bench was pause Larsen press, but later transitioned to pause close grip bench. \n\nThis training set up has proven to be my favorite way to train by far. I’ve found training two SBD days a week to be so much fun, but also great for my strength, conditioning for meet day, as well as practicing my execution of heavy competition lifts. \n\nThis summer is when I was able to dial in my training and recovery. I have summers off of work so planning a late fall meet gave me the opportunity to train hard over the summer and realize that work at the end of the fall. Just about every week I was setting new rep PRs all summer which gave me a huge confidence boost. \n\n6 weeks out, I took singles at RPE 9 and walked away with a 10 lb PR each for squat, bench, and deadlift at 370/285/485. 5 weeks out was a deload week, followed by a reload singles week 4 weeks out at 315/245/415. Then, 3 weeks out I took singles that were intended to be above a 2nd attempt, but below a 3rd. That week I went 360/275/465. 2 weeks out I took opener singles at 335/255/435. The week of the meet I took singles at 60% with some low intensity accessories. \n\nWeigh Ins\n\nSince WRPF has day before weigh ins, I traveled to Chico on Thursday, 11/2 after work. Then Friday morning I went to weigh in. There were no surprises at weigh ins. I came in at 80.4 which was on the lighter side of what I’ve been weighing for the past few weeks. \n\nAfter weigh ins, I made sure that I got around and moved throughout the day so that when it came time to going to bed I would feel like I had a full day and fall asleep easier. I have always had trouble sleeping the night before a meet. Usually it comes down to nerves, but this time I felt like I was going to sleep well. I truly wasn’t nervous about the meet at all, lots of confidence, but could not fall asleep for the life of me. I woke up feeling energized so I decided not to check my sleep data from my watch until after the meet so I wouldn’t get in my head about how it could affect my performance. I ended up getting 5.25 hours of sleep which I probably would’ve overthought and let bother me if I knew it. \n\nMeet Day\n\nSquat\n\nSquats were being done with a squat bar and monolift so I made sure to warmup on the only mono and squat bar in the warmup area, even though I walked my squats out. Warmups felt exactly as I planned. All my squats moved as normally and I felt great going into my opener. \n\nI opened at 152.5/336.1 and hit it comfortably. My wife wanted to call a 12.5 kg jump to 165 and I knew that would be a great jump. For my 2nd attempt at 165/363.8, without thinking, I sunk the squat deeper than I needed to and coming out of the hole I moved slower than I would have liked. I had good acceleration into lockout afterward but the slower squat made my wife call a more conservative jump for the 3rd attempt. I took 170/374.8 for my 3rd squat, got the depth figured out and hit it better than my 2nd attempt. All in all I was happy that I had gone 3/3 with a small PR on squat and was well on my way to building a great total.  \n\nBench \n\nAll the SBD training during meet prep had me ready to roll right into bench without any problem. My energy levels felt great and it showed during warmups. Everything had great speed and I was able to go into bench with a lot of confidence. \n\nI took 115/253.5 as a speedy opener. I’ve made the mistake of making too big of jumps before so my wife kept me at 7.5 kg jumps. My 2nd bench at 122.5/270.1 moved very comfortably and exactly how I needed it to move to take my goal 3rd attempt of 130/286.6. I felt great going into my 3rd and took it to my chest well but pressing off was a challenge. I came off with good speed, but my right tricep slowed down a bit which worried me that I might have had downward movement, but I locked out and got three whites for a good lift and a small bench PR and a 600kg subtotal. \n\nDeadlift \n\nBench had brought a bit of fatigue and tightness to my upper back and I wasn’t sure how that would play out for deadlift. Warmups for deadlift were chaotic. There were only two deadlift platforms and most the lifters in my flight, including myself, wanted to use the Texas DL bar to warmup but got a late start due to a lifter in the flight ahead of us still needing to take their last warmup. I finished my warmup earlier than I had planned to give the rest of the lifters time to get theirs in since I was one of the lightest pullers in the flight. \n\nI opened at 197.5/435.4 and hit it with speed. The bar on the platform was a Kabuki DL bar, but it didn’t affect my pulls negatively. We jumped to 210/463 for an aggressive 2nd attempt and I hit it with enough room in the tank to take my maximum allotted 3rd of 220/485 and finish it out better than I did in training. It was a great way to cap off a 9/9 day and a great meet. \n\nTLDR: I went 9/9 totaling 520kg (a 47.5 kg meet PR) at 80.4 kg for the best meet I’ve ever had. \n\nHere’s a link to all the lifts from the day- https://photos.app.goo.gl/EMBQtqqQCcdrNNCY9 \n\nHere’s a link to my Instagram recap with only my 3rd attempts- https://www.instagram.com/p/CzP1ecVrIcR7MgKMXxQ5hrAwXjWetlhQz-BiE00/?igshid=MTljbWpuNmh3YjVr",
+        "sourceLink": "https://www.reddit.com/r/powerlifting/comments/17sq5uh/meet_report_wrpf_north_state_barbell_open_520kg/",
+        "permaLink": "https://www.reddit.com/r/powerlifting/comments/17sq5uh/meet_report_wrpf_north_state_barbell_open_520kg/"
       }
     },
     {
-      "category": "learnprogramming",
+      "category": "powerlifting",
       "data": {
-        "title": "Has anyone here ever dropped out of an online boot camp?",
-        "user": "cur_learner",
-        "score": 7,
-        "selfText": "I see  very valuable reviews about recommended programs, but I actually want to raise a less common question - **who here has ever dropped out of an online boot camp and can share their experience with me?**  \nI'll greatly appreciate if you can comment or send me a dm.  \nI’m conducting a small research about difficulties people face during online programs and would appreciate any sharing and thoughts in a completely anonymous way.   \nSince this is somewhat sensitive question, which people are not in a hurry to note out on their LinkedIn profile, I'm struggling to find an informants who can shed a little bit light on this subject, and will thank you for any help.",
-        "sourceLink": "https://www.reddit.com/r/learnprogramming/comments/17wkei7/has_anyone_here_ever_dropped_out_of_an_online/",
-        "permaLink": "https://www.reddit.com/r/learnprogramming/comments/17wkei7/has_anyone_here_ever_dropped_out_of_an_online/"
-      }
-    },
-    {
-      "category": "learnprogramming",
-      "data": {
-        "title": "What to learn first?",
-        "user": "um2spiicy",
-        "score": 4,
-        "selfText": "I am a freshman college student, and we're currently learning c++ as our first language. What language do you think I should advance study that will be useful as a beginner?",
-        "sourceLink": "https://www.reddit.com/r/learnprogramming/comments/17wp5x3/what_to_learn_first/",
-        "permaLink": "https://www.reddit.com/r/learnprogramming/comments/17wp5x3/what_to_learn_first/"
-      }
-    },
-    {
-      "category": "learnprogramming",
-      "data": {
-        "title": "Should I forget about doing a conversion course in masters of computer science if I found cs50 hard?",
-        "user": "DonRaffeone",
-        "score": 2,
-        "selfText": "I apologise in advance if I've broken any rules of the subreddit. Currently I'm deciding whether or not I should pursue an online conversion masters of computer science. I did a bit of cs50 and I found the tasks to be quite difficult though I understood the lectures perfectly, I quit as it was a bit hard to juggle both work and CS50. Now that I am out of work and have enough money saved up to continue my studies, I would like to pursue Computer Science seriously.  \n\n\nI would also like to know if Online Masters degree in Computer Science holds much weight and if I could get a job with this degree.  \n\n\nI would love to hear your inputs on this matter.",
-        "sourceLink": "https://www.reddit.com/r/learnprogramming/comments/17wrpxw/should_i_forget_about_doing_a_conversion_course/",
-        "permaLink": "https://www.reddit.com/r/learnprogramming/comments/17wrpxw/should_i_forget_about_doing_a_conversion_course/"
-      }
-    },
-    {
-      "category": "learnprogramming",
-      "data": {
-        "title": "What do python users use for visuals",
-        "user": "UpbeatBoard5763",
-        "score": 4,
-        "selfText": "I'm interested in creating a little game in python, like I've done in visual basic, that includes a GUI. I was wondering what people use to create a GUI on python",
-        "sourceLink": "https://www.reddit.com/r/learnprogramming/comments/17wltap/what_do_python_users_use_for_visuals/",
-        "permaLink": "https://www.reddit.com/r/learnprogramming/comments/17wltap/what_do_python_users_use_for_visuals/"
-      }
-    },
-    {
-      "category": "learnprogramming",
-      "data": {
-        "title": "How to close off security loopholes in networking?",
-        "user": "Rishabh_0507",
-        "score": 2,
-        "selfText": "I am looking to develop a peer to peer live stream in python. For now it is a pretty simple code where I open a socket on sender's end and host the live stream over the internet. But how would I close off the security loopholes in this case? For example any one with the IP address could access the video stream. Should I have a encryption algorithm? If yes, then what kind of algorithm? \n\nApart from that, what kind of compression algorithm should I use?  I know Youtube uses less bandwidth by simply not changing pixels that remain constant through frames. That kind of stuff? \n\nI could use a few pointers in the correct directions as I am new to networking and stuff.",
-        "sourceLink": "https://www.reddit.com/r/learnprogramming/comments/17wpucy/how_to_close_off_security_loopholes_in_networking/",
-        "permaLink": "https://www.reddit.com/r/learnprogramming/comments/17wpucy/how_to_close_off_security_loopholes_in_networking/"
-      }
-    },
-    {
-      "category": "learnprogramming",
-      "data": {
-        "title": "Am I ready for a job?",
-        "user": "Last_Housing_3463",
-        "score": 19,
-        "selfText": "https://johndunking.github.io/jduncan-portfolio/#/ \n\nHere is a link to my portfolio which also has a link to my github. I am looking for advice on next steps. Should I work on more projects any in specific which focus on specific skills. I am currently a teacher looking to switch to software engineering and have been focusing on javascript and react. Any and all feedback and constructive criticism is welcome!",
-        "sourceLink": "https://www.reddit.com/r/learnprogramming/comments/17wbud1/am_i_ready_for_a_job/",
-        "permaLink": "https://www.reddit.com/r/learnprogramming/comments/17wbud1/am_i_ready_for_a_job/"
-      }
-    },
-    {
-      "category": "learnprogramming",
-      "data": {
-        "title": "I really like games that are like programming. Is this a sign that I would enjoy programming as a career?",
-        "user": "DrasticBread",
-        "score": 43,
-        "selfText": "(Edit: You folks are awesome, thanks for all the great advice and support. I've got enough recommendations from this post to keep me busy for quite awhile now. I salute you all, it's much appreciated.)\n\nBesides the title, I am 35 and don't have a college degree. In recent years, I've been really into playing games like Factorio and Dyson Sphere Program that, according to a lot of programmers who play, are a lot like programming. The way these games put my brain in a problem-solving mode can keep me glued to the desk for hours on end, and I'm beginning to think that it's likely I would feel a similar way about programming.\n\nToday, I did a free class on Python syntax, and finishing the review at the end felt just like I was building my first factory in one of these games. ~~Now I'm thinking of pulling the trigger on a subscription for Codeacademy~~, (edit: I moved on from this thanks partly to you folks, but mostly because I found out even the stuff marked \"free\" there is paywalled), but I thought it would be good to collect some outside input from people who actually do it for a living.",
-        "sourceLink": "https://www.reddit.com/r/learnprogramming/comments/17w5i6t/i_really_like_games_that_are_like_programming_is/",
-        "permaLink": "https://www.reddit.com/r/learnprogramming/comments/17w5i6t/i_really_like_games_that_are_like_programming_is/"
-      }
-    },
-    {
-      "category": "learnprogramming",
-      "data": {
-        "title": "I am in a bad CS program.",
-        "user": "Adorable_Simple465",
-        "score": 3,
-        "selfText": "NCC EDU sells curriculum to colleges in third world countries. Students from those colleges pay exam fees and sit for NCC EDU diploma tests.\n\nI am a student at one of those colleges. I am studying Level 4 Diploma in Computing.\n\nThis Diploma did not start with a couse in programming. Practically every CS Year 1 starts with a programming course.\n\nThe Computer Systems class seems to be a watered-down version of Comptia A+. There is not even a bit of system programming in that course. And the coursework I have to do has a very far-fetched task. I am supposed to write a report to a CEO about updating IT infrastructure of the entire company. It looks very much like bullshit (sorry if I am impolite) consulting task. Moreover, other tasks don't go deep into computer system theory (the curticulum itself has shallow computer system theory and practice).\n\nComputer Network class also does not have any programming tasks. NCC does not teach typical system programming languages like C. It is as shallow as Computer System class. The class has little to no practical lab tasks.\n\nSkills for Computing class also has far-fetched tasks but its teaching materials and curriculum provided by NCC is too lightweight. It does not explain theories behind the formulae very well. The presentation slides provided by NCC gives formulae and example problems for using those formulae. Other parts of SfC are about so-called problem solving. But instead of teaching about real problem solving useful for future programmers , NCC teaches us how to do consulting (not always about IT) tasks for business owners. Wishy-washy corporate speak is the worst of all. There are several project management acronyms but no deep discussions about project management.\n\nThe next class is Database class and I haven't learnt programming. This class also focuses on consultant tasks that are too far-fetched. I am supposed to design an entire database system for a business and the course material doesn't get deep into a database system like MySQL or PostgreSQL or database theory. I must remind you that this class lasted only a month (four days a week). \n\nThe worst thing about the NCC programme is teaching algorithms before teaching programming. I am now taking algorithms class even though I haven't taken a class in programming. It is unbelieveable.\n\nNCC provides presentation slides as course materials. They can't go really deep into theory and practice. The teacher who taught computer system and computer networking class has little programming experience and a former network engineer in industry for only a few years. He doesn't seem to understand the course materials. Maybe it is because of his English. Maybe he doesn't understand the technical content. I don't know.\n\nThe entire programme from Level 4 to 6 (level 6 is a top-up degree at affiliated UK university) does not has compiler course, data structure class, system programming, usability and ui/ux, operating systems, data science and machine learning courses.\n\nIt seems like I will have to learn everything I need to know about Computer Science and Software Engineering on my own.",
-        "sourceLink": "https://www.reddit.com/r/learnprogramming/comments/17wlxgm/i_am_in_a_bad_cs_program/",
-        "permaLink": "https://www.reddit.com/r/learnprogramming/comments/17wlxgm/i_am_in_a_bad_cs_program/"
-      }
-    },
-    {
-      "category": "learnprogramming",
-      "data": {
-        "title": "Free &amp; Easy DB",
-        "user": "Longjumping-Video763",
-        "score": 2,
-        "selfText": "Hello,\r  \n\r  \nI am looking for app/site for my database. Any ideas/recommendation?\r  \n\r  \nRequirements:\r  \nFully free\r  \nMin 6 tables\r  \nFast &amp; Easy export to Excel\r  \nData queries can be done online (idealy from any website)\r  \nEasy to use (optional since its been a time working with any DB)\r  \n\r  \nI have already been looking and probably ClickUp or MongoDB should be fine for me.",
-        "sourceLink": "https://www.reddit.com/r/learnprogramming/comments/17woqd2/free_easy_db/",
-        "permaLink": "https://www.reddit.com/r/learnprogramming/comments/17woqd2/free_easy_db/"
-      }
-    },
-    {
-      "category": "learnprogramming",
-      "data": {
-        "title": "What back-end programming language to use?",
-        "user": "nasser_1498",
-        "score": 1,
-        "selfText": "In my full-stack journey, I'm about to enter the back-end world, \n\nThe [road map](https://roadmap.sh/full-stack) i follow is telling me to learn Node.js since I'm already familiar with JS.\n\n&amp;#x200B;\n\n but  I'm  Also familiar with java even better, so, Can i use java and continue?  and If so,\n\nwhat should i know (in advanced java) to move on to the next section, (witch is databases),\n\n&amp;#x200B;\n\nWhat I learnt is in the first 5 hours of this [course](https://www.youtube.com/watch?v=xk4_1vDrzzo&amp;t=14950s), Thank you :D\n\n&amp;#x200B;",
-        "sourceLink": "https://www.reddit.com/r/learnprogramming/comments/17wsvkq/what_backend_programming_language_to_use/",
-        "permaLink": "https://www.reddit.com/r/learnprogramming/comments/17wsvkq/what_backend_programming_language_to_use/"
-      }
-    },
-    {
-      "category": "cscareerquestions",
-      "data": {
-        "title": "Interview Discussion - November 16, 2023",
-        "user": "CSCQMods",
-        "score": 1,
-        "selfText": "Please use this thread to have discussions about interviews, interviewing, and interview prep. Posts focusing solely on interviews created outside of this thread will probably be removed.\n        \nAbide by the rules, don't be a jerk.\n        \nThis thread is posted each **Monday and Thursday at midnight PST**. Previous Interview Discussion threads can be found [here](https://www.reddit.com/r/cscareerquestions/search?q=Interview+Discussion&amp;restrict_sr=on&amp;sort=new&amp;t=all).",
-        "sourceLink": "https://www.reddit.com/r/cscareerquestions/comments/17whk8l/interview_discussion_november_16_2023/",
-        "permaLink": "https://www.reddit.com/r/cscareerquestions/comments/17whk8l/interview_discussion_november_16_2023/"
-      }
-    },
-    {
-      "category": "cscareerquestions",
-      "data": {
-        "title": "Daily Chat Thread - November 16, 2023",
-        "user": "CSCQMods",
-        "score": 1,
-        "selfText": "Please use this thread to chat, have casual discussions, and ask casual questions. Moderation will be light, but don't be a jerk.\n\nThis thread is posted **every day at midnight PST**. Previous Daily Chat Threads can be found [here](https://www.reddit.com/r/cscareerquestions/search?q=Daily+Chat+Thread&amp;restrict_sr=on&amp;sort=new&amp;t=all).",
-        "sourceLink": "https://www.reddit.com/r/cscareerquestions/comments/17whlm4/daily_chat_thread_november_16_2023/",
-        "permaLink": "https://www.reddit.com/r/cscareerquestions/comments/17whlm4/daily_chat_thread_november_16_2023/"
-      }
-    },
-    {
-      "category": "cscareerquestions",
-      "data": {
-        "title": "If you think \"Getting good\" is enough.",
-        "user": "jsveyfjc",
-        "score": 61,
-        "selfText": "I just went through interviews 6 different companies in which I answered all the questions in details (and correctly of course). These are results for each company:\n\n\\- there was somebody else who also answered all questions, so they had to choose randomly (of course not me)  \n\\- there was somebody with more YOE  \n\\- I don't have social media so it's suspicious  \n\\- I sounded more like a manager, instead of a developer (lol)  \n\\- the spot was filled before the interview and the interviewer didn't know about that  \n\\- the client put the job on hold\n\nAt this point even recruiters are sorry for me (and for themselves for not making money when their candidate answered the questions). It's very discouraging that you can do everything right and still not get the job for things outside your control. All I can do is to answer the questions well enough and not have somebody with a decade in the field trying to get a job too.\n\nIt does not matter if you're good or not, you can be even terrible and as long as you're the best available candidate, they will take you.",
-        "sourceLink": "https://www.reddit.com/r/cscareerquestions/comments/17wo2am/if_you_think_getting_good_is_enough/",
-        "permaLink": "https://www.reddit.com/r/cscareerquestions/comments/17wo2am/if_you_think_getting_good_is_enough/"
-      }
-    },
-    {
-      "category": "cscareerquestions",
-      "data": {
-        "title": "Better think twice before you accept take home assignment.",
-        "user": "Hot-Entry-007",
-        "score": 667,
-        "selfText": "I want to warn candidates about this company. Over 100 applications were posted on Linkedin. Like most, I was also sent a take-home assignment. It was strange that the task involved very specific use cases related to the insurance industry. So, from the beginning, everything smelled like a request for free work. Nonetheless, I spent two days working on the task, which was a C# backend API.\r  \n\r  \nToday, I received a response that I was not selected, probably because they got what they were looking for.\r  \n\r  \nWell, this way, they will get even more. I advise everyone to bypass the company CoverGo.com. And if you still want to do free work for them, here is the type of assignment they ask you to do, together with my solution.\r  \nhttps://github.com/jalle007/CoverGo",
-        "sourceLink": "https://www.reddit.com/r/cscareerquestions/comments/17w8t4o/better_think_twice_before_you_accept_take_home/",
-        "permaLink": "https://www.reddit.com/r/cscareerquestions/comments/17w8t4o/better_think_twice_before_you_accept_take_home/"
-      }
-    },
-    {
-      "category": "cscareerquestions",
-      "data": {
-        "title": "Stagnating salary",
-        "user": "rental_car_abuse",
-        "score": 40,
-        "selfText": "Is it normal that you work in a big company as a software developer and the salary remains the same for 3rd year in a row?\n\nBecause of the rising inflation, I actually earn less than when I joined.",
-        "sourceLink": "https://www.reddit.com/r/cscareerquestions/comments/17wobjd/stagnating_salary/",
-        "permaLink": "https://www.reddit.com/r/cscareerquestions/comments/17wobjd/stagnating_salary/"
-      }
-    },
-    {
-      "category": "cscareerquestions",
-      "data": {
-        "title": "5 YOE recently laid off and feeling hopeless/lost",
-        "user": "meatball_parm",
-        "score": 40,
-        "selfText": "Like the title says, I was laid off a couple weeks ago with 5.5 YOE as a Frontend leaning Fullstack Dev.  I’ve been applying like crazy, mostly getting rejections or ghosted.  I made it to a technical round and got eliminated on some minor details, being told that it was a strong submission but the bar is super high because of how many candidates they have.\n\nI know it’s the end of the year, but I’m starting to lose hope I’ll find something ever… let alone in the next 3 months.  I’ve been messaging hiring managers when I can, reaching out to old colleagues, but nothing so far.  My days are basically spent applying to jobs and coding personal projects to keep my chops up.  \n\nIs there anything else I should do/try doing to improve my situation?  And for anyone else in the same situation or who has been there… how do you keep your hopes/confidence alive?\n\nSorry if something like this was already posted, and thanks in advance for any advice",
-        "sourceLink": "https://www.reddit.com/r/cscareerquestions/comments/17wlc4n/5_yoe_recently_laid_off_and_feeling_hopelesslost/",
-        "permaLink": "https://www.reddit.com/r/cscareerquestions/comments/17wlc4n/5_yoe_recently_laid_off_and_feeling_hopelesslost/"
-      }
-    },
-    {
-      "category": "cscareerquestions",
-      "data": {
-        "title": "How long does \"I am still new, so cut me some slack when I mess up in basic ways\" hold up for.",
-        "user": "JustAPrinny",
-        "score": 143,
-        "selfText": "Basic context, been coding/deving as a hobby for close to 4 years for myself.\n\nRecently landed a position working on a companies project. Things are going well, but I have been working here for over 6 months now and I am wondering, at what point is \"Well, bad fuck ups are expected, I am still new\" a really poor excuse. Cause damn I still fuck up alot \n\nAny thoughts are appreciated, just curious where people stand on that.",
-        "sourceLink": "https://www.reddit.com/r/cscareerquestions/comments/17wd0wf/how_long_does_i_am_still_new_so_cut_me_some_slack/",
-        "permaLink": "https://www.reddit.com/r/cscareerquestions/comments/17wd0wf/how_long_does_i_am_still_new_so_cut_me_some_slack/"
-      }
-    },
-    {
-      "category": "cscareerquestions",
-      "data": {
-        "title": "Is coding always so mentally draining?",
-        "user": "PyJacker16",
-        "score": 422,
-        "selfText": "So I've been working as a full stack developer intern for the last four months, and it's been a grueling journey for the most part. On a very productive day I spend about 6 hours coding, yet other times I can barely muster up to 3.\n\nI'm working on the frontend for the most part, so I've been writing React code. It's very tedious, and always feels so \"hacky\". And for me, whose favourite hobby is Leetcode/competitive programming, it's very boring as well.\n\nSo I wanted to ask: do you find your day jobs equally tedious? If so, how do you cope? And what would you recommend that I do to motivate myself more and be more productive?",
-        "sourceLink": "https://www.reddit.com/r/cscareerquestions/comments/17w0q60/is_coding_always_so_mentally_draining/",
-        "permaLink": "https://www.reddit.com/r/cscareerquestions/comments/17w0q60/is_coding_always_so_mentally_draining/"
-      }
-    },
-    {
-      "category": "cscareerquestions",
-      "data": {
-        "title": "Why do recruiters think I care about a company's status in the stock market?",
-        "user": "yopp_son",
-        "score": 233,
-        "selfText": "They always say something like \"market leader worth x-billion dollars.\" I literally don't give a fuck lol. How much are they going to pay ME?",
-        "sourceLink": "https://www.reddit.com/r/cscareerquestions/comments/17w1v32/why_do_recruiters_think_i_care_about_a_companys/",
-        "permaLink": "https://www.reddit.com/r/cscareerquestions/comments/17w1v32/why_do_recruiters_think_i_care_about_a_companys/"
-      }
-    },
-    {
-      "category": "cscareerquestions",
-      "data": {
-        "title": "Stress",
-        "user": "BojangleChicken",
-        "score": 13,
-        "selfText": "The only thing I can think of when I think of the word stress is my job. I realized it’s probably me being afraid of letting someone down or being fired. But I just thought it a little more deeply though. \n\nIf I let someone the down then boo-hoo some multi-billion dollar corporation’s feature doesn’t work 2 days early. \n\nAnd if I get fired, I have an emergency fund and savings to last me a while. It would probably be so relieving to not have to work my current job. I could then get a new job doing something I like again.\n\nI used to work in corporate, and switched to engineering for a consulting firm. My god I fucking hate consulting, and I loved corporate. \n\nI’m going to start looking for a new job tomorrow.\n\nAnyone else hate consulting and love corporate or have been in similar shoes? What did you do?",
-        "sourceLink": "https://www.reddit.com/r/cscareerquestions/comments/17wk8ms/stress/",
-        "permaLink": "https://www.reddit.com/r/cscareerquestions/comments/17wk8ms/stress/"
-      }
-    },
-    {
-      "category": "cscareerquestions",
-      "data": {
-        "title": "Will tech companies be screwed 10 years down the line when they need a slew of senior devs but no one is senior level because no one offered jobs to juniors?",
-        "user": "Twilight_Scratch",
-        "score": 595,
-        "selfText": "Title.",
-        "sourceLink": "https://www.reddit.com/r/cscareerquestions/comments/17vu3tf/will_tech_companies_be_screwed_10_years_down_the/",
-        "permaLink": "https://www.reddit.com/r/cscareerquestions/comments/17vu3tf/will_tech_companies_be_screwed_10_years_down_the/"
-      }
-    },
-    {
-      "category": "cscareerquestions",
-      "data": {
-        "title": "Team culture vs stack: which one is more important when choosing a job?",
-        "user": "jesseparks13",
-        "score": 10,
-        "selfText": "When you are choosing a job, would you prioritize culture or stack?\n\nFor example, company A works with the stack you want but gives bad vibes, and company B gives super good vibes but has a stack you aren’t keen about, how would you choose?\n\nAs a fresh grad, I’m inching toward good vibes over good stack. One company with the stack I want has a team lead who comes off as very anti-social and slightly rude, so I’m concerned about working with him in the long run. Not that I want to judge someone through a short interaction, but committing to work for a company is a big deal and I can’t stand the risk of being supervised by someone who potentially has personality problems. He might not have said problem, but I just can’t stand the risk. \n\nPlease tell your opinions!",
-        "sourceLink": "https://www.reddit.com/r/cscareerquestions/comments/17wkcpz/team_culture_vs_stack_which_one_is_more_important/",
-        "permaLink": "https://www.reddit.com/r/cscareerquestions/comments/17wkcpz/team_culture_vs_stack_which_one_is_more_important/"
-      }
-    },
-    {
-      "category": "cscareerquestions",
-      "data": {
-        "title": "Team culture vs stack: which one is more important when choosing a job?",
-        "user": "jesseparks13",
-        "score": 10,
-        "selfText": "When you are choosing a job, would you prioritize culture or stack?\n\nFor example, company A works with the stack you want but gives bad vibes, and company B gives super good vibes but has a stack you aren’t keen about, how would you choose?\n\nAs a fresh grad, I’m inching toward good vibes over good stack. One company with the stack I want has a team lead who comes off as very anti-social and slightly rude, so I’m concerned about working with him in the long run. Not that I want to judge someone through a short interaction, but committing to work for a company is a big deal and I can’t stand the risk of being supervised by someone who potentially has personality problems. He might not have said problem, but I just can’t stand the risk. \n\nPlease tell your opinions!",
-        "sourceLink": "https://www.reddit.com/r/cscareerquestions/comments/17wkckq/team_culture_vs_stack_which_one_is_more_important/",
-        "permaLink": "https://www.reddit.com/r/cscareerquestions/comments/17wkckq/team_culture_vs_stack_which_one_is_more_important/"
-      }
-    },
-    {
-      "category": "cscareerquestions",
-      "data": {
-        "title": "I'm an unemployed SWE. Can I pivot in the Embedded Eng. space?",
-        "user": "Fralalart",
-        "score": 3,
-        "selfText": "Like others, it's a struggle to get a job. I'm a software engineer with 2 years of exp and I've been on the job hunt for 4-5 months. I recently even made a script that just auto applies me for \"Easy Apply\" job postings and still got nothing. \n\nIt's mentally stressful to apply, modify resume, and cold message people on LinkedIn. \n\nEmbedded engineering is something I've always been interested in. Even before I started job hunting. Considering the ending of 2024 is near, my brains thinking that hiring will slow down a bit till after the holidays.\n\nIs it as hard to look for Entry Level Embedded Engineering positions compared to Full Stack Dev positions?\n\nps. I'm in the US",
-        "sourceLink": "https://www.reddit.com/r/cscareerquestions/comments/17wop07/im_an_unemployed_swe_can_i_pivot_in_the_embedded/",
-        "permaLink": "https://www.reddit.com/r/cscareerquestions/comments/17wop07/im_an_unemployed_swe_can_i_pivot_in_the_embedded/"
-      }
-    },
-    {
-      "category": "cscareerquestions",
-      "data": {
-        "title": "Being assigned projects with no deadline unless I ask for it.",
-        "user": "csPromQueen",
-        "score": 3,
-        "selfText": "Hi-\n\nWondering if this is an issue other people face. Almost every dev project I have had at my job does not have a deadline attached to it. We use Jira and do sprints, tickets, etc, but I have to ask my boss and my project manager several times to get me a damn deadline.\n\nWhy? Because last summer I was working on a project that they gave no deadline for other than \"soon\"- so I thought \"soon\" meant several weeks, not a few days. They were upset about it not getting done and I made it clear that, sorry, but you did not give me a date on when this needed to be done. So I balanced it with the other things I have as responsibilities (on call stuff, analytics, etc).\n\nNow I am insistent that with any project I get, they give me a deadline. Our PM just got promoted and while I love them as a person, I can't help but feel peeved when they hardly plan out future sprints on Jira (or use Jira correctly in general) give project timelines prior to assigning project tickets, etc.\n\nI like my company and team, I just think we could do better project planning wise. The sr devs on my team get stuff done relatively quick so I am not sure if it bothers them as much. I am not a strong dev (working on it) so timelines help me pace my work out better when I balance other projects I am assigned.\n\n&amp;#x200B;",
-        "sourceLink": "https://www.reddit.com/r/cscareerquestions/comments/17wq6qx/being_assigned_projects_with_no_deadline_unless_i/",
-        "permaLink": "https://www.reddit.com/r/cscareerquestions/comments/17wq6qx/being_assigned_projects_with_no_deadline_unless_i/"
+        "title": "Every Second-Daily Thread - November 11, 2023",
+        "user": "AutoModerator",
+        "score": 8,
+        "selfText": "A sorta kinda daily open thread to use as an alternative to posting on the main board. You should post here for:\n\n* PRs\n* Formchecks\n*  Rudimentary discussion or questions\n* General conversation with other users\n* Memes, funnies, and general bollocks not appropriate to the main board\n* If you have suggestions for the subreddit, let us know!\n* This thread now defaults to \"new\" sorting.\n\n**For the purpose of fairness across timezones this thread works on a 44hr cycle.**",
+        "sourceLink": "https://www.reddit.com/r/powerlifting/comments/17sw5y0/every_seconddaily_thread_november_11_2023/",
+        "permaLink": "https://www.reddit.com/r/powerlifting/comments/17sw5y0/every_seconddaily_thread_november_11_2023/"
       }
     },
     {
@@ -842,7 +1007,7 @@
       "data": {
         "title": "Weakpoint Wednesday: Arms (Aesthetics)",
         "user": "WeightroomBot",
-        "score": 12,
+        "score": 11,
         "selfText": "# MAKING A TOP-LEVEL COMMENT WITHOUT CREDENTIALS WILL EARN A 30-DAY BAN\r\n\r\n***\r\n\r\nWelcome to the weekly installment of our Weakpoint Wednesday thread. This thread is a topic driven collective to fill the void that the more program oriented Tuesday thread has left. We will be covering a variety of topics that covers all of the strength and physique sports, as well as a few additional topics.\r\n\r\n**Today's topic of discussion: Arms (Aesthetics)**\r\n\r\n- What have you done to improve when you felt you were lagging?\r\n- What worked?\r\n- What not so much?\r\n- Where are/were you stalling?\r\n- What did you do to break the plateau?\r\n- Looking back, what would you have done differently?\r\n\r\n**Notes**\r\n\r\n- If you're a beginner, or fairly low intermediate, these threads are meant to be more of a guide for later reference. While we value your involvement on the sub, we don't want to create a culture of the blind leading the blind. Use this as a place to ask questions of the more advanced lifters that post top-level comments.\r\n- Any top level comment that does not provide credentials (preferably photos for these aesthetics WWs, but we'll also consider competition results, measurements, lifting numbers, achievements, etc.) will be removed and a temp ban issued.\r\n\r\n***\r\n\r\n[Index of ALL WWs](https://thefitness.wiki/intermediate-advanced-resources/weakpoint-wednesdays-archive/) from /u/PurpleSpengler's wiki.\r\n\r\n***\r\n\r\n**[WEAKPOINT WEDNESDAY SCHEDULE](https://docs.google.com/spreadsheets/d/1DiyXfKrMLUrF6nMzNuWvTti7mk-Ax2vw3G6oUIFRcBk/edit?usp=sharing) - Use this schedule to plan out your next contribution. :)**\r\n\r\nRoboCheers!",
         "sourceLink": "https://www.reddit.com/r/weightroom/comments/17vs58m/weakpoint_wednesday_arms_aesthetics/",
         "permaLink": "https://www.reddit.com/r/weightroom/comments/17vs58m/weakpoint_wednesday_arms_aesthetics/"
@@ -853,7 +1018,7 @@
       "data": {
         "title": "November 15 Daily Thread",
         "user": "AutoModerator",
-        "score": 6,
+        "score": 7,
         "selfText": "You should post here for:\n\n* PRs\n* General discussion or questions\n* Community conversation\n* Routine critiques\n* Form checks",
         "sourceLink": "https://www.reddit.com/r/weightroom/comments/17vm5tf/november_15_daily_thread/",
         "permaLink": "https://www.reddit.com/r/weightroom/comments/17vm5tf/november_15_daily_thread/"
@@ -875,7 +1040,7 @@
       "data": {
         "title": "November 14 Daily Thread",
         "user": "AutoModerator",
-        "score": 4,
+        "score": 5,
         "selfText": "You should post here for:\n\n* PRs\n* General discussion or questions\n* Community conversation\n* Routine critiques\n* Form checks",
         "sourceLink": "https://www.reddit.com/r/weightroom/comments/17uuthg/november_14_daily_thread/",
         "permaLink": "https://www.reddit.com/r/weightroom/comments/17uuthg/november_14_daily_thread/"
@@ -886,7 +1051,7 @@
       "data": {
         "title": "November 13 Daily Thread",
         "user": "AutoModerator",
-        "score": 4,
+        "score": 5,
         "selfText": "You should post here for:\n\n* PRs\n* General discussion or questions\n* Community conversation\n* Routine critiques\n* Form checks",
         "sourceLink": "https://www.reddit.com/r/weightroom/comments/17u3dc9/november_13_daily_thread/",
         "permaLink": "https://www.reddit.com/r/weightroom/comments/17u3dc9/november_13_daily_thread/"
@@ -897,7 +1062,7 @@
       "data": {
         "title": "[Meet Report] Unsanctioned powerlifting meet in Lakewood, CO on November 11, 2023 - M | 1205 lb at 194.2 lb | 352.85 Wilks",
         "user": "TheCrimsonGlass",
-        "score": 37,
+        "score": 39,
         "selfText": "Eyyyy long time no whatever. A few months ago, I saw my local rec department was putting on a casual meet in November, so I signed up! My last meet was in 2017, and I have definitely not been consistently training hard in the last 6 years. It's been intermittent at best. Since this was unsanctioned, they did everything in pounds. Singlets were not required, but typical USAPL rules for other attire and lifts applied.\n\n[TLDR on Instagram.](https://www.instagram.com/p/CzhBmCoA8VX/?utm_source=ig_web_copy_link&amp;igshid=MzRlODBiNWFlZA==) I went 8/9 and hit some nice PRs.\n\n**Training**\n\nEarlier in the year, I used the Stronger By Science program builder to make a program that accomplished the same general principle as Jeff Nippard's minimalism programming while doing just a bit more total volume and focusing a little harder on the big lifts (RDL instead of DL, because that's what I like if I'm not training for a comp). I used this template probably 4 months.\n\nAround 3 months out, I signed up for Stronger By Science online coaching, and I feel like that went quite well. My coach's feedback each week was great. Training was 5 days per week, and sessions typically took between 1 hour and 1.5 hours. I won't go into too much detail, but it was high frequency and high volume. It obviously worked well for me, but there were times where it was difficult to keep the schedule going between work and other commitments. I feel like this training commitment isn't one I can be on perpetually, but every now and then is manageable.\n\nI really was feeling beat up from like 5 weeks ago all the way up to 2 weeks ago. Squat was usually feeling good, but bench and deadlift were total crap shoots. The reps/RPEs I was hitting said my deadlift max should be \\~522 lb, but I failed 510 as attempted training weights multiple weeks in a row. My previous best was 505.\n\nA *fun* thing I had to deal with during this training was dislocating my shoulder twice, with the most recent occurrence last Saturday.\n\n**Diet**\n\nI use MacroFactor, so I just tracked everything on that. I was planning on competing in the 90 kg (198.4 lb) weight class, but they didn't have enough participants to have separate classes. They used Wilks to determine winners, separated by gender. I typically just kept protein between 150 and 200 grams and planned to just slowly add mass from my 194 lb starting weight to fill out the weight class. I  did a short sodium and water load starting Wednesday (I probably could have started earlier, but I didn't care that much, honestly), tried (mostly unsuccessfully) to cut sodium Thursday and Friday while also drinking \\~10 liters of water per day. I cut water intake around 5 PM Friday. I was consistently weighing 199-201 lb on my bathroom scale the last week. I weighed 197 lb on that scale the morning of the competition. I then weighed in at 194.2 lb an hour later at check in. I'm not sure where the 3 lb difference came from (maybe my scale is hot garbage?), but hey I'll take it.\n\nAfter weighing in, I at like 300 calories of Skittles and drank like 2 liters of water mixed with Propel powder and a Red Bull. I also took some Excedrin because why not. After about 40 minutes, I ate a banana. I really felt like I did a nice job getting some quick carbs in for energy then going for something a little more filling so I wouldn't be hungry. I gradually ate the remaining 400 calories of Skittles in my bag throughout the morning. I was starting to feel actively hungry after squats, so I just ate a piece of wheat bread. I also drank another Red Bull after squats and after bench.\n\nI will note that I eat a minimally-processed diet outside of protein powder and bars. The vast majority of my food is something I cook from scratch and fruits/vegetables. I also try to keep my saturated fat intake down. All that to say I believe the whole-foods-based diet contributed positively to my overall training experience and satiety.\n\nI'm not going to make a whole section for this: Sleep hygiene is not to be underestimated. I'm typically asleep by 10:00 PM and wake up naturally (no alarm) around 7:00 AM.\n\n**Squat**\n\nEverything was feeling good during warmups. I recall in 2017 having trouble warming up and getting in the groove. I blamed this on lifting during the evenings. I now lift around 11:00 AM, and I think that made a huge difference today.\n\n* 1st attempt: 375 lb. I hit this earlier this week, and it felt pretty easy, maybe RPE 7.5. This was just a super safe attempt to get on the board. My previous PR was 390. It went up fast.\n* 2nd attempt: 395 lb. This was a PR for me. I originally signed up for 390, but 375 felt almost like a warmup, so I added a bit. This also went up fast.\n* 3rd attempt: 405 lb. I contemplated going for more here, but I wanted that 4 plate PR so badly and didn't want to bite off too much and still not be there. I took the safe route. From the video, I obviously had more room there; I hardly slowed down at the sticking point at all. I'm satisfied going away with a 15 lb PR and big milestone, though.\n\n**Bench**\n\nBench has always been more worst lift. I have long arms and a history of shoulder problems. In training, I hit 265 lb on paused bench, which felt like RPE 9. I was feeling good during training one day and went for 275, but it just wouldn't budge. I then had trouble with 265 and ended up at 255 for my training weight. Bench is just so hit or miss for me. Warmups felt nice, though.\n\n* 1st attempt: 255 lb. Felt way easier than it had a couple weeks ago. Flew up.\n* 2nd attempt: 270 lb. Also felt easy. This is what I am showing in the Instagram post. Hardly felt the sticking point at all. Based on how my first attempt felt, I had considered increasing this to 275, which I kind of wish I had. My all time bench PR is 275, but my paused bench PR was 265 before this, so I'll call it a 5 lb PR.\n* 3rd attempt: 280 lb - no lift. I was SO close to hitting this. At the sticking point, my left hand just crept down like an inch. I didn't even realize it and bitched at the spotter for grabbing the bar. I then apologized after watching the video... I felt like I could have hit it if we had a 4th attempt.\n\n**Deadlift**\n\nI was still warming up when they started the first lifter. We had only 8 competitors, so that meant I was only a couple minutes away. I quickly wrapped up my warmups, which were also feeling pretty good. My leverages have just always made me better at deadlifting than anything else. This was the only lift of the day where I was scheduled to go last instead of second to last. They guy before me started at 475 lb.\n\n* 1st attempt: 485 lb. I actually thought I had told them 480 lb. When they put a 5 on each side instead of a 2.5, I asked them about it, thinking they got their plate math wrong. They then said, \"You wanted 485, right?\" I told them I thought I said 480. They offered to change it down, but since they'd already loaded the bar and were ready for me, I just said, \"Nah this is fine.\" We all got a good laugh from that. It went up super fast and felt easy.\n* 2nd attempt: 505 lb. I was planning on playing it safe with a 500 lb second attempt. 505 was my previous PR, and I'd been failing 510 in training leading up to this. I was afraid deadlifting just wasn't going to go well. But 485 felt so good, and the guy pulling before me did 505, so I just told them to leave the 5 extra pounds on and went for it. Went up fast and smooth, no issues at all.\n* 3rd attempt: 530 lb. I was, again, planning on going for 515 here. I just had no clue how this was going to go based on how training had been. Well, the guy pulling before me pulled 525. He was like 50 lb ahead of me on squat and bench, but I thought I could at least go for the deadlift win. I told them to add 5 lb (they were running out of room on the bar; they'll need to get some real plates if they keep doing this) and it went up quickly. I feel like I had more in the tank here, but hey, I'll take the 25 lb PR and deadlift win.\n\n**Thoughts**\n\nThey hope to make it a sanctioned event in the future. I came in second overall. The guy who came in first had a 399.4 Wilks, so I'm fine with \"losing\" to someone so ahead of me. It was tons of fun going head to head on deadlifts, though.\n\nEveryone was incredibly friendly and supportive. This was such an enjoyable meet, and I'm proud that I've made some nice progress. I'll need to dial things down a bit for the next few months, but I'll probably sign up again next year. ",
         "sourceLink": "https://www.reddit.com/r/weightroom/comments/17t424k/meet_report_unsanctioned_powerlifting_meet_in/",
         "permaLink": "https://www.reddit.com/r/weightroom/comments/17t424k/meet_report_unsanctioned_powerlifting_meet_in/"
@@ -908,7 +1073,7 @@
       "data": {
         "title": "November 12 Daily Thread",
         "user": "AutoModerator",
-        "score": 7,
+        "score": 5,
         "selfText": "You should post here for:\n\n* PRs\n* General discussion or questions\n* Community conversation\n* Routine critiques\n* Form checks",
         "sourceLink": "https://www.reddit.com/r/weightroom/comments/17td11m/november_12_daily_thread/",
         "permaLink": "https://www.reddit.com/r/weightroom/comments/17td11m/november_12_daily_thread/"
@@ -919,7 +1084,7 @@
       "data": {
         "title": "November 11 Daily Thread",
         "user": "AutoModerator",
-        "score": 10,
+        "score": 8,
         "selfText": "You should post here for:\n\n* PRs\n* General discussion or questions\n* Community conversation\n* Routine critiques\n* Form checks",
         "sourceLink": "https://www.reddit.com/r/weightroom/comments/17snc9g/november_11_daily_thread/",
         "permaLink": "https://www.reddit.com/r/weightroom/comments/17snc9g/november_11_daily_thread/"
@@ -930,7 +1095,7 @@
       "data": {
         "title": "Foodie Friday",
         "user": "AutoModerator",
-        "score": 3,
+        "score": 4,
         "selfText": "Weekly thread for discussing:\n            \n* recipes\n* nutritional plans\n* favorite foods\n* macro schemes \n* diet questions",
         "sourceLink": "https://www.reddit.com/r/weightroom/comments/17s0t3l/foodie_friday/",
         "permaLink": "https://www.reddit.com/r/weightroom/comments/17s0t3l/foodie_friday/"
@@ -963,7 +1128,7 @@
       "data": {
         "title": "Weakpoint Wednesday: Delts (Aesthetics)",
         "user": "WeightroomBot",
-        "score": 20,
+        "score": 19,
         "selfText": "# MAKING A TOP-LEVEL COMMENT WITHOUT CREDENTIALS WILL EARN A 30-DAY BAN\r\n\r\n***\r\n\r\nWelcome to the weekly installment of our Weakpoint Wednesday thread. This thread is a topic driven collective to fill the void that the more program oriented Tuesday thread has left. We will be covering a variety of topics that covers all of the strength and physique sports, as well as a few additional topics.\r\n\r\n**Today's topic of discussion: Delts (Aesthetics)**\r\n\r\n- What have you done to improve when you felt you were lagging?\r\n- What worked?\r\n- What not so much?\r\n- Where are/were you stalling?\r\n- What did you do to break the plateau?\r\n- Looking back, what would you have done differently?\r\n\r\n**Notes**\r\n\r\n- If you're a beginner, or fairly low intermediate, these threads are meant to be more of a guide for later reference. While we value your involvement on the sub, we don't want to create a culture of the blind leading the blind. Use this as a place to ask questions of the more advanced lifters that post top-level comments.\r\n- Any top level comment that does not provide credentials (preferably photos for these aesthetics WWs, but we'll also consider competition results, measurements, lifting numbers, achievements, etc.) will be removed and a temp ban issued.\r\n\r\n***\r\n\r\n[Index of ALL WWs](https://thefitness.wiki/intermediate-advanced-resources/weakpoint-wednesdays-archive/) from /u/PurpleSpengler's wiki.\r\n\r\n***\r\n\r\n**[WEAKPOINT WEDNESDAY SCHEDULE](https://docs.google.com/spreadsheets/d/1DiyXfKrMLUrF6nMzNuWvTti7mk-Ax2vw3G6oUIFRcBk/edit?usp=sharing) - Use this schedule to plan out your next contribution. :)**\r\n\r\nRoboCheers!",
         "sourceLink": "https://www.reddit.com/r/weightroom/comments/17qk3fh/weakpoint_wednesday_delts_aesthetics/",
         "permaLink": "https://www.reddit.com/r/weightroom/comments/17qk3fh/weakpoint_wednesday_delts_aesthetics/"
@@ -974,7 +1139,7 @@
       "data": {
         "title": "November 8 Daily Thread",
         "user": "AutoModerator",
-        "score": 5,
+        "score": 7,
         "selfText": "You should post here for:\n\n* PRs\n* General discussion or questions\n* Community conversation\n* Routine critiques\n* Form checks",
         "sourceLink": "https://www.reddit.com/r/weightroom/comments/17qec37/november_8_daily_thread/",
         "permaLink": "https://www.reddit.com/r/weightroom/comments/17qec37/november_8_daily_thread/"
@@ -985,175 +1150,10 @@
       "data": {
         "title": "Training Tuesday: Block Periodization",
         "user": "WeightroomBot",
-        "score": 5,
+        "score": 6,
         "selfText": "Welcome to Training Tuesdays, the weekly /r/weightroom training thread. We will feature discussions over training methodologies, program templates, and general weightlifting topics. **(Questions not related to today's topic should be directed towards the daily thread.)**\r\n\r\nCheck out the Training Tuesdays [Google Sheet](https://docs.google.com/spreadsheets/d/1QU2byMuivbjZpz8MzdmzaUkjfDQf_1eEiLbIsrihn_I/edit?usp=sharing) that includes upcoming topics, links to discussions dating back to mid-2013 (many of which aren't included in the FAQ). Please feel free to message any of the mods with topic suggestions, potential discussion points, and resources for upcoming topics!\r\n\r\nThis week we will be talking about:\r\n\r\n**Block Periodization**\r\n\r\n- Describe your training history.\r\n- What specific programming did you employ? Why?\r\n- What were the results of your programming?\r\n- What do you typically add to a program? Remove?\r\n- What went right/wrong?\r\n- Do you have any recommendations for someone starting out?\r\n- What sort of trainee or individual would benefit from using the/this method/program style?\r\n- How do manage recovery/fatigue/deloads while following the method/program style?\r\n- Share any interesting facts or applications you have seen/done\r\n\r\n# Reminder\r\n\r\n# Top level comments are for answering the questions put forth in the OP and/or sharing your experiences with today's topic. If you are a beginner or low intermediate, we invite you to learn from the more experienced users but please refrain from posting a top level comment.\r\n\r\nRoboCheers!",
         "sourceLink": "https://www.reddit.com/r/weightroom/comments/17pspja/training_tuesday_block_periodization/",
         "permaLink": "https://www.reddit.com/r/weightroom/comments/17pspja/training_tuesday_block_periodization/"
-      }
-    },
-    {
-      "category": "powerlifting",
-      "data": {
-        "title": "NEW TO THE SUB? START HERE!",
-        "user": "BenchPolkov",
-        "score": 364,
-        "selfText": "#1. READ THE [WIKI](https://www.reddit.com/r/powerlifting/wiki/index). PLEASE READ THE WIKI!\nThen read it again, and again, especially **[HOW TO POST IN THIS SUB](https://www.reddit.com/r/powerlifting/wiki/index)** and **[THE RULES](https://www.reddit.com/r/powerlifting/wiki/rules)**.\n\n#2. USER FLAIR IS MANDATORY\nYou can't post or comment without it. [Find out how to get yours.](https://www.reddit.com/r/powerlifting/wiki/flair)\n\n#3. READ THE SIDEBAR\n**Your thread belongs on the main board:**\n\n* -It's a meet report.\n* -It's an interesting article or video of an elite or interesting lift relevant to the sport.\n* -It's a program review.\n* -It's a thread that is specifically about powerlifting and promotes community discussion.\n\n**Your thread belongs in the daily thread or one of the other weekly threads:**\n\n* -It's not a community discussion thread.\n* -You want to complain.\n* -It's a form check.\n* -You want to sell us a product or do market research.\n* -It pertains to only you and not the larger community.\n* -It's not specifically about powerlifting or only very tangentially related .\n* -It's a request for a program critique.\n\n**What /r/powerlifting is:**\n\n* -A place to discuss the sport of Powerlifting and the training of the lifts.\n* -A place to post theory, discussion and information that will make us better lifters.\n* -A place where mods WILL delete any post we feel is not a good fit, regardless of any sidebar or FAQ statements. A post doesn't have to violate a rule to not meet our criteria.\n\n**What /r/powerlifting isn't:**\n\n* -This is not a place for questions that can be answered via a quick google search.\n* -This is not a place for memes or rants.\n* -This is not a place for overdone and nonconstructive complaints and criticisms about elements of the sport that you don't like, **ESPECIALLY IF YOU DON'T ACTUALLY TAKE PART IN THE SPORT**.\n* -This is not a place for your personal records, articles or videologs unless you meet specific requirements.",
-        "sourceLink": "https://www.reddit.com/r/powerlifting/comments/aw04t0/new_to_the_sub_start_here/",
-        "permaLink": "https://www.reddit.com/r/powerlifting/comments/aw04t0/new_to_the_sub_start_here/"
-      }
-    },
-    {
-      "category": "powerlifting",
-      "data": {
-        "title": "Every Second-Daily Thread - November 15, 2023",
-        "user": "AutoModerator",
-        "score": 2,
-        "selfText": "A sorta kinda daily open thread to use as an alternative to posting on the main board. You should post here for:\n\n* PRs\n* Formchecks\n*  Rudimentary discussion or questions\n* General conversation with other users\n* Memes, funnies, and general bollocks not appropriate to the main board\n* If you have suggestions for the subreddit, let us know!\n* This thread now defaults to \"new\" sorting.\n\n**For the purpose of fairness across timezones this thread works on a 44hr cycle.**",
-        "sourceLink": "https://www.reddit.com/r/powerlifting/comments/17vnzqb/every_seconddaily_thread_november_15_2023/",
-        "permaLink": "https://www.reddit.com/r/powerlifting/comments/17vnzqb/every_seconddaily_thread_november_15_2023/"
-      }
-    },
-    {
-      "category": "powerlifting",
-      "data": {
-        "title": "Adductor Rehab",
-        "user": "iampizzaprincess",
-        "score": 1,
-        "selfText": "Adductors are slightly irritated from wide stance sumo work. Aside from regulating intensity and volume, does anyone have any good rehab movements? Would like to add a few things into my warm up.",
-        "sourceLink": "https://www.reddit.com/r/powerlifting/comments/17wsrcf/adductor_rehab/",
-        "permaLink": "https://www.reddit.com/r/powerlifting/comments/17wsrcf/adductor_rehab/"
-      }
-    },
-    {
-      "category": "powerlifting",
-      "data": {
-        "title": "Equipped Lifting Thread",
-        "user": "AutoModerator",
-        "score": 12,
-        "selfText": "Do you like having 2-3 sweaty men shoe-horn you into polyester, canvas or denim bondage gear.\n\nDo you like having your joints wrapped so tightly they bruise and bleed?\n\nDo you like having your blood pressure turned up to 11 and being compressed so much that you think your head might explode? \n\nDo you get off on enduring pain and suffering, and watching others endure it too? \n\nDo you have a deathwish every time you get under the bar?\n\n**Yes?**\n\n&amp;#x200B;\n\n# THEN WELCOME TO THE FORTNIGHTLY EQUIPPED LIFTING THREAD!!!",
-        "sourceLink": "https://www.reddit.com/r/powerlifting/comments/17w84sc/equipped_lifting_thread/",
-        "permaLink": "https://www.reddit.com/r/powerlifting/comments/17w84sc/equipped_lifting_thread/"
-      }
-    },
-    {
-      "category": "powerlifting",
-      "data": {
-        "title": "Diet Discussion Thread",
-        "user": "AutoModerator",
-        "score": 4,
-        "selfText": "**For discussion of:**\n\n* **Eating all the food when you want to get swole**\n* **Eating less of the food when you're too fluffy**\n* **Diet methods and plans**\n* **Favourite foods and recipes**\n* **How awful dieting is**",
-        "sourceLink": "https://www.reddit.com/r/powerlifting/comments/17w9j2s/diet_discussion_thread/",
-        "permaLink": "https://www.reddit.com/r/powerlifting/comments/17w9j2s/diet_discussion_thread/"
-      }
-    },
-    {
-      "category": "powerlifting",
-      "data": {
-        "title": "IPF Open Equipped Worlds Megathread",
-        "user": "psstein",
-        "score": 29,
-        "selfText": "Occurring Nov. 13-18th. \n\nNominations, stream, and results here: https://goodlift.info/live.php",
-        "sourceLink": "https://www.reddit.com/r/powerlifting/comments/17v7acp/ipf_open_equipped_worlds_megathread/",
-        "permaLink": "https://www.reddit.com/r/powerlifting/comments/17v7acp/ipf_open_equipped_worlds_megathread/"
-      }
-    },
-    {
-      "category": "powerlifting",
-      "data": {
-        "title": "Programming Wednesdays",
-        "user": "AutoModerator",
-        "score": 6,
-        "selfText": " \n\n## Discuss all aspects of training for powerlifting:\n\n&amp;#x200B;\n\n* Periodization\n* Nutrition\n* Movement selection\n* Routine critiques\n* etc...",
-        "sourceLink": "https://www.reddit.com/r/powerlifting/comments/17vg97r/programming_wednesdays/",
-        "permaLink": "https://www.reddit.com/r/powerlifting/comments/17vg97r/programming_wednesdays/"
-      }
-    },
-    {
-      "category": "powerlifting",
-      "data": {
-        "title": "Lifting at Higher Altitudes",
-        "user": "ts_arnell",
-        "score": 48,
-        "selfText": "I recently moved to Colorado from Indiana. In Indy, I was sitting at 400-500 feet. Where I live in CO, I am training around 5900-6000 feet. I’ve lived here nearly 3 months and weight (especially on squat and deadlift) still feels extremely heavy, and everything over 6-7 reps makes me feel like I’m going to pass out. \n\nIs this normal? And, has anyone else experienced this? I never had these issues back in Indy, so I assume it has to be elevation related but it’s taking so long to acclimate",
-        "sourceLink": "https://www.reddit.com/r/powerlifting/comments/17up8vy/lifting_at_higher_altitudes/",
-        "permaLink": "https://www.reddit.com/r/powerlifting/comments/17up8vy/lifting_at_higher_altitudes/"
-      }
-    },
-    {
-      "category": "powerlifting",
-      "data": {
-        "title": "Ladies Open Weekly Thread",
-        "user": "AutoModerator",
-        "score": 5,
-        "selfText": " \n\n**Here you can:**  \n\n* **Discuss all aspects of powerlifting as it pertains to being a woman.**\n* **Socialize with other ladies.**\n* **If you have discussion provoking bullet points, those are welcome too.**",
-        "sourceLink": "https://www.reddit.com/r/powerlifting/comments/17uq6zd/ladies_open_weekly_thread/",
-        "permaLink": "https://www.reddit.com/r/powerlifting/comments/17uq6zd/ladies_open_weekly_thread/"
-      }
-    },
-    {
-      "category": "powerlifting",
-      "data": {
-        "title": "[Meet report] DT Strength Throwdown| Kirkland, WA| | 400 kg @ 86.1 kg | F32 | Raw | DOTS 363.8",
-        "user": "GilesofGiles",
-        "score": 46,
-        "selfText": "This meet was 20 minutes from my house, I know the director runs smooth meets, and it was about a year after my last meet. No brainer. The meet also happened today so I’m a little scattered but wanted to get this down. I initially did meet reports because I was kind of lonely in the powerlifting world, but now I have a really great IRL crew including my awesome friends who came out to watch and handle me, so I post these to mark how far I’ve come since my first meet. \n\n*My prep*\n\nThis was a fucking killer prep. We tried a new structure and it worked really well. Another thing I want to note is that I am embarking on a 2-3 year bulk/cut cycle with the long term goal of being a much more jacked 82.5 lifter. However, I did not want to pause the bulk I was currently on to lift in that class for this event, so I lifted in the 90 kg class. I think it also helped my prep that I was actively bulking through it. The only issue with my prep was a tendency to flirt with high squats. However, for this meet I really, really wanted a 400 kg total. I didn’t need a big squat to get that but going 3/3 would take a lot of pressure off of me so I made a conservative squat plan with the intention of sinking each one. I knew if I could go 3/3 I would have a shot to secure the total on my second deadlift, and then I could wild out on the last deadlift to get a little silly. Bench and deads, no notes, PR’d in prep and everything moved wonderfully. \n\nVideo of all lifts can be found [here](https://youtu.be/kP_NrWGby7A)\n\nSQUAT: \n\n1: 137.5 yes good. Easy. Whatever \n\n2: 145 also yes\n\n3: 150 hell yes!! A lifetime PR and 5 kg meet PR. Moved easy. Exactly what I wanted—enough room in the tank that I wasn’t worn out for bench and deads and heavy enough to take some pressure off the other events for the total I wanted \n\nBENCH: \n\n1: 75 this was my third attempt at my last meet\n\n2: 80, little wobble. I had planned anyway to jump to 82.5 and technically I had no choice but if there had been a more conservative option I would have taken it \n\n3: 82.5, miss. Lol. I have hit this in the gym before, and still walked away with another 5 kg meet PR. \n\nMy back was really sore at this point but my amazing and excellent handler found me a foam roller so I foam rolled and ate a sausage egg muffin sandwich and deadlift warmups were ON FIRE! Missing the third bench meant I would need to use my third deadlift attempt to secure the total, but making all my squats like the genius that I am meant I wouldn’t need to ask too much of myself to get it. \n\nDEADLIFT:\n\n1: 157.5 I am visibly pissed off here that the platform crew didn’t straighten out the bar for me and I had to kneel down and roll it into place with my precious minute. But it was fine for the rest of the attempts \n\n2: 167.5 yes good, 2.5 kg meet PR. At this point, the total was 397.5. My coach came to me and said he thought I could definitely do 172.5, maybe even 175. And I was like yeah and I know this is basically taking the same weight twice, and it’s anticlimactic, but...\n\n3: 170 yeah I just did this to grab that total. I’ll wild out at the next meet. My best gym deadlift is 175 and that was definitely available on the day. Maybe next time. \n\n*What I did right* \n\nI was really diligent about recovery during this prep and I was actively eating in a surplus and that probably did most of the work for me, I do not care. I was told I had the biggest women’s total at the meet, I will confirm that when the results are posted. I also got drug tested. I think that speaks more to how fractured the powerlifting world is across feds than to whether or not I am strong. \n\nI was also an execution machine. Historically I have been high on hype, but for this meet I just put my headphones in between attempts and chilled out. Focusing on a total instead of individual lifts also helped me think about lifting strategically instead of desperately trying to PR everything, even though I did that too. This was a major mental PR. Also I have not gone 3/3 on squats since 2018. I am extremely grateful for my friends who came out to watch my meet even though it was just me lifting, and for my friend that stepped up to handle me when I asked for help. I like my powerlifting crew a lot. \n\n*What I wish I did differently*\n\nI wish I’d fueled a little better between squats and bench because I think my back was tired and shaky, but the deadlifts moved so well after eating that I see it was a fuel problem. Then I could have gone all out on my third deadlift. That is a very minor thing though.\n\n*What’s next*\n\nNothing! Whatever the next meet on my timeline is, that is what I will do. My next goal is to total 410, and force my squats to be consistent enough that I can actually talk about big numbers when planning attempts instead making a plan for how to not bomb out.",
-        "sourceLink": "https://www.reddit.com/r/powerlifting/comments/17u04n5/meet_report_dt_strength_throwdown_kirkland_wa_400/",
-        "permaLink": "https://www.reddit.com/r/powerlifting/comments/17u04n5/meet_report_dt_strength_throwdown_kirkland_wa_400/"
-      }
-    },
-    {
-      "category": "powerlifting",
-      "data": {
-        "title": "Every Second-Daily Thread - November 13, 2023",
-        "user": "AutoModerator",
-        "score": 8,
-        "selfText": "A sorta kinda daily open thread to use as an alternative to posting on the main board. You should post here for:\n\n* PRs\n* Formchecks\n*  Rudimentary discussion or questions\n* General conversation with other users\n* Memes, funnies, and general bollocks not appropriate to the main board\n* If you have suggestions for the subreddit, let us know!\n* This thread now defaults to \"new\" sorting.\n\n**For the purpose of fairness across timezones this thread works on a 44hr cycle.**",
-        "sourceLink": "https://www.reddit.com/r/powerlifting/comments/17u88ww/every_seconddaily_thread_november_13_2023/",
-        "permaLink": "https://www.reddit.com/r/powerlifting/comments/17u88ww/every_seconddaily_thread_november_13_2023/"
-      }
-    },
-    {
-      "category": "powerlifting",
-      "data": {
-        "title": "Weekly Dumb/Newb Question Thread",
-        "user": "AutoModerator",
-        "score": 13,
-        "selfText": "**Do you have a question and are:**\n\n* **A novice and basically clueless by default?**\n* **Completely incapable of using google?**\n* **Just feeling plain stupid today and need shit explained like you're 5?**\n\n**Then this is the thread FOR YOU!** Don't take up valuable space on the front page and annoy the mods, ASK IT HERE and one of our resident \"experts\" will try and answer it. As long as it's somehow related to powerlifting then nothing is too generic, too stupid, too awful, too obvious or too repetitive. And don't be shy, we don't bite (unless we're hungry), and no one will judge you because everyone had to start somewhere and we're more than happy to help newbie lifters out.\n\n# SO FIRE AWAY WITH YOUR DUMBNESS!!!",
-        "sourceLink": "https://www.reddit.com/r/powerlifting/comments/17u0346/weekly_dumbnewb_question_thread/",
-        "permaLink": "https://www.reddit.com/r/powerlifting/comments/17u0346/weekly_dumbnewb_question_thread/"
-      }
-    },
-    {
-      "category": "powerlifting",
-      "data": {
-        "title": "Powerlifting Victory Thread",
-        "user": "AutoModerator",
-        "score": 5,
-        "selfText": " \n\nThis is the thread to post your:\n\n* Powerlifting accomplishments\n* Training PRs\n* Gym or diet related victories\n* Best flexing photos\n* Sweet new equipment purchases\n* Gym dog or gym family photos\n\nOr really anything you felt good or happy about from the last week (or even further back in time, no one's gonna stop you).\n\nText, images, videos, any format goes.\n\nLet's get those good vibes flowing.",
-        "sourceLink": "https://www.reddit.com/r/powerlifting/comments/17titkq/powerlifting_victory_thread/",
-        "permaLink": "https://www.reddit.com/r/powerlifting/comments/17titkq/powerlifting_victory_thread/"
-      }
-    },
-    {
-      "category": "powerlifting",
-      "data": {
-        "title": "(Almost) One cycle of GZCL The Rippler [Program Review]",
-        "user": "omnptnt",
-        "score": 39,
-        "selfText": "Starting with the usual stats:\n\n&amp;#x200B;\n\n||Starting Stats|Week 8 (AMRAP after 8 singles at the same weight)|Week 10|\n|:-|:-|:-|:-|\n|Age|33|33|33|\n|Height|182cm|182cm|182cm|\n|Weight|91-92kg|91-92kg|91-92kg|\n|Squat|135kg x 2|130kg x 6|137kg x 3|\n|Bench Press|100kg x 2|102kg x 4|102kg x 3|\n|Deadlift|125kg x 3|120kg x 10|125kg x 6|\n|Lovely daughter|0|0|1|\n\n&amp;#x200B;\n\nSo let me preface this by stating that I cut the program short, 11th week is supposed to be a deload week and the 12th week is supposed to be a 1RM test week.\n\nMy lovely newborn daughter decided to come just slightly a bit earlier than expected (just before Week 10 of the program), so I decided not to continue with Weeks 11 and 12 as Week 10 was already done with loads of fatigue due to sleep deprivation.\n\nFor those familiar with the program, Week 8 is the one with the highest accumulated volume at the highest intensity (8 singles @ 97.5% and an AMRAP 9th set). It is worth noting that my performance at the final 1+ set of that week was better than my performance of Week 10, which leaves me with a lot to be desired...\n\nBefore starting The Rippler I was on holidays for 3 weeks and I was doing 531 SSL just to maintain strength and before that I did Candito's 6 week program which gave me good results.\n\n&amp;#x200B;\n\nMy program was as follows:\n\nMonday: T1 Squat, T2 Squat, T3a Single-leg weighted hyperextensions, T3b Leg curls/Leg extensions, T3c Calves work\n\nTuesday: T1 Bench press, T2a Bench press, T2b Incline DB press/Chins, T3a DB curls/DB French press, T3b Ab work\n\nThursday: T1 Deadlift, T2a Deadlift, T2b Reverse BB lunges, T3a GHR/Leg extensions, T3b Calves work\n\nFriday:  T1 CGBP, T2a CGBP, T2b Incline DB press/Chins, T3a DB hammers/Overhead cable tricep extensions, T3b Ab work\n\n&amp;#x200B;\n\nDuring previous programs that I've followed I didn't use OHP neither and exchanged it for CGBP, reason is that I'm still working on my overhead mobility.\n\nCody says that T2 should be variations of T1, or use the same movement if technique needs to be honed in. I consider myself an early intermediate lifter, so I decided to make T2 the same as T1 in order to improve my technique. Next time I'll be running The Rippler again, I'll probably use the variation method and see where it gets me.\n\n&amp;#x200B;\n\nWhile running The Rippler I could feel that weights in high intensities were feeling considerably lighter than before, and on +sets I was always hitting PRs. Another important point to note is that during these 10 weeks I did not experience any joint pain, while usually I'm quite prone to left quadricep tendon inflammations.\n\nI loved the program and I loved the higher intensity work it put me through, I enjoyed the undulating progression, I would surely follow it again. Cody has done an amazing job at providing the community all these years with such valuable, high quality information.\n\nAs I said earlier, I'll never know what my real RM would be during the 12th Week but that's okay. I'll use Week's 10 numbers which better depict my current fatigued state in order to continue with another percentage-based program or something like GZCL General Gainz which is RPE based and will suit my current life better, or something with even less volume like a minimum effective training dose approach.\n\n&amp;#x200B;\n\n&amp;#x200B;",
-        "sourceLink": "https://www.reddit.com/r/powerlifting/comments/17syji8/almost_one_cycle_of_gzcl_the_rippler_program/",
-        "permaLink": "https://www.reddit.com/r/powerlifting/comments/17syji8/almost_one_cycle_of_gzcl_the_rippler_program/"
-      }
-    },
-    {
-      "category": "powerlifting",
-      "data": {
-        "title": "[Meet Report] WRPF North State Barbell Open (520kg @80.4)",
-        "user": "nespinola24",
-        "score": 39,
-        "selfText": "Overview\n\nLast weekend, 11/4/23, I (24 year old male) competed at the North State Barbell Open in Chico, CA. I totaled 520/1146 at a body weight of 80.4/177.3. My best lifts were: squat-170/374.8, bench-130/286.6, deadlift-220-485. This was my first meet since last September, my first WRPF meet, and by far my the best meet I’ve ever had as far as performance goes. The credit for the performance goes to my coach, Dr. Dave Osborn who get me set up perfectly to perform well at the meet and my wife who coached me on meet day and did a spectacular job. \n\nTraining\n\nI’ve been working with Dr. Dave Osborn now since November of 2021 and have been making strides since then. This spring, due to a busy schedule in my personal life, we switched from training 4 days a week to 3. With the 3 day training set up, I train two SBD days split up by an accessory day. On day 1, I train main squat and bench as well as conventional deadlift as a secondary deadlift movement. Day 2 is only accessory movements. Then, day 3 is main deadlift followed by a secondary bench, then hibar squat. Early on, the secondary bench was pause Larsen press, but later transitioned to pause close grip bench. \n\nThis training set up has proven to be my favorite way to train by far. I’ve found training two SBD days a week to be so much fun, but also great for my strength, conditioning for meet day, as well as practicing my execution of heavy competition lifts. \n\nThis summer is when I was able to dial in my training and recovery. I have summers off of work so planning a late fall meet gave me the opportunity to train hard over the summer and realize that work at the end of the fall. Just about every week I was setting new rep PRs all summer which gave me a huge confidence boost. \n\n6 weeks out, I took singles at RPE 9 and walked away with a 10 lb PR each for squat, bench, and deadlift at 370/285/485. 5 weeks out was a deload week, followed by a reload singles week 4 weeks out at 315/245/415. Then, 3 weeks out I took singles that were intended to be above a 2nd attempt, but below a 3rd. That week I went 360/275/465. 2 weeks out I took opener singles at 335/255/435. The week of the meet I took singles at 60% with some low intensity accessories. \n\nWeigh Ins\n\nSince WRPF has day before weigh ins, I traveled to Chico on Thursday, 11/2 after work. Then Friday morning I went to weigh in. There were no surprises at weigh ins. I came in at 80.4 which was on the lighter side of what I’ve been weighing for the past few weeks. \n\nAfter weigh ins, I made sure that I got around and moved throughout the day so that when it came time to going to bed I would feel like I had a full day and fall asleep easier. I have always had trouble sleeping the night before a meet. Usually it comes down to nerves, but this time I felt like I was going to sleep well. I truly wasn’t nervous about the meet at all, lots of confidence, but could not fall asleep for the life of me. I woke up feeling energized so I decided not to check my sleep data from my watch until after the meet so I wouldn’t get in my head about how it could affect my performance. I ended up getting 5.25 hours of sleep which I probably would’ve overthought and let bother me if I knew it. \n\nMeet Day\n\nSquat\n\nSquats were being done with a squat bar and monolift so I made sure to warmup on the only mono and squat bar in the warmup area, even though I walked my squats out. Warmups felt exactly as I planned. All my squats moved as normally and I felt great going into my opener. \n\nI opened at 152.5/336.1 and hit it comfortably. My wife wanted to call a 12.5 kg jump to 165 and I knew that would be a great jump. For my 2nd attempt at 165/363.8, without thinking, I sunk the squat deeper than I needed to and coming out of the hole I moved slower than I would have liked. I had good acceleration into lockout afterward but the slower squat made my wife call a more conservative jump for the 3rd attempt. I took 170/374.8 for my 3rd squat, got the depth figured out and hit it better than my 2nd attempt. All in all I was happy that I had gone 3/3 with a small PR on squat and was well on my way to building a great total.  \n\nBench \n\nAll the SBD training during meet prep had me ready to roll right into bench without any problem. My energy levels felt great and it showed during warmups. Everything had great speed and I was able to go into bench with a lot of confidence. \n\nI took 115/253.5 as a speedy opener. I’ve made the mistake of making too big of jumps before so my wife kept me at 7.5 kg jumps. My 2nd bench at 122.5/270.1 moved very comfortably and exactly how I needed it to move to take my goal 3rd attempt of 130/286.6. I felt great going into my 3rd and took it to my chest well but pressing off was a challenge. I came off with good speed, but my right tricep slowed down a bit which worried me that I might have had downward movement, but I locked out and got three whites for a good lift and a small bench PR and a 600kg subtotal. \n\nDeadlift \n\nBench had brought a bit of fatigue and tightness to my upper back and I wasn’t sure how that would play out for deadlift. Warmups for deadlift were chaotic. There were only two deadlift platforms and most the lifters in my flight, including myself, wanted to use the Texas DL bar to warmup but got a late start due to a lifter in the flight ahead of us still needing to take their last warmup. I finished my warmup earlier than I had planned to give the rest of the lifters time to get theirs in since I was one of the lightest pullers in the flight. \n\nI opened at 197.5/435.4 and hit it with speed. The bar on the platform was a Kabuki DL bar, but it didn’t affect my pulls negatively. We jumped to 210/463 for an aggressive 2nd attempt and I hit it with enough room in the tank to take my maximum allotted 3rd of 220/485 and finish it out better than I did in training. It was a great way to cap off a 9/9 day and a great meet. \n\nTLDR: I went 9/9 totaling 520kg (a 47.5 kg meet PR) at 80.4 kg for the best meet I’ve ever had. \n\nHere’s a link to all the lifts from the day- https://photos.app.goo.gl/EMBQtqqQCcdrNNCY9 \n\nHere’s a link to my Instagram recap with only my 3rd attempts- https://www.instagram.com/p/CzP1ecVrIcR7MgKMXxQ5hrAwXjWetlhQz-BiE00/?igshid=MTljbWpuNmh3YjVr",
-        "sourceLink": "https://www.reddit.com/r/powerlifting/comments/17sq5uh/meet_report_wrpf_north_state_barbell_open_520kg/",
-        "permaLink": "https://www.reddit.com/r/powerlifting/comments/17sq5uh/meet_report_wrpf_north_state_barbell_open_520kg/"
       }
     },
     {
@@ -1161,7 +1161,7 @@
       "data": {
         "title": "The real realtime preemption end game",
         "link": "https://lwn.net/SubscriberLink/951337/e9139cdb65a9cb93/",
-        "score": "197 points",
+        "score": "230 points",
         "user": "chmaynard",
         "age": "2023-11-16T14:47:02"
       }
@@ -1171,7 +1171,7 @@
       "data": {
         "title": "From email to phone number, a new OSINT approach (2019)",
         "link": "https://www.martinvigo.com/email2phonenumber/",
-        "score": "87 points",
+        "score": "121 points",
         "user": "Luc",
         "age": "2023-11-16T15:20:52"
       }
@@ -1180,8 +1180,8 @@
       "category": "ycombinator",
       "data": {
         "title": "Zimbra 0-day used to steal email data from government organizations",
-        "link": "https://blog.google/threat-analysis-group/zimbra-0-day-used-to-steal-email-data-from-government-organizations/",
-        "score": "36 points",
+        "link": "https://blog.google/threat-analysis-group/zimbra-0-day-used-to-target-international-government-organizations/",
+        "score": "54 points",
         "user": "hasheddan",
         "age": "2023-11-16T16:04:42"
       }
@@ -1189,41 +1189,11 @@
     {
       "category": "ycombinator",
       "data": {
-        "title": "Show HN: Numbat – A programming language with physical dimensions as types",
-        "link": "https://numbat.dev/articles/intro.html",
-        "score": "51 points",
-        "user": "sharkdp",
-        "age": "2023-11-15T13:34:57"
-      }
-    },
-    {
-      "category": "ycombinator",
-      "data": {
-        "title": "Privacy is priceless, but Signal is expensive",
-        "link": "https://signal.org/blog/signal-is-expensive/",
-        "score": "261 points",
-        "user": "mikece",
-        "age": "2023-11-16T16:18:10"
-      }
-    },
-    {
-      "category": "ycombinator",
-      "data": {
-        "title": "Smart drugs reduce quality of effort, and slow decision-making",
-        "link": "https://www.bps.org.uk/research-digest/smart-drugs-arent-so-smart-after-all",
-        "score": "162 points",
-        "user": "wjb3",
-        "age": "2023-11-16T09:12:15"
-      }
-    },
-    {
-      "category": "ycombinator",
-      "data": {
-        "title": "Hello World on the GPU (2019)",
-        "link": "https://acko.net/blog/hello-world-on-the-gpu/",
-        "score": "19 points",
-        "user": "thdespou",
-        "age": "2023-11-15T11:47:00"
+        "title": "Migrating to OpenTelemetry",
+        "link": "https://www.airplane.dev/blog/migrating-to-opentelemetry",
+        "score": "38 points",
+        "user": "kkoppenhaver",
+        "age": "2023-11-16T17:29:07"
       }
     },
     {
@@ -1231,7 +1201,7 @@
       "data": {
         "title": "Emu Video and Emu Edit, our latest generative AI research milestones",
         "link": "https://ai.meta.com/blog/emu-text-to-video-generation-image-editing-research/",
-        "score": "20 points",
+        "score": "46 points",
         "user": "ot",
         "age": "2023-11-16T15:59:51"
       }
@@ -1239,31 +1209,61 @@
     {
       "category": "ycombinator",
       "data": {
-        "title": "U.S. states sue Instagram owner for making social media addictive to kids",
-        "link": "https://www.cbc.ca/news/business/meta-lawsuit-children-addictive-1.7006259",
-        "score": "40 points",
-        "user": "colinprince",
-        "age": "2023-11-16T16:55:06"
+        "title": "Show HN: Numbat – A programming language with physical dimensions as types",
+        "link": "https://numbat.dev/articles/intro.html",
+        "score": "77 points",
+        "user": "sharkdp",
+        "age": "2023-11-15T13:34:57"
       }
     },
     {
       "category": "ycombinator",
       "data": {
-        "title": "Bad Bots Account for 73% of Internet Traffic: Analysis",
-        "link": "https://www.securityweek.com/bad-bots-account-for-73-of-internet-traffic-analysis/",
-        "score": "70 points",
-        "user": "LinuxBender",
-        "age": "2023-11-16T16:16:56"
+        "title": "Apple announces that RCS support is coming to iPhone next year",
+        "link": "https://9to5mac.com/2023/11/16/apple-rcs-coming-to-iphone/",
+        "score": "67 points",
+        "user": "dm",
+        "age": "2023-11-16T18:04:54"
       }
     },
     {
       "category": "ycombinator",
       "data": {
-        "title": "Printed robots with bones, ligaments, and tendons",
-        "link": "https://ethz.ch/en/news-and-events/eth-news/news/2023/11/printed-robots-with-bones-ligaments-and-tendons.html",
-        "score": "131 points",
-        "user": "cainxinth",
-        "age": "2023-11-16T12:56:45"
+        "title": "std::source_location Is Broken",
+        "link": "https://www.elbeno.com/blog/?p=1738",
+        "score": "15 points",
+        "user": "jandeboevrie",
+        "age": "2023-11-16T17:03:49"
+      }
+    },
+    {
+      "category": "ycombinator",
+      "data": {
+        "title": "Privacy is priceless, but Signal is expensive",
+        "link": "https://signal.org/blog/signal-is-expensive/",
+        "score": "368 points",
+        "user": "mikece",
+        "age": "2023-11-16T16:18:10"
+      }
+    },
+    {
+      "category": "ycombinator",
+      "data": {
+        "title": "Is Delaware the Cheapest Place to Incorporate?",
+        "link": "https://news.ycombinator.com/item?id=38276515",
+        "score": "24 points",
+        "user": "ddxv",
+        "age": "2023-11-15T13:44:12"
+      }
+    },
+    {
+      "category": "ycombinator",
+      "data": {
+        "title": "The CWEB System of Structured Documentation",
+        "link": "https://www-cs-faculty.stanford.edu/~knuth/cweb.html",
+        "score": "11 points",
+        "user": "weeber",
+        "age": "2023-11-16T16:39:42"
       }
     },
     {
@@ -1271,7 +1271,7 @@
       "data": {
         "title": "You don't need a CRDT to build a collaborative experience",
         "link": "https://zknill.io/posts/collaboration-no-crdts/",
-        "score": "42 points",
+        "score": "62 points",
         "user": "zknill",
         "age": "2023-11-16T13:36:19"
       }
@@ -1279,9 +1279,19 @@
     {
       "category": "ycombinator",
       "data": {
+        "title": "Operating on a minimal two-core Postgres instance: Query optimization insights",
+        "link": "https://robertrode.com/2023/11/15/operating-an-entire-company-on-a-minimal-two-core-postgresql-instance-query-optimization-insights-part-1.html",
+        "score": "120 points",
+        "user": "rob742",
+        "age": "2023-11-15T14:08:03"
+      }
+    },
+    {
+      "category": "ycombinator",
+      "data": {
         "title": "AI-Exploits: Repo of multiple unauthenticated RCEs in AI tools",
         "link": "https://github.com/protectai/ai-exploits",
-        "score": "8 points",
+        "score": "14 points",
         "user": "DanMcInerney",
         "age": "2023-11-16T16:48:44"
       }
@@ -1289,21 +1299,11 @@
     {
       "category": "ycombinator",
       "data": {
-        "title": "Show HN: Beak.js – Custom conversational assistants for your React app",
-        "link": "https://github.com/mme/beakjs",
-        "score": "22 points",
-        "user": "_mme",
-        "age": "2023-11-16T15:22:55"
-      }
-    },
-    {
-      "category": "ycombinator",
-      "data": {
-        "title": "Ransomware Group Files SEC Complaint over Victim's Failure Disclose Data Breach",
-        "link": "https://www.securityweek.com/ransomware-group-files-sec-complaint-over-victims-failure-to-disclose-data-breach/",
-        "score": "43 points",
-        "user": "LinuxBender",
-        "age": "2023-11-16T16:16:31"
+        "title": "Apple to support RCS messaging standard next year",
+        "link": "https://www.techradar.com/phones/iphone/breaking-apple-will-support-rcs-in-2024",
+        "score": "15 points",
+        "user": "ashton314",
+        "age": "2023-11-16T18:23:03"
       }
     }
   ]

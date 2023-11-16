@@ -63,26 +63,20 @@ const DataItem = ({ item }) => {
         </p>
       )}
 
-      <div className="popup" style={popupStyle}>
-        {showPopup && (
-          <div className="popup-content">
-            {console.log(item.selfText)}
-            {item.selfText && !isImage && (
-              <div
-                className="discussion-text"
-                dangerouslySetInnerHTML={{ __html: item.selfText }}
-              />
-            )}
-            {isImage && (
-              <img
-                src={item.permaLink}
-                alt={item.title}
-                className="popup-image"
-              />
-            )}
-          </div>
-        )}
-      </div>
+      {showPopup && item.selfText && !isImage && (
+  <div className="popup-content">
+    <div
+      className="discussion-text"
+      dangerouslySetInnerHTML={{ __html: item.selfText }}
+    />
+  </div>
+)}
+{showPopup && isImage && (
+  <div className="popup-content">
+    <img src={item.permaLink} alt={item.title} className="popup-image" />
+  </div>
+)}
+
     </div>
   );
 };

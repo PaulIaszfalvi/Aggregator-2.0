@@ -25,15 +25,6 @@ function SubContainer({ data }) {
     );
   }
 
-  const groupedData = data.reduce((result, item) => {
-    const category = item.category;
-    if (!result[category]) {
-      result[category] = [];
-    }
-    result[category].push(item);
-    return result;
-  }, {});
-
   const toggleCollapse = (category) => {
     setCollapseStates((prevState) => ({
       ...prevState,
@@ -43,20 +34,24 @@ function SubContainer({ data }) {
 
   return (
     <div className="sub-container">
-      {Object.keys(groupedData).map((category, index) => (
-        <div key={index}>
+      {Object.keys(collapseStates).map((category, index) => (
+        <div className={`category-container ${collapseStates[category] ? 'collapsed' : ''}`} key={index}>
           <div className="title">
-            <h3 className="category">{category}</h3>
+            <h3>{category}</h3>
             <button onClick={() => toggleCollapse(category)}>
               {collapseStates[category] ? 'Collapse' : 'Expand'}
             </button>
-          </div>
+          </div>  
           {collapseStates[category] && (
-            groupedData[category].map((item, itemIndex) => (
-              <div key={itemIndex}>
-                <DataItem item={item.data} />
-              </div>
-            ))
+            <div className="content">
+              {data
+                .filter((item) => item.category === category)
+                .map((item, itemIndex) => (
+                  <div key={itemIndex}>
+                    <DataItem item={item.data} />
+                  </div>
+                ))}
+            </div>
           )}
         </div>
       ))}

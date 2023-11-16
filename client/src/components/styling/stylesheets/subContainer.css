@@ -1,10 +1,11 @@
 /* subContainer.css */
 .sub-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
   gap: 0; /* Set both horizontal and vertical gap to 0 to eliminate gaps */
   max-width: 1920px; /* Maximum width when the screen size is 1920x1200 */
-  margin: 0 auto;
+  margin: 0 auto; 
 }
 
 .container {
@@ -35,6 +36,9 @@ button {
 .sub-container.collapsed {
   display: none;
 }
+
+
+
 
 /* Media query for responsiveness */
 @media (max-width: 1920px) {
